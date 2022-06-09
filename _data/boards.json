@@ -1,0 +1,62 @@
+[
+	{
+		"player": "Eric",
+		"challenges": [
+			"Invent (and play) a game",
+			"Climb a mountain with a friend",
+			"Catch a fish",
+			"Make food with foraged ingredients while camping.",
+			"Actually play a game at a “game night”",
+			"Knit something",
+			"Help someone else check off a square",
+			"Befriend a crow",
+			"This one is really quite long just to test the limits of the design, I mean how long could one square description be, really?",
+			"Run a lemonade stand.",
+			"Go to a new brewery",
+			"Start a new brewery (or just brew something [kombucha counts])",
+			"FREE",
+			"Write a song",
+			"Do karaoke",
+			"Walk on hot coals",
+			"Whittle a wooden spoon",
+			"Volunteer for a political campaign",
+			"Crash a party",
+			"Fly a kite",
+			"Pass a test (intentionally vague)",
+			"See bioluminesence",
+			"See the Milky Way",
+			"Go bowling and WIN",
+			"Play an actual game of BINGO"
+		]
+	},
+	{
+		"player": "Britt",
+		"challenges": [
+			"One",
+			"Two",
+			"Three",
+			"Four",
+			"Five",
+			"Six",
+			"Seven",
+			"Eight",
+			"Nine",
+			"Ten",
+			"Eleven",
+			"Twelve",
+			"FREE",
+			"Thirteen",
+			"Fourteen",
+			"Fifteen",
+			"Sixteen",
+			"Seventeen",
+			"Eighteen",
+			"Nineteen",
+			"Twenty",
+			"Twenty-one",
+			"Twenty-two",
+			"Twenty-three",
+			"Twenty-four"
+		]
+	}
+]
