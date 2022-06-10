@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+
+div {
+	width: 750px;
+	margin: 0 auto;
+}
+
+html {
+	--display-font: 'Bungee Shade', monospace;
+	--body-font: Outfit, Futura, system-ui, sans-serif;
+	font-family: var(--body-font);
+}
+a {
+	color: black;
+}
+a:not( h1 a ) {
+	padding: 0.125ch 0.25ch;
+	margin: -0.125ch -0.25ch;
+}
+a:hover {
+	color: white;
+	background: black;
+}
+a:active {
+	color: black;
+	background: none;
+}
+
+h1 a {
+	display: grid;
+	font-size: 7.5rem;
+	grid-template-columns: repeat(5, 1fr);
+	line-height: 0.8;
+	font-weight: normal;
+	text-decoration: none;
+	color: black;
+	padding: 1rem 0;
+}
+h2 {
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	letter-spacing: 0.25ch;
+	font-weight: 800;
+	padding: 0.25ch;
+}
+ruby {
+	ruby-position: under;
+	-webkit-ruby-position: after;
+	text-align: center;
+	font-family: var(--display-font);
+}
+rt, rp {
+	font-size: 1rem;
+	font-family: var(--body-font);
+	font-weight: 500;
+}
+
+table {
+	background: black;
+	border: 0.175em solid black;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: repeat(5, 1fr);
+	gap: 0.175em;
+}
+tr, tbody {
+	display: contents;
+	outline: 1px solid green;
+}
+td {
+	background-color: white;
+	aspect-ratio: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0.5em;
+	cursor: pointer;
+	font-size: 1.125em
+}
+td.freespace {
+	cursor: unset;
+}
+td.long {
+	font-size: 1em;
+}
+td.extra.long {
+	font-size: 0.875em;
+}
+td.super.extra.long {
+	font-size: 0.75em;
+}
+td.super.duper.extra.long {
+	font-size: 0.625em;
+}
+td.freespace {
+	background: black;
+}
+.freespace img {
+	display: block;
+	position: relative;
+	z-index: 9;
+	width: calc(100% + 3rem);
+	height: auto;
+	margin-left: -1.5rem;
+	margin-right: -1.5rem;
+}
+td.checked {
+	background-color: black;
+	color: white;
+}

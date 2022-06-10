@@ -1,20 +1,122 @@
 exports.data = {
-  pagination: {
-    data: "boards",
-    size: 1,
-    alias: 'board'
-  },
-  eleventyComputed: {
-    permalink: data => `boards/${ data.board.player.toLowerCase() }/`
-  }
+	layout: "base.11ty.js",
+	pagination: {
+		data: "boards",
+		size: 1,
+		alias: 'board'
+	},
+	eleventyComputed: {
+		permalink: data => `boards/${ data.board.player.toLowerCase() }/`
+	}
 };
 
 exports.render = function(data) {
-  return `<h1>${data.board.player}</h1>
-  <ol>
-    ${data.board.challenges.map(function(item) {
-        return `<li>${item}</li>`;
-      }).join("")
-    }
-  </ol>`;
+	return `
+<div>
+	<header>
+		<h1><a href="/">
+			
+			<ruby>B
+			<rp>(</rp><rt>Bellingham</rt><rp>)</rp>
+			</ruby>
+				
+			<ruby>A
+			<rp>(</rp><rt>Adults</rt><rp>)</rp>
+			</ruby>
+				
+			<ruby>A
+			<rp>(</rp><rt>Against</rt><rp>)</rp>
+			</ruby>
+			
+			<ruby>B
+			<rp>(</rp><rt>B-</rt><rp>)</rp>
+			</ruby>
+
+			<ruby>o
+			<rp>(</rp><rt>-oredom</rt><rp>)</rp>
+			</ruby>
+
+		</a></h1>
+		<h2>${ data.board.player }</h2>
+	</header>
+	<table>
+		<tr>
+			${ data.board.challenges.slice( 0, 5 ).map( function( item ) {
+				return `<td>${ item }`;
+			} ).join("") }
+		<tr>
+			${ data.board.challenges.slice( 5, 10 ).map( function( item ) {
+				return `<td>${ item }`;
+			} ).join("") }
+		<tr>
+			${ data.board.challenges.slice( 10, 12 ).map( function( item ) {
+				return `<td>${ item }`;
+			} ).join("") }
+			<td class="freespace"><img src="https://o.img.rodeo/image/upload/v1653428416/q1wweqagv9qwh5dwh6dl.svg">
+			${ data.board.challenges.slice( 12, 14 ).map( function( item ) {
+				return `<td>${ item }`;
+			} ).join("") }
+		<tr>
+			${ data.board.challenges.slice( 14, 19 ).map( function( item ) {
+				return `<td>${ item }`;
+			} ).join("") }
+		<tr>
+			${ data.board.challenges.slice( 19, 24 ).map( function( item ) {
+				return `<td>${ item }`;
+			} ).join("") }
+	</table>
+</div>
+
+<script>
+const tds = [ ...document.querySelectorAll( 'td' ) ];
+
+tds.forEach( td => {
+	if (td.textContent.length > 50) {
+		td.classList.add('long');
+	}
+	if (td.textContent.length > 90) {
+		td.classList.add('extra');
+	}
+	if (td.textContent.length > 130) {
+		td.classList.add('super');
+	}
+	if (td.textContent.length > 170) {
+		td.classList.add('duper');
+	}
+} );
+
+tds.forEach( ( td, index ) => {
+	if ( index === 12 ) { return; } // free space
+	td.addEventListener( 'click', function() {
+		this.classList.toggle( 'checked' );
+		const change = {
+			id: uuid(),
+			timestamp: Date.now(),
+			board: '${ data.board.player.toLowerCase() }',
+			index: index,
+			state: this.classList.contains( 'checked' )
+		};
+		postChange( change );
+	} );
+} );
+
+updateHtmlFromBoardState(
+	document.querySelector( 'table' ),
+	oneBoardFromLocalStorage( '${ data.board.player.toLowerCase() }' )
+);
+
+// go out to the database and update again, asynchronously
+syncLocalStorageChangeHistoryAndDatabase().then( ( result ) => {
+	if ( result.postedToLocalStorage === true ) {
+		updateHtmlFromBoardState(
+			document.querySelector( 'table' ),
+			oneBoardFromLocalStorage( '${ data.board.player.toLowerCase() }' )
+		);
+	}
+} );
+
+</script>
+
+`;
+
 };
