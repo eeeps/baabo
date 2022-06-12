@@ -68,7 +68,8 @@ exports.render = function(data) {
 </div>
 
 <script>
-const tds = [ ...document.querySelectorAll( 'td' ) ];
+const table = document.querySelector( 'table' );
+const tds = [ ...table.querySelectorAll( 'td' ) ];
 
 tds.forEach( td => {
 	if (td.textContent.length > 50) {
@@ -101,16 +102,16 @@ tds.forEach( ( td, index ) => {
 } );
 
 updateHtmlFromBoardState(
-	document.querySelector( 'table' ),
-	oneBoardFromLocalStorage( '${ data.board.player.toLowerCase() }' )
+	table,
+	boardsFromLocalStorage( [ '${ data.board.player.toLowerCase() }' ] )[ 0 ]
 );
 
 // go out to the database and update again, asynchronously
 syncLocalStorageChangeHistoryAndDatabase().then( ( result ) => {
 	if ( result.postedToLocalStorage === true ) {
 		updateHtmlFromBoardState(
-			document.querySelector( 'table' ),
-			oneBoardFromLocalStorage( '${ data.board.player.toLowerCase() }' )
+			table,
+			boardsFromLocalStorage( [ '${ data.board.player.toLowerCase() }' ] )[ 0 ]
 		);
 	}
 } );

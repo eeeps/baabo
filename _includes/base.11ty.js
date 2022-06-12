@@ -11,9 +11,6 @@ return `
 	<title>${ data.title }</title>
 	<meta name="viewport" content="width=765px">
 	<link rel="stylesheet" href="/style.css">
-	<script>
-		const playerNames = [ ${ data.boards.map( b => `"${ b.player.toLowerCase() }"` ).join(', ') } ];
-	</script>
 	<script src="/baabo.js"></script>
 	
 </head>

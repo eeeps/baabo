@@ -79,7 +79,8 @@ td {
 	justify-content: center;
 	padding: 0.5em;
 	cursor: pointer;
-	font-size: 1.125em
+	font-size: 1.125em;
+	outline: 0.175em solid black;
 }
 td.freespace {
 	cursor: unset;
@@ -111,4 +112,40 @@ td.freespace {
 td.checked {
 	background-color: black;
 	color: white;
+}
+
+table.thumb {
+	width: 5em;
+	border-width: 2px;
+	gap: 2px;
+}
+table.thumb td {
+	padding: 0;
+	outline: 2px solid black;
+}
+
+ul.players {
+	list-style: none;
+}
+
+.players li {
+	list-style: none;
+}
+.players div {
+	display: flex;
+}
+.players a:hover div {
+	background: black;
+}
+
+.players a {
+	text-decoration: none;
+	display: contents;
+}
+.players .thumb {
+	aspect-ratio: 1;
+	margin: 1em;
+}
+.players .name {
+	font-size: 2em;
 }

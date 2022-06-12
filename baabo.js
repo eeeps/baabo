@@ -74,15 +74,15 @@ const applyChangesToBoard = function( initial, changes ) {
 	return result;
 }
 
-const oneBoardStateFromEntireChangeHistory = function( playerName, changeHistory ) {
+const oneBoardStateFromChangeHistory = function( playerName, changeHistory ) {
 	const playerChanges = changeHistory.filter( change => change.board === playerName );
 	return applyChangesToBoard( blankBoard(), playerChanges );
 }
 
-const allBoardStatesFromEntireChangeHistory = function( playerNames, changeHistory ) {
+const boardStatesFromChangeHistory = function( playerNames, changeHistory ) {
 	const result = {};
 	playerNames.forEach( player => {
-		result[ player ] = oneBoardStateFromEntireChangeHistory( player, changeHistory );
+		result[ player ] = oneBoardStateFromChangeHistory( player, changeHistory );
 	} );
 	return result;
 }
@@ -107,16 +107,9 @@ const postChange = function( change ) {
 	postChangeToLocalStorage( change );
 }
 
-const allBoardsFromLocalStorage = function() {
-	return allBoardStatesFromEntireChangeHistory(
-		playerNames, // playerNames global set by Eleventy in the head (!)
-		fetchEntireChangeHistoryFromLocalStorage()
-	);
-}
-
-const oneBoardFromLocalStorage = function( playerName ) {
-	return oneBoardStateFromEntireChangeHistory(
-		playerName,
+const boardsFromLocalStorage = function( playerNames ) {
+	return boardStatesFromChangeHistory(
+		playerNames,
 		fetchEntireChangeHistoryFromLocalStorage()
 	);
 }
