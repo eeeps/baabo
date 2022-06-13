@@ -101,9 +101,11 @@ tds.forEach( ( td, index ) => {
 	} );
 } );
 
+const playerName = '${ data.board.player.toLowerCase() }';
+
 updateHtmlFromBoardState(
 	table,
-	boardsFromLocalStorage( [ '${ data.board.player.toLowerCase() }' ] )[ 0 ]
+	boardsFromLocalStorage( [ playerName ] )[ playerName ]
 );
 
 // go out to the database and update again, asynchronously
@@ -111,7 +113,7 @@ syncLocalStorageChangeHistoryAndDatabase().then( ( result ) => {
 	if ( result.postedToLocalStorage === true ) {
 		updateHtmlFromBoardState(
 			table,
-			boardsFromLocalStorage( [ '${ data.board.player.toLowerCase() }' ] )[ 0 ]
+			boardsFromLocalStorage( [ playerName ] )[ playerName ]
 		);
 	}
 } );

@@ -126,6 +126,7 @@ table.thumb td {
 
 ul.players {
 	list-style: none;
+	padding: 0;
 }
 
 .players li {
