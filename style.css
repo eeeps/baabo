@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
 
+* {
+	box-sizing: border-box;
+}
+
 div {
 	width: 750px;
 	margin: 0 auto;
@@ -61,11 +65,10 @@ rt, rp {
 
 table {
 	background: black;
-	border: 0.175em solid black;
+	border: 0.175rem solid black;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: repeat(5, 1fr);
-	gap: 0.175em;
 }
 tr, tbody {
 	display: contents;
@@ -77,25 +80,25 @@ td {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 0.5em;
+	padding: 0.5rem;
 	cursor: pointer;
-	font-size: 1.125em;
-	outline: 0.175em solid black;
+	font-size: 1.125rem;
+	outline: 0.175rem solid black;
 }
 td.freespace {
 	cursor: unset;
 }
 td.long {
-	font-size: 1em;
+	font-size: 1rem;
 }
 td.extra.long {
-	font-size: 0.875em;
+	font-size: 0.875rem;
 }
 td.super.extra.long {
-	font-size: 0.75em;
+	font-size: 0.75rem;
 }
 td.super.duper.extra.long {
-	font-size: 0.625em;
+	font-size: 0.625rem;
 }
 td.freespace {
 	background: black;
@@ -104,10 +107,10 @@ td.freespace {
 	display: block;
 	position: relative;
 	z-index: 9;
-	width: calc(100% + 3rem);
+	width: calc(100% + 2.25rem);
 	height: auto;
-	margin-left: -1.5rem;
-	margin-right: -1.5rem;
+	margin-left: -1.125rem;
+	margin-right: -1.125rem;
 }
 td.checked {
 	background-color: black;
@@ -145,8 +148,8 @@ ul.players {
 }
 .players .thumb {
 	aspect-ratio: 1;
-	margin: 1em;
+	margin: 1rem;
 }
 .players .name {
-	font-size: 2em;
+	font-size: 2rem;
 }
