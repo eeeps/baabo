@@ -3,7 +3,7 @@ exports.data = {
 };
 
 exports.render = function(data) {
-	return `<div>
+	return `<div class=mainContain>
 	<header>
 		<h1><a href="/">
 			
@@ -44,7 +44,7 @@ exports.render = function(data) {
 					<tr><td><td><td><td><td>
 					<tr><td><td><td><td><td>
 				</table>
-				<p class=name>${ board.player }
+				<h4 class=name>${ board.player }</h4>
 			</div></a>
 			`
 		).join('\n\t\t') }
@@ -52,67 +52,31 @@ exports.render = function(data) {
 	
 	<h2>Prizes</h2>
 
-<ul>
-<li>Celeste
-<li>Portrait of Celeste
-<li>Full Frame (all four sides)
-</ul>
+	<h3><span>Available</span></h3>
 
-<ul>
-<li>Ellie
-<li>Physical trophy that will be passed on for baabo generations
-<li>Do the thing on your board that is the most scary (or challenging) to you
-(Everyone must determine today)
-</ul>
+	<ul class="prizes available">
+		
+		${ data.prizes.map( prize => `
+		<li>
+			<p class="emoji">${ prize.emoji }</p>
+			<div>
+				<h4 class=what>${ prize.what }</h4>
+				<dl>
+					<div>
+						<dt>From</dt>
+						<dd>${ prize.from }
+					</div>
+					<div>
+						<dt>How to win</dt>
+						<dd>${ prize.howToWin }
+					</div>
+				</dl>
+			</div>
+		</li>
+		`).join('\n\t\t') }
 
-<ul>
-<li>Rachel
-<li>Throw a party with crazy cellar beer, open whatever you want
-<li>Draw an X (everyone who gets the X gets to come)
-</ul>
-
-<ul>
-<li>Britt
-<li>Cocktails and dessert from Britt to you
-<li>Draw an M
-</ul>
-
-<ul>
-<li>Jake
-<li>Illuminating waist pack
-<li>Straight across (Only in the middle)
-</ul>
-
-<ul>
-<li>Andrea
-<li>2 tickets to price is right mount baker theatre
-<li>S (all straight lines) (like money)
-</ul>
-
-<ul>
-<li>Eric
-<li>$25 gift certificate to Elizabeth station
-<li>First BINGO
-</ul>
-
-<ul>
-<li>Jeff
-<li>Beers with u and me
-<li>You get to choose brewery place and if the place is no good he’ll help choose a better one
-<li>Draw a U (first three winners)
-</ul>
-
-<ul>
-<li>Lindsey
-<li>Tahitian chocolate pearl neckalace and bracelet
-<li>Small circle around the free
-</ul>
-
-<ul>
-<li>Jamie
-<li>Whittled wooden spoon
-<li>5 activities that are new to you
-</ul>
+	<h3><span>Claimed</span></h3>
+	<p style="font-size: 2em; text-align: center;">None yet!</p>
 
 </div>
 

@@ -1,0 +1,74 @@
+[
+
+	{
+		"what": "Portrait of Celeste",
+		"emoji": "🖼",
+		"from": "Celeste",
+		"available": true,
+		"howToWin": "Complete a full frame (all four sides)"
+	},
+	{
+		"what": "A trophy <small>which will be passed down for BAABO generations</small>",
+		"emoji": "🏆",
+		"from": "Ellie",
+		"available": true,
+		"howToWin": "Do the thing on your board that is the most scary (or challenging) to you"
+	},
+	{
+		"what": "Invitation to Rachel’s cellar beer party",
+		"emoji": "🍾",
+		"from": "Rachel",
+		"available": true,
+		"howToWin": "Complete an X (everyone who gets the X gets to come)"
+	},
+	{
+		"what": "Cocktails and dessert",
+		"emoji": "🍸",
+		"from": "Britt",
+		"available": true,
+		"howToWin": "Complete an M"
+	},
+	{
+		"what": "Illuminating waist pack",
+		"emoji": "💡",
+		"from": "Jake",
+		"available": true,
+		"howToWin": "Complete the middle row"
+	},
+	{
+		"what": "Two tickets to <cite>The Price Is Right</cite> at Mount Baker Theatre",
+		"emoji": "🏷",
+		"from": "Andrea",
+		"available": true,
+		"howToWin": "Complete an S (like money)"
+	},
+	{
+		"what": "$25 gift certificate to Elizabeth station",
+		"emoji": "🍺",
+		"from": "Eric",
+		"available": true,
+		"howToWin": "First BINGO"
+	},
+	{
+		"what": "Beers with U and me",
+		"emoji": "🍻",
+		"from": "Jeff",
+		"available": true,
+		"howToWin": "Complete a U (first three winners)"
+	},
+	{
+		"what": "Tahitian chocolate pearl neckalace and bracelet",
+		"emoji": "📿",
+		"from": "Lindsey",
+		"available": true,
+		"howToWin": "Complete a small circle around the free square"
+	},
+	{
+		"what": "Whittled wooden spoon",
+		"emoji": "🥄",
+		"from": "Jamie",
+		"available": true,
+		"howToWin": "Complete 5 squares with activities that are new to you"
+	}
+
+]

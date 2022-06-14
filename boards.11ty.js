@@ -12,7 +12,7 @@ exports.data = {
 
 exports.render = function(data) {
 	return `
-<div>
+<div class="mainContain">
 	<header>
 		<h1><a href="/">
 			

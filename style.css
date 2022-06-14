@@ -1,11 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
-
 * {
 	box-sizing: border-box;
 }
 
-div {
+.mainContain {
 	width: 750px;
 	margin: 0 auto;
 }
@@ -41,16 +38,33 @@ h1 a {
 	color: black;
 	padding: 1rem 0;
 }
-h2 {
-	background-color: black;
-	color: white;
+
+h2, h3 {
 	text-align: center;
 	margin-bottom: 0;
 	text-transform: uppercase;
 	letter-spacing: 0.25ch;
-	font-weight: 800;
-	padding: 0.25ch;
+	font-weight: 300;
+	padding: 0.3625ch;
+	line-height: 1;
 }
+h2 {
+	background-color: black;
+	color: white;
+	margin-block: 0;
+}
+h3 {
+	border-bottom: 0.175rem solid black;
+	margin-block: 2rem;
+}
+h3 span {
+	background: white;
+	padding: 0.125em;
+	padding-inline-start: 0.4ch;
+	position: relative;
+	top: 0.875em;
+}
+
 ruby {
 	ruby-position: under;
 	-webkit-ruby-position: after;
@@ -64,26 +78,18 @@ rt, rp {
 }
 
 table {
-	background: black;
-	border: 0.175rem solid black;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-	grid-template-rows: repeat(5, 1fr);
-}
-tr, tbody {
-	display: contents;
-	outline: 1px solid green;
+	border-collapse: collapse;
+	--tableWidth: 750px;
+	width: var(--tableWidth);
 }
 td {
+	width: calc(var(--tableWidth) / 5);
+	height: calc(var(--tableWidth) / 5);
+	border: 3px solid black;
 	background-color: white;
-	aspect-ratio: 1;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	padding: 0.5rem;
 	cursor: pointer;
 	font-size: 1.125rem;
-	outline: 0.175rem solid black;
 }
 td.freespace {
 	cursor: unset;
@@ -118,18 +124,19 @@ td.checked {
 }
 
 table.thumb {
-	width: 5em;
-	border-width: 2px;
-	gap: 2px;
+	--tableWidth: 5.125rem;
+	break-inside: avoid;
 }
 table.thumb td {
 	padding: 0;
-	outline: 2px solid black;
+	border: 2px solid black;
 }
 
 ul.players {
 	list-style: none;
 	padding: 0;
+	column-count: 2;
+	margin-block: 2rem;
 }
 
 .players li {
@@ -137,6 +144,9 @@ ul.players {
 }
 .players div {
 	display: flex;
+	width: 100%;
+	justify-content: left;
+	align-items: center;
 }
 .players a:hover div {
 	background: black;
@@ -147,9 +157,50 @@ ul.players {
 	display: contents;
 }
 .players .thumb {
-	aspect-ratio: 1;
-	margin: 1rem;
+	margin: 0.75rem;
 }
-.players .name {
+
+h4 {
 	font-size: 2rem;
+	font-weight: normal;
+	margin: 0;
+}
+
+.prizes {
+	margin: 1rem;
+	padding: 0;
+	margin-block-start: 4rem;
+}
+
+.prizes li {
+	display: grid;
+	grid-template-columns: 7rem 1fr; 
+	margin-bottom: 2rem;
+}
+
+.emoji {
+	font-family: 'Noto Emoji';
+	font-size: 4rem;
+	display: block;
+	line-height: 1;
+	margin: 0;
+	margin-top: 0.5rem;
+}
+
+.what small {
+	display: block;
+	font-size: 0.5em;
+}
+.prizes dl {
+	margin-top: 0.5em;
+}
+.prizes dl div {
+	margin-bottom: 0.5em;
+}
+.prizes dt:after {
+	content: ":";
+}
+.prizes dd {
+	font-size: 1.25rem;
+	margin-inline-start: 0.25em;
 }
