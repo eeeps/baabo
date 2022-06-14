@@ -81,7 +81,7 @@ exports.render = function(data) {
 </div>
 
 <script>
-const tables = document.querySelectorAll( 'table' );
+const tables = document.querySelectorAll( 'table:not(.tiny)' );
 
 function updateTables( tables ) {
 	

@@ -204,3 +204,15 @@ h4 {
 	font-size: 1.25rem;
 	margin-inline-start: 0.25em;
 }
+
+table.tiny {
+	--tableWidth: 1.5rem;
+	display: inline-table;
+	margin-inline: 0.25ch;
+	vertical-align: top;
+}
+table.tiny td {
+	padding: 0;
+	border: 1px solid black;
+	cursor: unset;
+}

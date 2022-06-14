@@ -5,7 +5,7 @@
 		"emoji": "🖼",
 		"from": "Celeste",
 		"available": true,
-		"howToWin": "Complete a full frame (all four sides)"
+		"howToWin": "Complete a full frame (<table class=tiny><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)"
 	},
 	{
 		"what": "A trophy <small>which will be passed down for BAABO generations</small>",
@@ -19,28 +19,28 @@
 		"emoji": "🍾",
 		"from": "Rachel",
 		"available": true,
-		"howToWin": "Complete an X (everyone who gets the X gets to come)"
+		"howToWin": "Complete an X (<table class=tiny><tr><td class=checked><td><td><td><td class=checked><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td class=checked><td><td><td><td class=checked></table>); everyone who gets an X gets to come"
 	},
 	{
 		"what": "Cocktails and dessert",
 		"emoji": "🍸",
 		"from": "Britt",
 		"available": true,
-		"howToWin": "Complete an M"
+		"howToWin": "Complete an M (<table class=tiny><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td class=checked><td><td class=checked><td class=checked><tr><td class=checked><td><td class=checked><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked></table>)"
 	},
 	{
 		"what": "Illuminating waist pack",
 		"emoji": "💡",
 		"from": "Jake",
 		"available": true,
-		"howToWin": "Complete the middle row"
+		"howToWin": "Complete the middle row (<table class=tiny><tr><td><td><td><td><td><tr><td><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td><td><td><td><tr><td><td><td><td><td></table>)"
 	},
 	{
 		"what": "Two tickets to <cite>The Price Is Right</cite> at Mount Baker Theatre",
 		"emoji": "🏷",
 		"from": "Andrea",
 		"available": true,
-		"howToWin": "Complete an S (like money)"
+		"howToWin": "Complete an S (<table class=tiny><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td><td><td><td class=checked><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>) (like money)"
 	},
 	{
 		"what": "$25 gift certificate to Elizabeth station",
@@ -54,14 +54,14 @@
 		"emoji": "🍻",
 		"from": "Jeff",
 		"available": true,
-		"howToWin": "Complete a U (first three winners)"
+		"howToWin": "Complete a U (<table class=tiny><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>); first three winners get beers"
 	},
 	{
 		"what": "Tahitian chocolate pearl neckalace and bracelet",
 		"emoji": "📿",
 		"from": "Lindsey",
 		"available": true,
-		"howToWin": "Complete a small circle around the free square"
+		"howToWin": "Complete a small circle around the free square (<table class=tiny><tr><td><td><td><td><td><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td><td class=checked><td><td class=checked><td><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td><td><td><td><td></table>)"
 	},
 	{
 		"what": "Whittled wooden spoon",
