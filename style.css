@@ -216,3 +216,7 @@ table.tiny td {
 	border: 1px solid black;
 	cursor: unset;
 }
+
+.prizes.claimed .what {
+	text-decoration: line-through;
+}

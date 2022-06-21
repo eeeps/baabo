@@ -46,8 +46,9 @@
 		"what": "$25 gift certificate to Elizabeth Station",
 		"emoji": "🍺",
 		"from": "Eric",
-		"available": true,
-		"howToWin": "First BINGO"
+		"available": false,
+		"howToWin": "First BINGO",
+		"wonBy": "Andrea"
 	},
 	{
 		"what": "Beers with U and me",

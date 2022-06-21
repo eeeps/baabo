@@ -55,8 +55,10 @@ exports.render = function(data) {
 	<h3><span>Available</span></h3>
 
 	<ul class="prizes available">
-		
-		${ data.prizes.map( prize => `
+
+		${ data.prizes
+			.filter( prize => prize.available )
+			.map( prize => `
 		<li>
 			<p class="emoji">${ prize.emoji }</p>
 			<div>
@@ -75,8 +77,40 @@ exports.render = function(data) {
 		</li>
 		`).join('\n\t\t') }
 
+	</ul>
+
 	<h3><span>Claimed</span></h3>
-	<p style="font-size: 2em; text-align: center;">None yet!</p>
+
+	<ul class="prizes claimed">
+
+		${ data.prizes
+			.filter( prize => !prize.available )
+			.map( prize => `
+		<li>
+			<p class="emoji">${ prize.emoji }</p>
+			<div>
+				<h4 class=what>${ prize.what }</h4>
+				<dl>
+					<div>
+						<dt>From</dt>
+						<dd>${ prize.from }
+					</div>
+					<div>
+						<dt>How to win</dt>
+						<dd>${ prize.howToWin }
+					</div>
+					<div>
+						<dt>Won by</dt>
+						<dd>${ prize.wonBy }
+					</div>
+				</dl>
+			</div>
+		</li>
+		`).join('\n\t\t') }
+
+	</ul>
+
+
 
 </div>
 
