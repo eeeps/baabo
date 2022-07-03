@@ -3,6 +3,9 @@ exports.data = {
 };
 
 exports.render = function(data) {
+
+// console.log( data.boardStates );
+
 	return `<div class=mainContain>
 	<header>
 		<h1><a href="/">
@@ -33,21 +36,23 @@ exports.render = function(data) {
 	<h2>Players</h2>
 	
 	<ul class=players>
-		${ data.boards.map( board => 
-			`
+		${ data.boards.map( board => {
+			const boardState = data.boardStates[ board.player.toLowerCase() ];
+			const tds = boardState.map( checked => `<td${ ( checked ? ' class="checked"' : '' ) }>` );
+			return `
 		<li>
 			<a href="/boards/${ board.player.toLowerCase() }"><div>
 				<table class="thumb" data-player="${ board.player.toLowerCase() }">
-					<tr><td><td><td><td><td>
-					<tr><td><td><td><td><td>
-					<tr><td><td><td class="checked"><td><td>
-					<tr><td><td><td><td><td>
-					<tr><td><td><td><td><td>
+					<tr>${ tds[ 0 ] }${ tds[ 1 ] }${ tds[ 2 ] }${ tds[ 3 ] }${ tds[ 4 ] }
+					<tr>${ tds[ 5 ] }${ tds[ 6 ] }${ tds[ 7 ] }${ tds[ 8 ] }${ tds[ 9 ] }
+					<tr>${ tds[ 10 ] }${ tds[ 11 ] }<td class="checked">${ tds[ 13 ] }${ tds[ 14 ] }
+					<tr>${ tds[ 15 ] }${ tds[ 16 ] }${ tds[ 17 ] }${ tds[ 18 ] }${ tds[ 19 ] }
+					<tr>${ tds[ 20 ] }${ tds[ 21 ] }${ tds[ 22 ] }${ tds[ 23 ] }${ tds[ 24 ] }
 				</table>
 				<h4 class=name>${ board.player }</h4>
 			</div></a>
 			`
-		).join('\n\t\t') }
+		} ).join('\n\t\t') }
 	</ul>
 	
 	<h2>Prizes</h2>

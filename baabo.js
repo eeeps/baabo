@@ -150,3 +150,9 @@ const uuid = function() {
 		} );
 	}
 }
+
+// exports (for node!)
+if (typeof module !== "undefined" && module.exports) {
+	module.exports.fetchEntireChangeHistoryFromDatabase = fetchEntireChangeHistoryFromDatabase;
+	exports.boardStatesFromChangeHistory = boardStatesFromChangeHistory;
+}
