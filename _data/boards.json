@@ -17,7 +17,7 @@
 			"Plan a vacation for next year with an itinerary and budget plan",
 			"Eat at Sadighi’s",
 			"Make your own fermented drink or food",
-			"Hike Skyline Divide",
+			"Hike <del>Skyline</del><ins>Cougar</ins> Divide",
 			"Yoga in the park",
 			"Learn a viral TikTok dance and perform it (provide evidence)",
 			"Attend Downtown Sounds",
@@ -110,7 +110,7 @@
 			"Drink two PBFs at Cap Hansen’s",
 			"Sing ”Take Me Out to the Ballgame” at an actual ballgame",
 			"Spend the night outside",
-			"Hike Skyline Divide",
+			"Hike <del>Skyline</del><ins>Cougar</ins> Divide",
 			"Buy groceries by bike",
 			"Learn about, create a posterboard presentation, and present about your favorite bird at a bar"
 		]
@@ -148,7 +148,7 @@
 		"player": "Rachel",
 		"challenges": [
 			"Have two PBFs at Cap Hansen’s on the same night",
-			"Hike Skyline Divide",
+			"Hike <del>Skyline</del><ins>Cougar</ins> Divide",
 			"Do some chalk art with a friend",
 			"Explore a new town",
 			"Cold plunge in a body of water for five minutes",
@@ -170,7 +170,7 @@
 			"Set and complete a fitness goal",
 			"Drink on a boat",
 			"Sharpen a knife",
-			"Class from bellingham circus guild"
+			"Take a class of your choice from the Bellingham Circus Guild"
 		]
 	},
 	{
@@ -181,7 +181,7 @@
 			"Take a selfie with a street cat",
 			"Take a selfie with Jamie’s shrimp",
 			"S’mores",
-			"Hike Skyline Divide",
+			"Hike <del>Skyline</del><ins>Cougar</ins> Divide",
 			"Make your own fermented drink or food",
 			"Take a picture at Diablo Lake",
 			"Have a beer with a new neighbor",
@@ -265,7 +265,7 @@
 		"challenges": [
 			"Go on a new hike",
 			"Reach out to an old friend",
-			"Hike Skyline Divide",
+			"Hike <del>Skyline</del><ins>Cougar</ins> Divide",
 			"Yoga in the park",
 			"Cold plunge in a body of water for five minutes",
 			"Buy groceries by bike",

@@ -220,3 +220,8 @@ table.tiny td {
 .prizes.claimed .what {
 	text-decoration: line-through;
 }
+
+ins {
+	text-decoration: none;
+	font-style: italic;
+}
