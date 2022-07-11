@@ -11,8 +11,10 @@
 		"what": "A trophy <small>which will be passed down for BAABO generations</small>",
 		"emoji": "🏆",
 		"from": "Ellie",
-		"available": true,
-		"howToWin": "Do the thing on your board that is the most scary (or challenging) to you"
+		"available": false,
+		"howToWin": "Do the thing on your board that is the most scary (or challenging) to you",
+		"wonBy": "Lindsey",
+		"claimDate": "2022-07-10"
 	},
 	{
 		"what": "Cellar beer party",
