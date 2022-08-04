@@ -288,5 +288,34 @@
 			"Go experience the local bioluminescence",
 			"Jump the falls (Whatcom Falls)"
 		]
+	},
+	{
+		"player": "Sam",
+		"challenges": [
+			"Weave a functional basket (must hold four uncracked eggs)",
+			"Help three people check off a square (or join them)",
+			"Watch the Jensen kids",
+			"Learn a viral TikTok dance and perform it (provide evidence)",
+			"Complete a continuing ed course",
+			"Whittle a spoon",
+			"Win a round of Kombio",
+			"Have a bonfire on the beach",
+			"Drink on a boat",
+			"Catch an Artist’s Point sunset",
+			"Make jam or jelly for the group",
+			"Make your own fermented drink or food",
+			"Buy groceries by bike",
+			"Go on a trash pickup walk",
+			"Trap and catch a live neighborhood bunny",
+			"Go skinny dipping",
+			"Hike <del>Skyline</del><ins>Cougar</ins> Divide",
+			"Take a picture at Diablo Lake",
+			"Reach out to an old friend",
+			"Try a new creative art",
+			"Go on a new hike",
+			"Explore a new town",
+			"Swim at Pixie Falls",
+			"Enjoy a meal at Rachawadee Thai"
+		]
 	}
 ]
