@@ -135,8 +135,10 @@ table.thumb td {
 ul.players {
 	list-style: none;
 	padding: 0;
-	column-count: 2;
 	margin-block: 2rem;
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-rows: repeat(6, 1fr);
 }
 
 .players li {
