@@ -34,8 +34,10 @@
 		"what": "Illuminating waist pack",
 		"emoji": "💡",
 		"from": "Jake",
-		"available": true,
-		"howToWin": "Complete the middle row (<table class=tiny><tr><td><td><td><td><td><tr><td><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td><td><td><td><tr><td><td><td><td><td></table>)"
+		"available": false,
+		"howToWin": "Complete the middle row (<table class=tiny><tr><td><td><td><td><td><tr><td><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td><td><td><td><tr><td><td><td><td><td></table>)",
+		"wonBy": "Eric",
+		"claimDate": "2022-08-13"
 	},
 	{
 		"what": "Two tickets to <cite>The Price Is Right</cite> at Mount Baker Theatre",
