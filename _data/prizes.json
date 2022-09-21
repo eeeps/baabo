@@ -73,8 +73,10 @@
 		"what": "Whittled wooden spoon",
 		"emoji": "🥄",
 		"from": "Jamie",
-		"available": true,
-		"howToWin": "Complete five squares with activities that are new to you"
+		"available": false,
+		"howToWin": "Complete five squares with activities that are new to you",
+		"wonBy": "Celeste",
+		"claimDate": "2022-09-11"
 	}
 
 ]
