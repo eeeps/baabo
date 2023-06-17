@@ -8,14 +8,7 @@ exports.render = function(data) {
 
 	return `
 <div class="centerContainer">
-<div>
-	<h2>BAABO</h2>
-	
-	<ul class="years">
-		<li><a href="2023">2023</a></li>
-		<li><a href="2022">2022</a></li>
-	</ul>
+<h1>Coming soon!</h1>
 </div>
-</div> <!--/maincontain-->
 `;
 }

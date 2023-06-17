@@ -88,11 +88,10 @@ td {
 	border: 3px solid black;
 	background-color: white;
 	padding: 0.5rem;
-	cursor: pointer;
 	font-size: 1.125rem;
 }
-td.freespace {
-	cursor: unset;
+.clickable {
+	cursor: pointer;
 }
 td.long {
 	font-size: 1rem;
@@ -226,4 +225,31 @@ table.tiny td {
 ins {
 	text-decoration: none;
 	font-style: italic;
+}
+
+.years {
+	list-style:	none;
+	margin-inline-start: 0;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+.years > li {
+	text-align: center;
+	display: block;
+}
+.years > li > a {
+	font-family: var(--display-font);
+	font-size: 12rem;
+	text-decoration: none;
+	padding: unset;
+	padding-bottom: 0.2ch;
+	margin: unset;
+	display: block;
+}
+.centerContainer {
+	height: calc(100vh - 2em);
+	height: calc(100vh - 2em);
+	display: grid;
+	place-items: center;
 }

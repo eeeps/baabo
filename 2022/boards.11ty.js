@@ -6,7 +6,7 @@ exports.data = {
 		alias: 'board'
 	},
 	eleventyComputed: {
-		permalink: data => `boards/${ data.board.player.toLowerCase() }/`
+		permalink: data => `2022/boards/${ data.board.player.toLowerCase() }/`
 	}
 };
 
@@ -92,21 +92,22 @@ tds.forEach( td => {
 		td.classList.add('duper');
 	}
 } );
-
-tds.forEach( ( td, index ) => {
-	if ( index === 12 ) { return; } // free space
-	td.addEventListener( 'click', function() {
-		this.classList.toggle( 'checked' );
-		const change = {
-			id: uuid(),
-			timestamp: Date.now(),
-			board: '${ data.board.player.toLowerCase() }',
-			index: index,
-			state: this.classList.contains( 'checked' )
-		};
-		postChange( change );
-	} );
-} );
+// 
+// tds.forEach( ( td, index ) => {
+// 	if ( index === 12 ) { return; } // free space
+// 	td.classList.add('clickable');
+// 	td.addEventListener( 'click', function() {
+// 		this.classList.toggle( 'checked' );
+// 		const change = {
+// 			id: uuid(),
+// 			timestamp: Date.now(),
+// 			board: '${ data.board.player.toLowerCase() }',
+// 			index: index,
+// 			state: this.classList.contains( 'checked' )
+// 		};
+// 		postChange( change );
+// 	} );
+// } );
 
 const playerName = '${ data.board.player.toLowerCase() }';
 
