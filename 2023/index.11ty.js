@@ -8,7 +8,7 @@ exports.render = function(data) {
 
 	return `
 <div class="centerContainer">
-<h1>Coming soon!</h1>
+<h1 style="font-weight: 500;">Coming soon!</h1>
 </div>
 `;
 }
