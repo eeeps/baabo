@@ -17,7 +17,19 @@ const fetchEntireChangeHistoryFromLocalStorage = function() {
 	if ( !fromLocalStorage ) {
 		return [];
 	} else {
-		return JSON.parse( fromLocalStorage ); 
+		return JSON.parse( fromLocalStorage )
+
+			// transition to 2023 -- make sure all entries have a game!
+			// delete this eventually??
+			.map( c => {
+				if ( c.game ) {
+					return c;
+				} else {
+					c.game = "2022";
+					return c;
+				}
+			} ); 
+			// end transition code
 	}
 }
 
@@ -66,6 +78,12 @@ const blankBoard = function() {
 	         false, false, false, false, false ];
 }
 
+// applyChangesToBoard ::
+// ( 
+//   [ Boolean{25} ], 
+//   [ { timestamp: Number, index: Number, state: Boolean } ]
+// ) 
+// -> [ Boolean{25} ]
 const applyChangesToBoard = function( initial, changes ) {
 	const result = JSON.parse( JSON.stringify( initial ) );
 	changes
@@ -74,17 +92,28 @@ const applyChangesToBoard = function( initial, changes ) {
 	return result;
 }
 
-const oneBoardStateFromChangeHistory = function( playerName, changeHistory ) {
-	const playerChanges = changeHistory.filter( change => change.board === playerName );
+// oneBoardStateFromChangeHistory ::
+// ( String, String, [ { timestamp: Number, index: Number, state: Boolean } ] )
+// -> [ Boolean{25} ]
+const oneBoardStateFromChangeHistory = function( gameName, playerName, changeHistory ) {
+	const playerChanges = changeHistory.filter( change => 
+		change.game === gameName &&
+		change.board === playerName
+	);
 	return applyChangesToBoard( blankBoard(), playerChanges );
 }
 
-const boardStatesFromChangeHistory = function( playerNames, changeHistory ) {
-	const result = {};
-	playerNames.forEach( player => {
-		result[ player ] = oneBoardStateFromChangeHistory( player, changeHistory );
-	} );
-	return result;
+// boardStatesFromChangeHistory ::
+// ( [ { game: String, player: String} ], [ { timestamp: Number, index: Number, state: Boolean } ] )
+// -> [ { game: String, player: String, squareStates: [ Boolean{25} ] } ]
+const boardStatesFromChangeHistory = function( gameAndPlayerNames, changeHistory ) {
+
+	return gameAndPlayerNames.map( gb => ( {
+		game: gb.game,
+		player: gb.player,
+		boardState: oneBoardStateFromChangeHistory( gb.game, gb.player, changeHistory )
+	} ) );
+
 }
 
 const postChangeToDatabase = function( change ) {
@@ -107,9 +136,12 @@ const postChange = function( change ) {
 	postChangeToLocalStorage( change );
 }
 
-const boardsFromLocalStorage = function( playerNames ) {
+// boardsFromLocalStorage ::
+// ( [ { game: String, player: String} ] )
+// -> [ { game: String, player: String, boardState: [ Boolean{25} ] } ]
+const boardsFromLocalStorage = function( gameAndPlayerNames ) {
 	return boardStatesFromChangeHistory(
-		playerNames,
+		gameAndPlayerNames,
 		fetchEntireChangeHistoryFromLocalStorage()
 	);
 }

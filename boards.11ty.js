@@ -6,12 +6,19 @@ exports.data = {
 		alias: 'board'
 	},
 	eleventyComputed: {
-		permalink: data => `2022/boards/${ data.board.player.toLowerCase() }/`
+		permalink: data => `${ data.board.game.toLowerCase() }/boards/${ data.board.player.toLowerCase() }/`
 	}
 };
 
 exports.render = function(data) {
-	const boardState = data.boardStates[ data.board.player.toLowerCase() ];
+		
+	const boardState = data.boardStates.find( boardState =>
+		boardState.game.toLowerCase() === data.board.game.toLowerCase() &&
+		boardState.player.toLowerCase() === data.board.player.toLowerCase()		
+	).boardState;
+	
+	const game = data.games.find( g => g.name.toLowerCase() === data.board.game.toLowerCase() );
+	
 	return `
 <div class="mainContain">
 	<header>
@@ -92,28 +99,35 @@ tds.forEach( td => {
 		td.classList.add('duper');
 	}
 } );
-// 
-// tds.forEach( ( td, index ) => {
-// 	if ( index === 12 ) { return; } // free space
-// 	td.classList.add('clickable');
-// 	td.addEventListener( 'click', function() {
-// 		this.classList.toggle( 'checked' );
-// 		const change = {
-// 			id: uuid(),
-// 			timestamp: Date.now(),
-// 			board: '${ data.board.player.toLowerCase() }',
-// 			index: index,
-// 			state: this.classList.contains( 'checked' )
-// 		};
-// 		postChange( change );
-// 	} );
-// } );
 
+${ ( game.active ? `
+tds.forEach( ( td, index ) => {
+	if ( index === 12 ) { return; } // free space
+	td.classList.add('clickable');
+	td.addEventListener( 'click', function() {
+		this.classList.toggle( 'checked' );
+		const change = {
+			id: uuid(),
+			timestamp: Date.now(),
+			game: '${ data.board.game.toLowerCase() }',
+			board: '${ data.board.player.toLowerCase() }',
+			index: index,
+			state: this.classList.contains( 'checked' )
+		};
+		postChange( change );
+	} );
+} );
+` : '' ) }
+
+const gameName = '${ data.board.game.toLowerCase() }';
 const playerName = '${ data.board.player.toLowerCase() }';
 
 updateHtmlFromBoardState(
 	table,
-	boardsFromLocalStorage( [ playerName ] )[ playerName ]
+	boardsFromLocalStorage( [ { 
+		game: gameName,
+		player: playerName
+	} ] )[ 0 ].boardState
 );
 
 // go out to the database and update again, asynchronously
@@ -121,13 +135,15 @@ syncLocalStorageChangeHistoryAndDatabase().then( ( result ) => {
 	if ( result.postedToLocalStorage === true ) {
 		updateHtmlFromBoardState(
 			table,
-			boardsFromLocalStorage( [ playerName ] )[ playerName ]
+			boardsFromLocalStorage( [ { 
+				game: gameName,
+				player: playerName
+			} ] )[ 0 ].boardState
 		);
 	}
 } );
 
 </script>
-
 `;
 
 };

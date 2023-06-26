@@ -1,12 +1,28 @@
 exports.data = {
+	pagination: {
+		data: "games",
+		size: 1,
+		alias: 'game'
+	},
+	eleventyComputed: {
+		permalink: data => `${ data.game.name }/`
+	},
 	layout: "base.11ty.js"
 };
 
+
 exports.render = function(data) {
 
-// console.log( data.boardStates );
+	const boards = data.boards
+		.filter( x => x.game === data.game.name );
+	const boardStates = data.boardStates
+		.filter( x => x.game === data.game.name );
+	const prizes = data.prizes
+		.filter( x => x.game === data.game.name );
 
-	return `<div class=mainContain>
+// console.log( boardStates );
+
+	return `<div class="mainContain" data-game="${ data.game.name }">
 	<header>
 		<h1><a href="/">
 			
@@ -36,12 +52,14 @@ exports.render = function(data) {
 	<h2>Players</h2>
 	
 	<ul class=players>
-		${ data.boards.map( board => {
-			const boardState = data.boardStates[ board.player.toLowerCase() ];
+		${ boards.map( board => {
+			const boardState = boardStates.find( bs => 
+				bs.player.toLowerCase() === board.player.toLowerCase()
+			).boardState;
 			const tds = boardState.map( checked => `<td${ ( checked ? ' class="checked"' : '' ) }>` );
 			return `
 		<li>
-			<a href="/2022/boards/${ board.player.toLowerCase() }"><div>
+			<a href="/${ board.game.toLowerCase() }/boards/${ board.player.toLowerCase() }"><div>
 				<table class="thumb" data-player="${ board.player.toLowerCase() }">
 					<tr>${ tds[ 0 ] }${ tds[ 1 ] }${ tds[ 2 ] }${ tds[ 3 ] }${ tds[ 4 ] }
 					<tr>${ tds[ 5 ] }${ tds[ 6 ] }${ tds[ 7 ] }${ tds[ 8 ] }${ tds[ 9 ] }
@@ -61,7 +79,7 @@ exports.render = function(data) {
 
 	<ul class="prizes available">
 
-		${ data.prizes
+		${ prizes
 			.filter( prize => prize.available )
 			.map( prize => `
 		<li>
@@ -88,7 +106,7 @@ exports.render = function(data) {
 
 	<ul class="prizes claimed">
 
-		${ data.prizes
+		${ prizes
 			.filter( prize => !prize.available )
 			.map( prize => `
 		<li>
@@ -124,12 +142,16 @@ const tables = document.querySelectorAll( 'table:not(.tiny)' );
 
 function updateTables( tables ) {
 	
-	const playerNames = [ ${ data.boards.map( b => `"${ b.player.toLowerCase() }"` ).join(', ') } ];
-	const allBoards = boardsFromLocalStorage( playerNames );
+	const playerNames = [ ${ boards.map( b => `"${ b.player.toLowerCase() }"` ).join(', ') } ];
+	const allBoards = boardsFromLocalStorage( playerNames.map( pn => ( {
+		game: "${ data.game.name.toLowerCase() }",
+		player: pn,
+	} ) ) );
 	
 	tables.forEach( table => {
-		const playerName = table.dataset.player;
-		updateHtmlFromBoardState( table, allBoards[ playerName ] );
+		const playerName = table.dataset.player.toLowerCase();
+		// console.log( allBoards.find( b => b.player.toLowerCase() === playerName ).boardState );
+		updateHtmlFromBoardState( table, allBoards.find( b => b.player.toLowerCase() === playerName ).boardState );
 	} );
 	
 }
