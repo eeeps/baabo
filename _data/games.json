@@ -1,0 +1,10 @@
+[
+	{
+		"name": "2023",
+		"active": true
+	},
+	{
+		"name": "2022",
+		"active": false
+	}
+]

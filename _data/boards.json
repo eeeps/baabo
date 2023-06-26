@@ -1,5 +1,6 @@
 [
 	{
+		"game": "2022",
 		"player": "Jake",
 		"challenges": [
 			"Drink on a boat",
@@ -29,6 +30,7 @@
 		]
 	},
 	{
+		"game": "2022",
 		"player": "Andrea",
 		"challenges": [
 			"Go on a new hike",
@@ -58,6 +60,7 @@
 		]
 	},
 	{
+		"game": "2022",
 		"player": "Celeste",
 		"challenges": [
 			"Enjoy a treat at Breadfarm in Bow",
@@ -87,6 +90,7 @@
 		]
 	},
 	{
+		"game": "2022",
 		"player": "Lindsey",
 		"challenges": [
 			"S’mores",
@@ -116,6 +120,7 @@
 		]
 	},
 	{
+		"game": "2022",
 		"player": "Jeff",
 		"challenges": [
 			"Perform Brittney Spears at karaoke",
@@ -145,6 +150,7 @@
 		]
 	},
 	{
+		"game": "2022",
 		"player": "Rachel",
 		"challenges": [
 			"Have two PBFs at Cap Hansen’s on the same night",
@@ -174,6 +180,7 @@
 		]
 	},
 	{
+		"game": "2022",
 		"player": "Ellie",
 		"challenges": [
 			"Attend Downtown Sounds this summer",
@@ -203,6 +210,7 @@
 		]
 	},
 	{
+		"game": "2022",
 		"player": "Britt",
 		"challenges": [
 			"Cross something off your bucketlist, or make a bucketlist if you don’t have one",
@@ -232,6 +240,7 @@
 		]
 	},
 	{
+		"game": "2022",
 		"player": "Eric",
 		"challenges": [
 			"Help three people check off a square (or join them)",
@@ -261,6 +270,7 @@
 		]
 	},
 	{
+		"game": "2022",
 		"player": "Jamie",
 		"challenges": [
 			"Go on a new hike",
@@ -290,6 +300,7 @@
 		]
 	},
 	{
+		"game": "2022",
 		"player": "Sam",
 		"challenges": [
 			"Weave a functional basket (must hold four uncracked eggs)",
@@ -317,5 +328,459 @@
 			"Swim at Pixie Falls",
 			"Enjoy a meal at Rachawadee Thai"
 		]
+	},
+	{
+		"game": "2023",
+		"player": "Britt",
+		"challenges": [
+			"Bike on a pump track",
+			"Find a queer or bipoc owned resturant and give them a good Yelp review",
+			"Do a BAABO activity that you wanted to do that didn't end up on your board",
+			"Glean a pound of stone fruit",
+			"Make a playlist of your all-time favorite summer jams",
+			"Start a BAABO scrapbook with other folks who get this challenge",
+			"Go roller skating",
+			"Go to three or more breweries in one day",
+			"Come up with a three minute synchronized swimming routine",
+			"Meet a llama in person",
+			"Eat a hot dog at a baseball game",
+			"Visit a new to you city, county, and state park",
+			"Record and share an episode of drunk history but the Bellingham version",
+			"Pick one other BAABO player and coordinate your outfits so you're matching for a day",
+			"Find a geocache and leave a message in it",
+			"Go with somebody and jump off Taylor Dock",
+			"Spend a night solo retreating somewhere",
+			"Selfie with a geoduck",
+			"Set up a friend (friendship OK!)",
+			"Host a themed dinner party",
+			"Meet and greet five new to you dogs (ask first!)",
+			"Complete a needle-point project",
+			"Go to a Bellingham City Countil meeting",
+			"Eat a slice of apple pie with cheddar cheese"
+		]
+	},
+	{
+		"game": "2023",
+		"player": "Lauren",
+		"challenges": [
+			"Write a rap about BAABO (at least 10 lines) and perform to the group",
+			"Drive to Winthrop on Hwy 20 (spend at least some of the time driving)",
+			"Do a BAABO activity that you wanted to do that didn't end up on your board",
+			"Go to three or more breweries in one day",
+			"Get an astrology or tarot reading done by a professional",
+			"Participate in a sun dress bar crawl",
+			"Selfie with a geoduck",
+			"Come up with a three minute synchronized swimming routine",
+			"Host a themed dinner party",
+			"Bike on a pump track",
+			"Go to a Bellingham City Countil meeting",
+			"Attend or volunteer at an event with a queer allied organization",
+			"Find a queer or bipoc owned resturant and give them a good Yelp review",
+			"Make a playlist of your all-time favorite summer jams",
+			"Solve Jake's puzzle",
+			"Go skinny dipping",
+			"Complete a needle-point project",
+			"Go vegan for two weeks",
+			"Eat a bug, intentionally",
+			"Go with somebody and jump off Taylor Dock",
+			"Master a classic cocktail",
+			"Disable all social media accounts for a week",
+			"Eat a slice of apple pie with cheddar cheese",
+			"Memorize and recite your favorite poem to five BAABO players"
+		]
+	},
+	{
+		"game": "2023",
+		"player": "Jake",
+		"challenges": [
+			"Make a new to you cocktail or mocktail with 5+ ingredients and share with 3+ players",
+			"Sing a song at a local karaoke bar",
+			"Enter something into the Northwest Washington Fair",
+			"Meet and greet five new to you dogs (ask first!)",
+			"Disable all social media accounts for a week",
+			"Take a picture of a bald eagle",
+			"Go bowling and get a strike",
+			"Buy something weird at a yard sale or street fair",
+			"Eat a bug, intentionally",
+			"Come up with a three minute synchronized swimming routine",
+			"Participate in a sun dress bar crawl",
+			"Write an original song and perform it for the group or at an open mic",
+			"Go do something spooky at Bayview cemetary",
+			"Make a toy, or write a childhood song or story",
+			"Get it in the hole in a game of cornhole",
+			"Get a new hairdo (or facial hair)",
+			"Help three people check off a square or join them",
+			"Drink a mai tai on a beach",
+			"Go to Downtown Sounds",
+			"Do a BAABO activity that you wanted to do that didn't end up on your board",
+			"See a Bells win",
+			"Solve Jake's puzzle",
+			"Go roller skating",
+			"Have an adult tea party"
+		]
+	},
+	{
+		"game": "2023",
+		"player": "Andrea",
+		"challenges": [
+			"Touch snow",
+			"Take a picture of a live hummingbrid",
+			"Solve Jake's puzzle",
+			"Complete a self-care thing you've been putting off",
+			"Make a difficult desert",
+			"Spend a night solo retreating somewhere",
+			"Extreme chacuterie (pack and hike a board into the wilderness)",
+			"Record and share an episode of drunk history but the Bellingham version",
+			"Beat Jasper in pickleball",
+			"Write an original song and perform it for the group or at an open mic",
+			"Get an astrology or tarot reading done by a professional",
+			"Get it in the hole in a game of cornhole",
+			"Conduct a science experiment and present your findings to the group",
+			"Drink a mai tai on a beach",
+			"Go bowling and get a strike",
+			"Attend or volunteer at an event with a queer allied organization",
+			"Selfie with a geoduck",
+			"Eat a hot dog at a baseball game",
+			"Make a playlist of your all-time favorite summer jams",
+			"Go vegan for two weeks",
+			"Find a geocache and leave a message in it",
+			"Treat yourself",
+			"Sing a song at a local karaoke bar",
+			"Spend an evening on the Bay"
+		]
+	},
+	{
+		"game": "2023",
+		"player": "Jason",
+		"challenges": [
+			"Drive to Winthrop on Hwy 20 (spend at least some of the time driving)",
+			"Go do something spooky at Bayview cemetary",
+			"Walk onto a ferry and have a meal on an island of your choosing",
+			"Complete a needle-point project",
+			"Learn to do an impression (of a Bellebrity?)",
+			"Do a BAABO activity that you wanted to do that didn't end up on your board",
+			"Bike on a pump track",
+			"Find a queer or bipoc owned resturant and give them a good Yelp review",
+			"Go skinny dipping",
+			"Get a new hairdo (or facial hair)",
+			"Go to three or more breweries in one day",
+			"Visit a new to you city, county, and state park",
+			"Do a chore for a friend (their choice)",
+			"Buy something weird at a yard sale or street fair",
+			"Go bowling and get a strike",
+			"Find a geocache and leave a message in it",
+			"Take a picture of a bald eagle",
+			"Spend a night solo retreating somewhere",
+			"Get narcan and learn (or teach) when and how to use it",
+			"See a Bells win",
+			"Go to a Bellingham City Countil meeting",
+			"Attend or volunteer at an event with a queer allied organization",
+			"Hike 50 miles cumulatively",
+			"Write an original song and perform it for the group or at an open mic"
+		]
+	},
+	{
+		"game": "2023",
+		"player": "Jamie",
+		"challenges": [
+			"Make an edit on Wikipedia that is accepted",
+			"Spend an evening on the Bay",
+			"Take a picture of a bald eagle",
+			"Memorize and recite your favorite poem to five BAABO players",
+			"Treat yourself",
+			"Beat Jasper in pickleball",
+			"Go to a Bellingham City Countil meeting",
+			"Complete a self-care thing you've been putting off",
+			"Read a book of fiction",
+			"Get an astrology or tarot reading done by a professional",
+			"Host a themed dinner party",
+			"Read a book in a genre you haven't read before",
+			"Write an original song and perform it for the group or at an open mic",
+			"Buy something weird at a yard sale or street fair",
+			"Extreme chacuterie (pack and hike a board into the wilderness)",
+			"Make a new to you cocktail or mocktail with 5+ ingredients and share with 3+ players",
+			"Set up a friend (friendship OK!)",
+			"Go to Downtown Sounds",
+			"Paint your partner's nails (or a friend)",
+			"Get narcan and learn (or teach) when and how to use it",
+			"Brunch on a patio",
+			"Swim in a new to you natural body of water",
+			"Go vegan for two weeks",
+			"Glean a pound of stone fruit"
+		]
+	},
+	{
+		"game": "2023",
+		"player": "Jasper",
+		"challenges": [
+			"Complete a needle-point project",
+			"Selfie with a geoduck",
+			"Start a BAABO scrapbook with other folks who get this challenge",
+			"Glean a pound of stone fruit",
+			"Come up with a three minute synchronized swimming routine",
+			"Participate in a sun dress bar crawl",
+			"Disable all social media accounts for a week",
+			"Make a new to you cocktail or mocktail with 5+ ingredients and share with 3+ players",
+			"Take a picture of a bald eagle",
+			"Play hot stick and be in the top three",
+			"Go bowling and get a strike",
+			"Do a chore for a friend (their choice)",
+			"Bike on a pump track",
+			"See a Bells win",
+			"Hike 50 miles cumulatively",
+			"Go to a Bellingham City Countil meeting",
+			"Make an edit on Wikipedia that is accepted",
+			"Drink a mai tai on a beach",
+			"Brunch on a patio",
+			"Attend or volunteer at an event with a queer allied organization",
+			"Host a themed dinner party",
+			"Record and share an episode of drunk history but the Bellingham version",
+			"Buy something weird at a yard sale or street fair",
+			"Make a playlist of your all-time favorite summer jams"
+		]
+	},
+	{
+		"game": "2023",
+		"player": "Celeste",
+		"challenges": [
+			"Come up with a three minute synchronized swimming routine",
+			"Attend a group bike ride",
+			"Go skinny dipping",
+			"Touch snow",
+			"Go vegan for two weeks",
+			"Get it in the hole in a game of cornhole",
+			"Start a BAABO scrapbook with other folks who get this challenge",
+			"Meet a llama in person",
+			"See a Bells win",
+			"Hike 50 miles cumulatively",
+			"Play hot stick and be in the top three",
+			"Visit the Bellingham touch tank and learn a fact to share",
+			"Read a book of fiction",
+			"Sing a song at a local karaoke bar",
+			"Make a difficult desert",
+			"Brunch on a patio",
+			"Receive recognition at bar trivia",
+			"Learn to do an impression (of a Bellebrity?)",
+			"Write a rap about BAABO (at least 10 lines) and perform to the group",
+			"Set up a friend (friendship OK!)",
+			"Identify and hug five native tree species",
+			"Find five Fairhaven historic markers",
+			"Get an astrology or tarot reading done by a professional",
+			"Go with somebody and jump off Taylor Dock"
+		]
+	},
+	{
+		"game": "2023",
+		"player": "Bryson",
+		"challenges": [
+			"Disable all social media accounts for a week",
+			"Attend or volunteer at an event with a queer allied organization",
+			"Take a picture of a live hummingbrid",
+			"Host a game night",
+			"Meet and greet five new to you dogs (ask first!)",
+			"Identify and hug five native tree species",
+			"Drive to Winthrop on Hwy 20 (spend at least some of the time driving)",
+			"Attend a Bellingham Pride event",
+			"Sing a song at a local karaoke bar",
+			"Selfie with a geoduck",
+			"Solve Jake's puzzle",
+			"Host a themed dinner party",
+			"Come up with a three minute synchronized swimming routine",
+			"Swim in a new to you natural body of water",
+			"Go roller skating",
+			"Find five Fairhaven historic markers",
+			"Learn to do an impression (of a Bellebrity?)",
+			"Make a playlist of your all-time favorite summer jams",
+			"Hike 50 miles cumulatively",
+			"Make an edit on Wikipedia that is accepted",
+			"Make a new to you cocktail or mocktail with 5+ ingredients and share with 3+ players",
+			"Go with somebody and jump off Taylor Dock",
+			"Take a picture of a bald eagle",
+			"See a Bells win"
+		]
+	},
+	{
+		"game": "2023",
+		"player": "Megan",
+		"challenges": [
+			"Glean a pound of stone fruit",
+			"Spend a night solo retreating somewhere",
+			"Plan an execute a romatic date with a friend",
+			"Meet a llama in person",
+			"Solve Jake's puzzle",
+			"Make a toy, or write a childhood song or story",
+			"Touch snow",
+			"Do a chore for a friend (their choice)",
+			"Have a picnic",
+			"Observe and identify at least three new birds",
+			"Start a BAABO scrapbook with other folks who get this challenge",
+			"Read a book in a genre you haven't read before",
+			"Drink a mai tai on a beach",
+			"Complete a self-care thing you've been putting off",
+			"Go with somebody and jump off Taylor Dock",
+			"Find five Fairhaven historic markers",
+			"Hike 50 miles cumulatively",
+			"See a Bells win",
+			"Participate in a sun dress bar crawl",
+			"Go skinny dipping",
+			"Disable all social media accounts for a week",
+			"Receive recognition at bar trivia",
+			"Buy something weird at a yard sale or street fair",
+			"Go vegan for two weeks"
+		]
+	},
+	{
+		"game": "2023",
+		"player": "Mary",
+		"challenges": [
+			"Spend a night solo retreating somewhere",
+			"Attend or host an outdoor movie viewing",
+			"Go to a Bellingham City Countil meeting",
+			"Identify and hug five native tree species",
+			"Drink a mai tai on a beach",
+			"Visit a new to you city, county, and state park",
+			"Get narcan and learn (or teach) when and how to use it",
+			"Attend a group bike ride",
+			"Go to Downtown Sounds",
+			"Sing a song at a local karaoke bar",
+			"Take a picture of a live hummingbrid",
+			"Eat a hot dog at a baseball game",
+			"Master a classic cocktail",
+			"Complete a self-care thing you've been putting off",
+			"Start a BAABO scrapbook with other folks who get this challenge",
+			"See a Bells win",
+			"Selfie with a geoduck",
+			"Chateau St. Michelle concert",
+			"Beat Jasper in pickleball",
+			"Conduct a science experiment and present your findings to the group",
+			"Have a picnic",
+			"Go skinny dipping",
+			"Eat a slice of apple pie with cheddar cheese",
+			"Go to three or more breweries in one day"
+		]
+	},
+	{
+		"game": "2023",
+		"player": "Ellie",
+		"challenges": [
+			"Plan an execute a romatic date with a friend",
+			"Make a playlist of your all-time favorite summer jams",
+			"Eat a slice of apple pie with cheddar cheese",
+			"Make a toy, or write a childhood song or story",
+			"Find a geocache and leave a message in it",
+			"Master a classic cocktail",
+			"Wine tasting at an actual winery or vineyard",
+			"Find five Fairhaven historic markers",
+			"Pick one other BAABO player and coordinate your outfits so you're matching for a day",
+			"Learn to do an impression (of a Bellebrity?)",
+			"Visit a new to you museum",
+			"Host a themed dinner party",
+			"Beat Jasper in pickleball",
+			"Set up a friend (friendship OK!)",
+			"Go to Downtown Sounds",
+			"Treat yourself",
+			"Paint your partner's nails (or a friend)",
+			"Swim in a new to you natural body of water",
+			"Touch snow",
+			"Disable all social media accounts for a week",
+			"Complete a needle-point project",
+			"Make a difficult desert",
+			"Record and share an episode of drunk history but the Bellingham version",
+			"Help three people check off a square or join them"
+		]
+	},
+	{
+		"game": "2023",
+		"player": "Caity",
+		"challenges": [
+			"Enter something into the Northwest Washington Fair",
+			"Play pickleball at Cornwall Park",
+			"Drink a mai tai on a beach",
+			"Bike on a pump track",
+			"Drive to Winthrop on Hwy 20 (spend at least some of the time driving)",
+			"Attend or host an outdoor movie viewing",
+			"Do a BAABO activity that you wanted to do that didn't end up on your board",
+			"Start a BAABO scrapbook with other folks who get this challenge",
+			"Host a themed dinner party",
+			"Record and share an episode of drunk history but the Bellingham version",
+			"Wine tasting at an actual winery or vineyard",
+			"Go to Downtown Sounds",
+			"Write a rap about BAABO (at least 10 lines) and perform to the group",
+			"Find a queer or bipoc owned resturant and give them a good Yelp review",
+			"Get a new hairdo (or facial hair)",
+			"Complete a needle-point project",
+			"Learn to do an impression (of a Bellebrity?)",
+			"Meet a llama in person",
+			"Attend a group bike ride",
+			"Extreme chacuterie (pack and hike a board into the wilderness)",
+			"Selfie with a geoduck",
+			"Attend or volunteer at an event with a queer allied organization",
+			"Complete a self-care thing you've been putting off",
+			"Visit the Bellingham touch tank and learn a fact to share"
+		]
+	},
+	{
+		"game": "2023",
+		"player": "Bryon",
+		"challenges": [
+			"Drive to Winthrop on Hwy 20 (spend at least some of the time driving)",
+			"Eat a hot dog at a baseball game",
+			"Do a BAABO activity that you wanted to do that didn't end up on your board",
+			"Drink a mai tai on a beach",
+			"Record and share an episode of drunk history but the Bellingham version",
+			"Take a picture of a bald eagle",
+			"Hike 50 miles cumulatively",
+			"Memorize and recite your favorite poem to five BAABO players",
+			"Find a queer or bipoc owned resturant and give them a good Yelp review",
+			"Go bowling and get a strike",
+			"Complete a self-care thing you've been putting off",
+			"Go dancing",
+			"Take a picture of a live hummingbrid",
+			"Help three people check off a square or join them",
+			"Attend or host an outdoor movie viewing",
+			"Go to Downtown Sounds",
+			"Brunch on a patio",
+			"Spend an evening on the Bay",
+			"See a Bells win",
+			"Master a classic cocktail",
+			"Host a themed dinner party",
+			"Wine tasting at an actual winery or vineyard",
+			"Write an original song and perform it for the group or at an open mic",
+			"Complete a needle-point project"
+		]
+	},
+	{
+		"game": "2023",
+		"player": "Eric",
+		"challenges": [
+			"Glean a pound of stone fruit",
+			"Complete a self-care thing you've been putting off",
+			"Conduct a science experiment and present your findings to the group",
+			"Spend an evening on the Bay",
+			"Make a new to you cocktail or mocktail with 5+ ingredients and share with 3+ players",
+			"Go to Downtown Sounds",
+			"Identify and hug five native tree species",
+			"Sing a song at a local karaoke bar",
+			"Do a chore for a friend (their choice)",
+			"Walk onto a ferry and have a meal on an island of your choosing",
+			"Visit a new to you museum",
+			"Go with somebody and jump off Taylor Dock",
+			"Host a themed dinner party",
+			"Read a book of fiction",
+			"Brunch on a patio",
+			"Paint your partner's nails (or a friend)",
+			"Go vegan for two weeks",
+			"Master a classic cocktail",
+			"Meet and greet five new to you dogs (ask first!)",
+			"Go dancing",
+			"Solve Jake's puzzle",
+			"Find a geocache and leave a message in it",
+			"Selfie with a geoduck",
+			"Touch snow"
+		]
 	}
+
+	
+	
+	
 ]

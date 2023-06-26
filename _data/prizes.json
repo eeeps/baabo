@@ -1,6 +1,7 @@
 [
 
 	{
+		"game": "2022",
 		"what": "Portrait of Celeste",
 		"emoji": "🖼",
 		"from": "Celeste",
@@ -8,6 +9,7 @@
 		"howToWin": "Complete a full frame (<table class=tiny><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)"
 	},
 	{
+		"game": "2022",
 		"what": "A trophy <small>which will be passed down for BAABO generations</small>",
 		"emoji": "🏆",
 		"from": "Ellie",
@@ -17,6 +19,7 @@
 		"claimDate": "2022-07-10"
 	},
 	{
+		"game": "2022",
 		"what": "Cellar beer party",
 		"emoji": "🍾",
 		"from": "Rachel",
@@ -24,6 +27,7 @@
 		"howToWin": "Complete an X (<table class=tiny><tr><td class=checked><td><td><td><td class=checked><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td class=checked><td><td><td><td class=checked></table>); everyone who gets an X gets to come"
 	},
 	{
+		"game": "2022",
 		"what": "Cocktails and dessert",
 		"emoji": "🍸",
 		"from": "Britt",
@@ -31,6 +35,7 @@
 		"howToWin": "Complete an M (<table class=tiny><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td class=checked><td><td class=checked><td class=checked><tr><td class=checked><td><td class=checked><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked></table>); everyone who gets an M gets a prize"
 	},
 	{
+		"game": "2022",
 		"what": "Illuminating waist pack",
 		"emoji": "💡",
 		"from": "Jake",
@@ -40,6 +45,7 @@
 		"claimDate": "2022-08-13"
 	},
 	{
+		"game": "2022",
 		"what": "Two tickets to <cite>The Price Is Right</cite> at Mount Baker Theatre",
 		"emoji": "🏷",
 		"from": "Andrea",
@@ -47,6 +53,7 @@
 		"howToWin": "Complete an S (<table class=tiny><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td><td><td><td class=checked><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>) (like money)"
 	},
 	{
+		"game": "2022",
 		"what": "$25 gift certificate to Elizabeth Station",
 		"emoji": "🍺",
 		"from": "Eric",
@@ -56,6 +63,7 @@
 		"claimDate": "2022-06-21"
 	},
 	{
+		"game": "2022",
 		"what": "Beers with U and me",
 		"emoji": "🍻",
 		"from": "Jeff",
@@ -63,6 +71,7 @@
 		"howToWin": "Complete a U (<table class=tiny><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>); first three winners get beers"
 	},
 	{
+		"game": "2022",
 		"what": "Tahitian chocolate pearl neckalace and bracelet",
 		"emoji": "📿",
 		"from": "Lindsey",
@@ -70,6 +79,7 @@
 		"howToWin": "Complete a small circle around the free square (<table class=tiny><tr><td><td><td><td><td><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td><td class=checked><td><td class=checked><td><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td><td><td><td><td></table>)"
 	},
 	{
+		"game": "2022",
 		"what": "Whittled wooden spoon",
 		"emoji": "🥄",
 		"from": "Jamie",
