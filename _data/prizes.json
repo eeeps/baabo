@@ -87,6 +87,133 @@
 		"howToWin": "Complete five squares with activities that are new to you",
 		"wonBy": "Celeste",
 		"claimDate": "2022-09-11"
+	},
+	{
+		"game": "2023",
+		"what": "A “BAABO’s Bravest” trophy",
+		"emoji": "🏆",
+		"from": "Ellie",
+		"available": true,
+		"howToWin": "Do the thing on your board that is the most scary (or challenging) to&nbsp;you"
+	},
+	{
+		"game": "2023",
+		"what": "Escape-room boardgames",
+		"emoji": "🗝️",
+		"from": "Jake",
+		"available": true,
+		"howToWin": "Complete a box around the free space (<table class=tiny><tr><td><td><td><td><td><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td><td class=checked><td><td class=checked><td><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td><td><td><td><td></table>)"
+	},
+	{
+		"game": "2023",
+		"what": "A basket of chocolate-themed goodies",
+		"emoji": "🍫",
+		"from": "Andrea",
+		"available": true,
+		"howToWin": "Complete any two adjacent vertical columns (<table class=tiny><tr><td class=checked><td class=checked><td><td><td><tr><td class=checked><td class=checked><td><td><td><tr><td class=checked><td class=checked><td><td><td><tr><td class=checked><td class=checked><td><td><td><tr><td class=checked><td class=checked><td><td><td></table>, <table class=tiny><tr><td><td class=checked><td class=checked><td><td><tr><td><td class=checked><td class=checked><td><td><tr><td><td class=checked><td class=checked><td><td><tr><td><td class=checked><td class=checked><td><td><tr><td><td class=checked><td class=checked><td><td></table>, <table class=tiny><tr><td><td><td class=checked><td class=checked><td><tr><td><td><td class=checked><td class=checked><td><tr><td><td><td class=checked><td class=checked><td><tr><td><td><td class=checked><td class=checked><td><tr><td><td><td class=checked><td class=checked><td></table>, or <table class=tiny><tr><td><td><td><td class=checked><td class=checked><tr><td><td><td><td class=checked><td class=checked><tr><td><td><td><td class=checked><td class=checked><tr><td><td><td><td class=checked><td class=checked><tr><td><td><td><td class=checked><td class=checked></table>)"
+	},
+	{
+		"game": "2023",
+		"what": "A BAABO-themed embroidery hoop",
+		"emoji": "🪡",
+		"from": "Mary",
+		"available": true,
+		"howToWin": "Four corners (<table class=tiny><tr><td class=checked><td><td><td><td class=checked><tr><td><td><td><td><td><tr><td><td><td><td><td><tr><td><td><td><td><td><tr><td class=checked><td><td><td><td class=checked></table>)"
+	},
+	{
+		"game": "2023",
+		"what": "$50 to the non-profit of your choice",
+		"emoji": "🎗️",
+		"from": "Britt",
+		"available": true,
+		"howToWin": "First person to get TWO Bingos"
+	},
+	{
+		"game": "2023",
+		"what": "Custom printing stamp",
+		"emoji": "✍️",
+		"from": "Celeste",
+		"available": true,
+		"howToWin": "Complete a diamond (<table class=tiny><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td class=checked><td><td><td><td class=checked><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td></table>)"
+	},
+	{
+		"game": "2023",
+		"what": "Cookies of your choice <small>(possibly off of a helpful list)</small>",
+		"emoji": "🍪",
+		"from": "Megan",
+		"available": true,
+		"howToWin": "First five people to complete an “M” (<table class=tiny><tr><td class=checked><td class=checked><td><td class=checked><td class=checked><tr><td class=checked><td><td class=checked><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked></table>)"
+	},
+	{
+		"game": "2023",
+		"what": "Coupon for an hour-long toy show at WinkWink",
+		"emoji": "🍆",
+		"from": "Jason",
+		"available": true,
+		"howToWin": "Complete a cross (for Jesus) (<table class=tiny><tr><td><td><td class=checked><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td><td class=checked><td><td><tr><td><td><td class=checked><td><td><tr><td><td><td class=checked><td><td></table>)"
+	},
+	{
+		"game": "2023",
+		"what": "Custom crochet piece",
+		"emoji": "🧶",
+		"from": "Jamie",
+		"available": true,
+		"howToWin": "Complete a “C” (excluding the corners) (<table class=tiny><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td class=checked><tr><td><td class=checked><td class=checked><td class=checked><td></table>)"
+	},	
+	{
+		"game": "2023",
+		"what": "Nepali package <small>Includes: 15 rupees, a blessing scarf, and a canvas print of one of Jasper’s photos from the Himalayas</small>",
+		"emoji": "🏔️",
+		"from": "Jasper",
+		"available": true,
+		"howToWin": "Complete an “X” (<table class=tiny><tr><td class=checked><td><td><td><td class=checked><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td class=checked><td><td><td><td class=checked></table>)"
+	},
+	{
+		"game": "2023",
+		"what": "Markers and a “Knot-It!” book",
+		"emoji": "🪢",
+		"from": "Lauren",
+		"available": true,
+		"howToWin": "Complete an “L” (<table class=tiny><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)"
+	},
+	{
+		"game": "2023",
+		"what": "$30 gift card to El Suenito",
+		"emoji": "🫔",
+		"from": "Caity",
+		"available": true,
+		"howToWin": "Complete an “E” (<table class=tiny><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)"
+	},
+	{
+		"game": "2023",
+		"what": "One-hour massage from the place of your choice",
+		"emoji": "💆",
+		"from": "Bryon",
+		"available": true,
+		"howToWin": "Blackout!"
+	},
+	{
+		"game": "2023",
+		"what": "A Papa Murphy’s pizza, delivered and cooked",
+		"emoji": "🍕",
+		"from": "Bryson",
+		"available": true,
+		"howToWin": "First two people to complete a “T” (<table class=tiny><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td><td class=checked><td><td><tr><td><td><td class=checked><td><td><tr><td><td><td class=checked><td><td><tr><td><td><td class=checked><td><td></table>)"
+	},
+	{
+		"game": "2023",
+		"what": "A half-dozen of the best donuts",
+		"emoji": "🍩",
+		"from": "Eric",
+		"available": true,
+		"howToWin": "First Bingo"
+	},
+	{
+		"game": "2023",
+		"what": "You must display a portrait of Celeste",
+		"emoji": "🖼️",
+		"from": "Celeste",
+		"available": true,
+		"howToWin": "Complete the fewest squares (“Shame Prize”)"
 	}
-
 ]
