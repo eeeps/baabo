@@ -177,7 +177,7 @@ h4 {
 	margin-block-start: 4rem;
 }
 
-.prizes li {
+.prizes li:not(dd > ol > li) {
 	display: grid;
 	grid-template-columns: 7rem 1fr; 
 	margin-bottom: 2rem;

@@ -94,7 +94,7 @@
 		"emoji": "🏆",
 		"from": "Ellie",
 		"available": true,
-		"howToWin": "Do the thing on your board that is the most scary (or challenging) to&nbsp;you"
+		"howToWin": "Identify and complete three separate challenges on your board: <ol><li>the scariest thing for you,</li> <li>the most time-consuming thing for you, and</li> <li>the most difficult thing for you</li></ol>"
 	},
 	{
 		"game": "2023",
@@ -123,7 +123,7 @@
 	{
 		"game": "2023",
 		"what": "$50 to the non-profit of your choice",
-		"emoji": "🎗️",
+		"emoji": "💸",
 		"from": "Britt",
 		"available": true,
 		"howToWin": "First person to get TWO bingos"
@@ -131,7 +131,7 @@
 	{
 		"game": "2023",
 		"what": "Custom printing stamp",
-		"emoji": "✍️",
+		"emoji": "🖼️",
 		"from": "Celeste",
 		"available": true,
 		"howToWin": "Complete a diamond (<table class=tiny><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td class=checked><td><td><td><td class=checked><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td></table>)"
@@ -147,7 +147,7 @@
 	{
 		"game": "2023",
 		"what": "Coupon for an hour-long toy show at WinkWink",
-		"emoji": "🍆",
+		"emoji": "💝",
 		"from": "Jason",
 		"available": true,
 		"howToWin": "Complete a cross (for Jesus) (<table class=tiny><tr><td><td><td class=checked><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td><td class=checked><td><td><tr><td><td><td class=checked><td><td><tr><td><td><td class=checked><td><td></table>)"
@@ -219,7 +219,7 @@
 	{
 		"game": "2023",
 		"what": "You must display a portrait of Celeste",
-		"emoji": "🖼️",
+		"emoji": "🙃",
 		"from": "Celeste",
 		"available": true,
 		"howToWin": "Complete the fewest squares (“Shame Prize”)"
