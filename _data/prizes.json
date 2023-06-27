@@ -126,7 +126,7 @@
 		"emoji": "🎗️",
 		"from": "Britt",
 		"available": true,
-		"howToWin": "First person to get TWO Bingos"
+		"howToWin": "First person to get TWO bingos"
 	},
 	{
 		"game": "2023",
@@ -206,7 +206,15 @@
 		"emoji": "🍩",
 		"from": "Eric",
 		"available": true,
-		"howToWin": "First Bingo"
+		"howToWin": "First bingo"
+	},
+	{
+		"game": "2023",
+		"what": "Bedazzled name on the BAABO website",
+		"emoji": "✨",
+		"from": "Eric",
+		"available": true,
+		"howToWin": "Blackout!"
 	},
 	{
 		"game": "2023",
