@@ -73,6 +73,18 @@ exports.render = function(data) {
 		} ).join('\n\t\t') }
 	</ul>
 	
+	${ (
+		data.game.name === '2023' ?
+			`<p style="margin: 3em; text-align: center;">
+				<a href="who-got-each-challenge/"
+				   style="font-size: 2rem; text-underline-offset: 0.1em; padding: 0.125ch 0.5ch 0.25ch 0.5ch;">
+				   	Who got each challenge?
+				</a>
+			</p>`
+		:
+			''
+	) }
+	
 	<h2>Prizes</h2>
 
 	<h3><span>Available</span></h3>
