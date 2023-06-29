@@ -141,7 +141,7 @@ ul.players {
 }
 
 .mainContain[data-game="2023"] ul.players {
-	grid-template-rows: repeat(5, 1fr);
+	grid-template-rows: repeat(6, 1fr);
 }
 
 .players li {
