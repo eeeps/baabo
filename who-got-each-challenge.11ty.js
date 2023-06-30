@@ -49,6 +49,8 @@ dt {
 	</header>
 	
 	<h2>Who got each challenge?</h2>
+
+
 <dl>
 
 <div>
@@ -59,6 +61,7 @@ dt {
 <dd>Jasper</dd>
 <dd>Caity</dd>
 <dd>Julie</dd>
+<dd>Vince</dd>
 </div>
 
 
@@ -114,6 +117,7 @@ dt {
 <dd>Mary</dd>
 <dd>Caity</dd>
 <dd>Julie</dd>
+<dd>Vince</dd>
 </div>
 
 
@@ -132,6 +136,7 @@ dt {
 <dd>Jason</dd>
 <dd>Mary</dd>
 <dd>Julie</dd>
+<dd>Vince</dd>
 </div>
 
 
@@ -220,6 +225,7 @@ dt {
 <dd>Jason</dd>
 <dd>Megan</dd>
 <dd>Mary</dd>
+<dd>Vince</dd>
 </div>
 
 
@@ -242,6 +248,7 @@ dt {
 <dd>Jamie</dd>
 <dd>Celeste</dd>
 <dd>Ellie</dd>
+<dd>Vince</dd>
 </div>
 
 
@@ -277,6 +284,7 @@ dt {
 <dd>Ellie</dd>
 <dd>Caity</dd>
 <dd>Bryon</dd>
+<dd>Vince</dd>
 </div>
 
 
@@ -316,6 +324,7 @@ dt {
 <dd>Bryson</dd>
 <dd>Caity</dd>
 <dd>Bryon</dd>
+<dd>Vince</dd>
 </div>
 
 
@@ -334,6 +343,7 @@ dt {
 <dd>Jake</dd>
 <dd>Jasper</dd>
 <dd>Megan</dd>
+<dd>Vince</dd>
 </div>
 
 
@@ -384,6 +394,7 @@ dt {
 <dt>Eat a bug, intentionally</dt>
 <dd>Lauren</dd>
 <dd>Jake</dd>
+<dd>Vince</dd>
 </div>
 
 
@@ -434,6 +445,7 @@ dt {
 <dd>Bryson</dd>
 <dd>Mary</dd>
 <dd>Eric</dd>
+<dd>Vince</dd>
 </div>
 
 
@@ -484,6 +496,7 @@ dt {
 <dd>Jason</dd>
 <dd>Jamie</dd>
 <dd>Bryon</dd>
+<dd>Vince</dd>
 </div>
 
 
@@ -499,6 +512,7 @@ dt {
 <dd>Jake</dd>
 <dd>Megan</dd>
 <dd>Ellie</dd>
+<dd>Vince</dd>
 </div>
 
 
@@ -507,6 +521,7 @@ dt {
 <dd>Jake</dd>
 <dd>Andrea</dd>
 <dd>Celeste</dd>
+<dd>Vince</dd>
 </div>
 
 
@@ -536,6 +551,7 @@ dt {
 <dd>Mary</dd>
 <dd>Caity</dd>
 <dd>Bryon</dd>
+<dd>Vince</dd>
 </div>
 
 
@@ -579,6 +595,7 @@ dt {
 <dd>Megan</dd>
 <dd>Ellie</dd>
 <dd>Eric</dd>
+<dd>Vince</dd>
 </div>
 
 
@@ -600,6 +617,7 @@ dt {
 <dd>Caity</dd>
 <dd>Bryon</dd>
 <dd>Eric</dd>
+<dd>Vince</dd>
 </div>
 
 
@@ -627,6 +645,7 @@ dt {
 <dd>Jamie</dd>
 <dd>Mary</dd>
 <dd>Ellie</dd>
+<dd>Vince</dd>
 </div>
 
 
@@ -680,6 +699,7 @@ dt {
 <dd>Megan</dd>
 <dd>Eric</dd>
 <dd>Julie</dd>
+<dd>Vince</dd>
 </div>
 
 
@@ -752,6 +772,7 @@ dt {
 <dd>Jamie</dd>
 <dd>Bryson</dd>
 <dd>Ellie</dd>
+<dd>Vince</dd>
 </div>
 
 
@@ -767,6 +788,7 @@ dt {
 <dd>Celeste</dd>
 <dd>Mary</dd>
 <dd>Caity</dd>
+<dd>Vince</dd>
 </div>
 
 
@@ -774,6 +796,7 @@ dt {
 <dt>Visit the Bellingham touch tank and learn a fact to share</dt>
 <dd>Celeste</dd>
 <dd>Caity</dd>
+<dd>Vince</dd>
 </div>
 
 
@@ -808,6 +831,7 @@ dt {
 <div>
 <dt>Host a game night</dt>
 <dd>Bryson</dd>
+<dd>Vince</dd>
 </div>
 
 
@@ -834,6 +858,7 @@ dt {
 <div>
 <dt>Observe and identify at least three new birds</dt>
 <dd>Megan</dd>
+<dd>Vince</dd>
 </div>
 
 
@@ -842,6 +867,7 @@ dt {
 <dd>Mary</dd>
 <dd>Caity</dd>
 <dd>Bryon</dd>
+<dd>Vince</dd>
 </div>
 
 
@@ -880,6 +906,8 @@ dt {
 </div>
 
 </dl>
+
+
 </div>
 `;
 }
