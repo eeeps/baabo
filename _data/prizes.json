@@ -205,8 +205,10 @@
 		"what": "A half-dozen of the best donuts",
 		"emoji": "🍩",
 		"from": "Eric",
-		"available": true,
-		"howToWin": "First bingo"
+		"available": false,
+		"howToWin": "First bingo",
+		"wonBy": "Ellie",
+		"claimDate": "2023-07-06"
 	},
 	{
 		"game": "2023",
