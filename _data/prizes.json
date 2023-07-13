@@ -125,8 +125,10 @@
 		"what": "$50 to the non-profit of your choice",
 		"emoji": "💸",
 		"from": "Britt",
-		"available": true,
-		"howToWin": "First person to get TWO bingos"
+		"available": false,
+		"howToWin": "First person to get TWO bingos",
+		"wonBy": "Ellie",
+		"claimDate": "2023-07-13"
 	},
 	{
 		"game": "2023",
