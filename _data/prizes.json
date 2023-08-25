@@ -155,8 +155,10 @@
 		"what": "Coupon for an hour-long toy show at WinkWink",
 		"emoji": "💝",
 		"from": "Jason",
-		"available": true,
-		"howToWin": "Complete a cross (for Jesus) (<table class=tiny><tr><td><td><td class=checked><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td><td class=checked><td><td><tr><td><td><td class=checked><td><td><tr><td><td><td class=checked><td><td></table>)"
+		"available": false,
+		"howToWin": "Complete a cross (for Jesus) (<table class=tiny><tr><td><td><td class=checked><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td><td class=checked><td><td><tr><td><td><td class=checked><td><td><tr><td><td><td class=checked><td><td></table>)",
+		"wonBy": "Mary",
+		"claimDate": "2023-08-23"
 	},
 	{
 		"game": "2023",
