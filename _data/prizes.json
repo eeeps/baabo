@@ -199,7 +199,9 @@
 		"what": "One-hour massage from the place of your choice",
 		"emoji": "💆",
 		"from": "Bryon",
-		"available": true,
+		"available": false,
+		"wonBy": "Lauren",
+		"claimDate": "2023-08-30",
 		"howToWin": "Blackout!"
 	},
 	{
@@ -225,7 +227,9 @@
 		"what": "Bedazzled name on the BAABO website",
 		"emoji": "✨",
 		"from": "Eric",
-		"available": true,
+		"available": false,
+		"wonBy": "Lauren",
+		"claimDate": "2023-08-30",
 		"howToWin": "Blackout!"
 	},
 	{

@@ -56,7 +56,7 @@ dt {
 <div>
 <dt>Bike on a pump track</dt>
 <dd>Britt</dd>
-<dd>Lauren</dd>
+<dd class="winner">Lauren</dd>
 <dd>Jason</dd>
 <dd>Jasper</dd>
 <dd>Caity</dd>
@@ -68,7 +68,7 @@ dt {
 <div>
 <dt>Find a queer or BIPOC owned resturant and give them a good Yelp review</dt>
 <dd>Britt</dd>
-<dd>Lauren</dd>
+<dd class="winner">Lauren</dd>
 <dd>Jason</dd>
 <dd>Caity</dd>
 <dd>Bryon</dd>
@@ -79,7 +79,7 @@ dt {
 <div>
 <dt>Do a BAABO activity that you wanted to do that didn't end up on your board</dt>
 <dd>Britt</dd>
-<dd>Lauren</dd>
+<dd class="winner">Lauren</dd>
 <dd>Jake</dd>
 <dd>Jason</dd>
 <dd>Caity</dd>
@@ -100,7 +100,7 @@ dt {
 <div>
 <dt>Make a playlist of your all-time favorite summer jams</dt>
 <dd>Britt</dd>
-<dd>Lauren</dd>
+<dd class="winner">Lauren</dd>
 <dd>Andrea</dd>
 <dd>Jasper</dd>
 <dd>Bryson</dd>
@@ -132,7 +132,7 @@ dt {
 <div>
 <dt>Go to three or more breweries in one day</dt>
 <dd>Britt</dd>
-<dd>Lauren</dd>
+<dd class="winner">Lauren</dd>
 <dd>Jason</dd>
 <dd>Mary</dd>
 <dd>Julie</dd>
@@ -143,7 +143,7 @@ dt {
 <div>
 <dt>Come up with a three minute synchronized swimming routine</dt>
 <dd>Britt</dd>
-<dd>Lauren</dd>
+<dd class="winner">Lauren</dd>
 <dd>Jake</dd>
 <dd>Jasper</dd>
 <dd>Celeste</dd>
@@ -210,7 +210,7 @@ dt {
 <div>
 <dt>Go with somebody and jump off Taylor Dock</dt>
 <dd>Britt</dd>
-<dd>Lauren</dd>
+<dd class="winner">Lauren</dd>
 <dd>Celeste</dd>
 <dd>Bryson</dd>
 <dd>Megan</dd>
@@ -232,7 +232,7 @@ dt {
 <div>
 <dt>Selfie with a geoduck</dt>
 <dd>Britt</dd>
-<dd>Lauren</dd>
+<dd class="winner">Lauren</dd>
 <dd>Andrea</dd>
 <dd>Jasper</dd>
 <dd>Bryson</dd>
@@ -255,7 +255,7 @@ dt {
 <div>
 <dt>Host a themed dinner party</dt>
 <dd>Britt</dd>
-<dd>Lauren</dd>
+<dd class="winner">Lauren</dd>
 <dd>Jamie</dd>
 <dd>Jasper</dd>
 <dd>Bryson</dd>
@@ -278,7 +278,7 @@ dt {
 <div>
 <dt>Complete a needle-point project</dt>
 <dd>Britt</dd>
-<dd>Lauren</dd>
+<dd class="winner">Lauren</dd>
 <dd>Jason</dd>
 <dd>Jasper</dd>
 <dd>Ellie</dd>
@@ -291,7 +291,7 @@ dt {
 <div>
 <dt>Go to a Bellingham City Countil meeting</dt>
 <dd>Britt</dd>
-<dd>Lauren</dd>
+<dd class="winner">Lauren</dd>
 <dd>Jason</dd>
 <dd>Jamie</dd>
 <dd>Jasper</dd>
@@ -303,7 +303,7 @@ dt {
 <div>
 <dt>Eat a slice of apple pie with cheddar cheese</dt>
 <dd>Britt</dd>
-<dd>Lauren</dd>
+<dd class="winner">Lauren</dd>
 <dd>Mary</dd>
 <dd>Ellie</dd>
 </div>
@@ -311,7 +311,7 @@ dt {
 
 <div>
 <dt>Write a rap about BAABO (at least 10 lines) and perform to the group</dt>
-<dd>Lauren</dd>
+<dd class="winner">Lauren</dd>
 <dd>Celeste</dd>
 <dd>Caity</dd>
 </div>
@@ -319,7 +319,7 @@ dt {
 
 <div>
 <dt>Drive to Winthrop on Hwy 20 (spend at least some of the time driving)</dt>
-<dd>Lauren</dd>
+<dd class="winner">Lauren</dd>
 <dd>Jason</dd>
 <dd>Bryson</dd>
 <dd>Caity</dd>
@@ -330,7 +330,7 @@ dt {
 
 <div>
 <dt>Get an astrology or tarot reading done by a professional</dt>
-<dd>Lauren</dd>
+<dd class="winner">Lauren</dd>
 <dd>Andrea</dd>
 <dd>Jamie</dd>
 <dd>Celeste</dd>
@@ -339,7 +339,7 @@ dt {
 
 <div>
 <dt>Participate in a sun dress bar crawl</dt>
-<dd>Lauren</dd>
+<dd class="winner">Lauren</dd>
 <dd>Jake</dd>
 <dd>Jasper</dd>
 <dd>Megan</dd>
@@ -349,7 +349,7 @@ dt {
 
 <div>
 <dt>Attend or volunteer at an event with a queer allied organization</dt>
-<dd>Lauren</dd>
+<dd class="winner">Lauren</dd>
 <dd>Andrea</dd>
 <dd>Jason</dd>
 <dd>Jasper</dd>
@@ -360,7 +360,7 @@ dt {
 
 <div>
 <dt>Solve Jake's puzzle</dt>
-<dd>Lauren</dd>
+<dd class="winner">Lauren</dd>
 <dd>Jake</dd>
 <dd>Andrea</dd>
 <dd>Bryson</dd>
@@ -371,7 +371,7 @@ dt {
 
 <div>
 <dt>Go skinny dipping</dt>
-<dd>Lauren</dd>
+<dd class="winner">Lauren</dd>
 <dd>Jason</dd>
 <dd>Celeste</dd>
 <dd>Megan</dd>
@@ -381,7 +381,7 @@ dt {
 
 <div>
 <dt>Go vegan for two weeks</dt>
-<dd>Lauren</dd>
+<dd class="winner">Lauren</dd>
 <dd>Andrea</dd>
 <dd>Jamie</dd>
 <dd>Celeste</dd>
@@ -392,7 +392,7 @@ dt {
 
 <div>
 <dt>Eat a bug, intentionally</dt>
-<dd>Lauren</dd>
+<dd class="winner">Lauren</dd>
 <dd>Jake</dd>
 <dd>Vince</dd>
 </div>
@@ -400,7 +400,7 @@ dt {
 
 <div>
 <dt>Master a classic cocktail</dt>
-<dd>Lauren</dd>
+<dd class="winner">Lauren</dd>
 <dd>Mary</dd>
 <dd>Ellie</dd>
 <dd>Bryon</dd>
@@ -410,7 +410,7 @@ dt {
 
 <div>
 <dt>Disable all social media accounts for a week</dt>
-<dd>Lauren</dd>
+<dd class="winner">Lauren</dd>
 <dd>Jake</dd>
 <dd>Jasper</dd>
 <dd>Bryson</dd>
@@ -421,7 +421,7 @@ dt {
 
 <div>
 <dt>Memorize and recite your favorite poem to five BAABO players</dt>
-<dd>Lauren</dd>
+<dd class="winner">Lauren</dd>
 <dd>Jamie</dd>
 <dd>Bryon</dd>
 </div>

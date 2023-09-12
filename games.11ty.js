@@ -67,7 +67,7 @@ exports.render = function(data) {
 					<tr>${ tds[ 15 ] }${ tds[ 16 ] }${ tds[ 17 ] }${ tds[ 18 ] }${ tds[ 19 ] }
 					<tr>${ tds[ 20 ] }${ tds[ 21 ] }${ tds[ 22 ] }${ tds[ 23 ] }${ tds[ 24 ] }
 				</table>
-				<h4 class=name>${ board.player }</h4>
+				<h4 class="name ${ data.game.winner === board.player.toLowerCase() ? 'winner' : '' }">${ board.player }</h4>
 			</div></a>
 			`
 		} ).join('\n\t\t') }
@@ -101,7 +101,7 @@ exports.render = function(data) {
 				<dl>
 					<div>
 						<dt>From</dt>
-						<dd>${ prize.from }
+						<dd ${ data.game.winner === prize.from.toLowerCase() ? 'class="winner"' : '' }>${ prize.from }
 					</div>
 					<div>
 						<dt>How to win</dt>
@@ -128,7 +128,7 @@ exports.render = function(data) {
 				<dl>
 					<div>
 						<dt>From</dt>
-						<dd>${ prize.from }
+						<dd ${ data.game.winner === prize.from.toLowerCase() ? 'class="winner"' : '' }>${ prize.from }
 					</div>
 					<div>
 						<dt>How to win</dt>
@@ -136,7 +136,7 @@ exports.render = function(data) {
 					</div>
 					<div>
 						<dt>Won by</dt>
-						<dd>${ prize.wonBy }
+						<dd ${ data.game.winner === prize.wonBy.toLowerCase() ? 'class="winner"' : '' }>${ prize.wonBy }
 					</div>
 				</dl>
 			</div>

@@ -45,7 +45,7 @@ exports.render = function(data) {
 			</ruby>
 
 		</a></h1>
-		<h2>${ data.board.player }</h2>
+		<h2><span ${ game.winner === data.board.player.toLowerCase() ? 'class="winner"' : '' }>${ data.board.player }</span></h2>
 	</header>
 	<table>
 		<tr>

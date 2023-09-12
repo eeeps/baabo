@@ -1,7 +1,8 @@
 [
 	{
 		"name": "2023",
-		"active": true
+		"active": true,
+		"winner": "lauren"
 	},
 	{
 		"name": "2022",
