@@ -222,7 +222,7 @@ dt {
 
 
 <div>
-<dt>Go to the Bow sanctuary and feed the Koi</dt>
+<dt>Go to the Bow Sanctuary and feed the koi</dt>
 <dd>Britt</dd>
 <dd>Jamie</dd>
 <dd>Mary</dd>
