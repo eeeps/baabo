@@ -2,7 +2,7 @@ const fs = require('fs');
 
 const boards = JSON.parse( 
 	fs.readFileSync('_data/boards.json')
-).filter( board => board.game === '2023');
+).filter( board => board.game === 'winter2023-24');
 
 //console.log(boards);
 

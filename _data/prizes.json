@@ -239,5 +239,101 @@
 		"from": "Celeste",
 		"available": true,
 		"howToWin": "Complete the fewest squares (“Shame Prize”)"
+	},
+	{
+		"game": "winter2023-24",
+		"what": "Brunch at Cafe Blue",
+		"emoji": "🥯",
+		"from": "Britt",
+		"available": true,
+		"howToWin": "Third person to get a bingo"
+	},
+	{
+		"game": "winter2023-24",
+		"what": "Crocheted hat",
+		"emoji": "🧶",
+		"from": "Jamie",
+		"available": true,
+		"howToWin": "Complete an “X” (<table class=tiny><tr><td class=checked><td><td><td><td class=checked><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td class=checked><td><td><td><td class=checked></table>)"
+	},
+	{
+		"game": "winter2023-24",
+		"what": "Pickford gift card",
+		"emoji": "🎞️",
+		"from": "Jasper",
+		"available": true,
+		"howToWin": "Second person to get two bingos"
+	},
+	{
+		"game": "winter2023-24",
+		"what": "$15 gift card to Camber",
+		"emoji": "☕️",
+		"from": "Caity",
+		"available": true,
+		"howToWin": "Complete a “C” (three sides) (<table class=tiny><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)"
+	},
+	{
+		"game": "winter2023-24",
+		"what": "$40 gift card to El Suenito",
+		"emoji": "🫔",
+		"from": "Bryon",
+		"available": true,
+		"howToWin": "Last person to get their first bingo"
+	},
+	{
+		"game": "winter2023-24",
+		"what": "“Made by Celeste” gift basket",
+		"emoji": "🧺",
+		"from": "Celeste",
+		"available": true,
+		"howToWin": "Complete a diamond (<table class=tiny><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td class=checked><td><td><td><td class=checked><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td></table>)"
+	},
+	{
+		"game": "winter2023-24",
+		"what": "A drink and a pastry from Iron Rooster",
+		"emoji": "🥐",
+		"from": "Mary",
+		"available": true,
+		"howToWin": "Four corners (<table class=tiny><tr><td class=checked><td><td><td><td class=checked><tr><td><td><td><td><td><tr><td><td><td><td><td><tr><td><td><td><td><td><tr><td class=checked><td><td><td><td class=checked></table>)"
+	},
+	{
+		"game": "winter2023-24",
+		"what": "Homemade loaf of Norwegian sweetbread",
+		"emoji": "🍞",
+		"from": "Lauren",
+		"available": true,
+		"howToWin": "Complete an “L” (<table class=tiny><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)"
+	},
+	{
+		"game": "winter2023-24",
+		"what": "Free bike tune up (parts not included)",
+		"emoji": "🚲",
+		"from": "Jeremy",
+		"available": true,
+		"howToWin": "First four people to complete the 100-cumulative-miles-on-a-bike challenge"
+	},
+	{
+		"game": "winter2023-24",
+		"what": "Homemade salve and soap",
+		"emoji": "🧼",
+		"from": "Ellie",
+		"available": true,
+		"howToWin": "First person to do the thing on your board that will make you the stinkiest"
+	},
+		{
+		"game": "winter2023-24",
+		"what": "$40 Bow Sanctuary gift card",
+		"emoji": "🧘",
+		"from": "Vicki",
+		"available": true,
+		"howToWin": "Postage stamp (any square block of four – but can’t include FREE space)"
+	},
+	{
+		"game": "winter2023-24",
+		"what": "$40 gift certificate to Tweets",
+		"emoji": "🐣",
+		"from": "Eric",
+		"available": true,
+		"howToWin": "First bingo"
 	}
 ]

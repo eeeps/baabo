@@ -74,7 +74,7 @@ exports.render = function(data) {
 	</ul>
 	
 	${ (
-		data.game.name === '2023' ?
+		data.game.name === '2023' || data.game.name === 'winter2023-24' ?
 			`<p style="margin: 3em; text-align: center;">
 				<a href="who-got-each-challenge/"
 				   style="font-size: 2rem; text-underline-offset: 0.1em; padding: 0.125ch 0.5ch 0.25ch 0.5ch;">
@@ -84,6 +84,7 @@ exports.render = function(data) {
 		:
 			''
 	) }
+	
 	
 	<h2>Prizes</h2>
 

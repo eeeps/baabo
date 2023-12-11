@@ -1,11 +1,18 @@
 [
 	{
+		"name": "winter2023-24",
+		"startDate": "2023-12-10",
+		"active": true
+	},
+	{
 		"name": "2023",
+		"startDate": "2023-06-24",
 		"active": false,
 		"winner": "lauren"
 	},
 	{
 		"name": "2022",
+		"startDate": "2022-06-13",
 		"active": false
 	}
 ]

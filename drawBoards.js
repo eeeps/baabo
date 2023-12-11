@@ -34,21 +34,21 @@ const drawABoard = ( challenges ) => {
 // draw all boards and replace the boards.json
 // only do this once!
 //
-// const boards = players.map( playerName => {
-// 	return {
-// 		"player": playerName,
-// 		"challenges": drawABoard( challenges )
-// 	}
-// } );
-// 
-// try {
-//   fs.writeFileSync('_data/boards.json', JSON.stringify( boards, null, 2 ), 'utf8');
-//   console.log('Data successfully saved to disk');
-// } catch (error) {
-//   console.log('An error has occurred ', error);
-// }
+const boards = players.map( playerName => {
+	return {
+		"player": playerName,
+		"challenges": drawABoard( challenges )
+	}
+} );
+
+try {
+  fs.writeFileSync('_data/boards-Winter_2023-24.json', JSON.stringify( boards, null, 2 ), 'utf8');
+  console.log('Data successfully saved to disk');
+} catch (error) {
+  console.log('An error has occurred ', error);
+}
 
 
 // draw one board
 // for julie
-console.log( drawABoard( challenges ) );
+// console.log( drawABoard( challenges ) );

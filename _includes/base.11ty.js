@@ -14,7 +14,7 @@ return `
 	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com"> 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-	<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Noto+Emoji&family=Outfit:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Outfit:wght@500&family=Noto+Emoji&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="/style.css">
 

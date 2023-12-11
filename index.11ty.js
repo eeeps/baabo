@@ -12,6 +12,10 @@ exports.render = function(data) {
 	<h2>BAABO</h2>
 	
 	<ul class="years">
+		<li><a href="winter2023-24">
+			<span style="display: block; font-size: 0.625em;">Winter</span>
+			<span style="display: block; font-size: 0.45em; margin-top: -0.33em;">2023-2024</span>
+		</a></li>
 		<li><a href="2023">2023</a></li>
 		<li><a href="2022">2022</a></li>
 	</ul>
