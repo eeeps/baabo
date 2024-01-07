@@ -333,7 +333,9 @@
 		"what": "$40 gift certificate to Tweets",
 		"emoji": "🐣",
 		"from": "Eric",
-		"available": true,
-		"howToWin": "First bingo"
+		"available": false,
+		"howToWin": "First bingo",
+		"wonBy": "Mary",
+		"claimDate": "2024-01-06"
 	}
 ]
