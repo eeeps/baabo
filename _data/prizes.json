@@ -263,8 +263,10 @@
 		"what": "Pickford gift card",
 		"emoji": "🎞️",
 		"from": "Jasper",
-		"available": true,
-		"howToWin": "Second person to get two bingos"
+		"available": false,
+		"howToWin": "Second person to get two bingos",
+		"wonBy": "Mary",
+		"claimDate": "2024-02-24"
 	},
 	{
 		"game": "winter2023-24",
@@ -331,8 +333,10 @@
 		"what": "$40 Bow Sanctuary gift card",
 		"emoji": "🧘",
 		"from": "Vicki",
-		"available": true,
-		"howToWin": "Postage stamp (any square block of four – but can’t include FREE space)"
+		"available": false,
+		"howToWin": "Postage stamp (any square block of four – but can’t include FREE space)",
+		"wonBy": "Caity",
+		"claimDate": "2024-02-21"
 	},
 	{
 		"game": "winter2023-24",
