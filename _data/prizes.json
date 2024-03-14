@@ -281,16 +281,20 @@
 		"what": "$40 gift card to El Sueñito",
 		"emoji": "🫔",
 		"from": "Bryon",
-		"available": true,
-		"howToWin": "Last person to get their first bingo"
+		"available": false,
+		"howToWin": "Last person to get their first bingo",
+		"wonBy": "Ellie",
+		"claimDate": "2024-03-10"
 	},
 	{
 		"game": "winter2023-24",
 		"what": "“Made by Celeste” gift basket",
 		"emoji": "🧺",
 		"from": "Celeste",
-		"available": true,
-		"howToWin": "Complete a diamond (<table class=tiny><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td class=checked><td><td><td><td class=checked><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td></table>)"
+		"available": false,
+		"howToWin": "Closest to completing a diamond (<table class=tiny><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td class=checked><td><td><td><td class=checked><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td></table>)",
+		"wonBy": "Jamie",
+		"claimDate": "2024-03-10"
 	},
 	{
 		"game": "winter2023-24",
@@ -325,8 +329,10 @@
 		"what": "Homemade salve and soap",
 		"emoji": "🧼",
 		"from": "Ellie",
-		"available": true,
-		"howToWin": "First person to do the thing on your board that will make you the stinkiest"
+		"available": false,
+		"howToWin": "First person to do the thing on your board that will make you the stinkiest",
+		"wonBy": "Jamie",
+		"claimDate": "2024-03-10"
 	},
 		{
 		"game": "winter2023-24",
