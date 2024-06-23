@@ -185,6 +185,8 @@ const uuid = function() {
 
 // exports (for node!)
 if (typeof module !== "undefined" && module.exports) {
-	module.exports.fetchEntireChangeHistoryFromDatabase = fetchEntireChangeHistoryFromDatabase;
-	module.exports.boardStatesFromChangeHistory = boardStatesFromChangeHistory;
+	module.exports =  {
+		fetchEntireChangeHistoryFromDatabase,
+		boardStatesFromChangeHistory
+	};
 }
