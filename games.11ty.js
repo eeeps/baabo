@@ -150,6 +150,7 @@ exports.render = function(data) {
 
 </div>
 
+${ data.game.active ? `
 <script>
 const tables = document.querySelectorAll( 'table:not(.tiny)' );
 
@@ -179,6 +180,6 @@ syncLocalStorageChangeHistoryAndDatabase().then( ( result ) => {
 
 
 </script>
-
+` : '' }
 `;
 }

@@ -117,7 +117,6 @@ tds.forEach( ( td, index ) => {
 		postChange( change );
 	} );
 } );
-` : '' ) }
 
 const gameName = '${ data.board.game.toLowerCase() }';
 const playerName = '${ data.board.player.toLowerCase() }';
@@ -143,7 +142,9 @@ syncLocalStorageChangeHistoryAndDatabase().then( ( result ) => {
 	}
 } );
 
+` : '' ) }
 </script>
+
 `;
 
 };
