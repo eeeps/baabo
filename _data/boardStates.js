@@ -37,7 +37,7 @@ module.exports = async function() {
 			item.game === cv.game.toLowerCase() &&
 			item.player === cv.player.toLowerCase()
 		} ) ) {
-			acc.push( { game: cv.game, player: cv.player } )
+			acc.push( { game: cv.game.toLowerCase(), player: cv.player.toLowerCase() } )
 		}
 
 		return acc;
