@@ -65,17 +65,17 @@ exports.render = function(data) {
 			} ).join("") }
 			<td class="freespace"><img src="https://o.img.rodeo/image/upload/v1653428416/q1wweqagv9qwh5dwh6dl.svg">
 			${ data.board.challenges.slice( 12, 14 ).map( function( item, index ) {
-				const tdIndex = 12 + index;
+				const tdIndex = 13 + index;
 				return `<td${ ( boardState[ tdIndex ] ? ' class="checked"' : '' ) }>${ item }`;
 			} ).join("") }
 		<tr>
 			${ data.board.challenges.slice( 14, 19 ).map( function( item, index ) {
-				const tdIndex = 14 + index;
+				const tdIndex = 15 + index;
 				return `<td${ ( boardState[ tdIndex ] ? ' class="checked"' : '' ) }>${ item }`;
 			} ).join("") }
 		<tr>
 			${ data.board.challenges.slice( 19, 24 ).map( function( item, index ) {
-				const tdIndex = 19 + index;
+				const tdIndex = 20 + index;
 				return `<td${ ( boardState[ tdIndex ] ? ' class="checked"' : '' ) }>${ item }`;
 			} ).join("") }
 	</table>
