@@ -30,7 +30,8 @@ const boards = require( './boards.json' );
 
 module.exports = async function() {
 
-	const changeHistory = await baaboJs.fetchEntireChangeHistoryFromDatabase();
+	// fetch entire change history
+	const changeHistory = await baaboJs.fetchChangeHistoryFromDatabaseWhere( {} );
 	
 	let gameAndPlayerNames = boards.reduce( ( acc, cv ) => {
 

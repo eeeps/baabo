@@ -1,17 +1,4 @@
 
-const fetchEntireChangeHistoryFromDatabase = async function() {
-	const endpoint = 'https://baabo-db.herokuapp.com/changes';
-	const response = await fetch( endpoint );
-	const json = await response.json();
-	
-	// cast date (which comes down as an ISO8601 string) to an... integer
-	// I love to work with dates in Javascript!
-	return json.map( change => {
-		change.timestamp = Date.parse( change.timestamp );
-		return change;
-	} );
-}
-
 const fetchChangeHistoryFromDatabaseWhere = async function( {
 	// all optional; empty obj gives entire history
 	games, // array of strings e.g. [ '2022', '2023' ]
@@ -47,27 +34,6 @@ const fetchChangeHistoryFromDatabaseWhere = async function( {
 	
 }
 
-const fetchEntireChangeHistoryFromLocalStorage = function() {
-	const fromLocalStorage = localStorage.getItem( 'changeHistory' );
-	if ( !fromLocalStorage ) {
-		return [];
-	} else {
-		return JSON.parse( fromLocalStorage )
-
-			// transition to 2023 -- make sure all entries have a game!
-			// delete this eventually??
-			.map( c => {
-				if ( c.game ) {
-					return c;
-				} else {
-					c.game = "2022";
-					return c;
-				}
-			} ); 
-			// end transition code
-	}
-}
-
 const fetchChangeHistoryFromLocalStorageWhere = function( {
 	games,
 	game,
@@ -100,39 +66,6 @@ const fetchChangeHistoryFromLocalStorageWhere = function( {
 
 const setDifference = function( setA, setB ) {
 	return new Set( [ ...setA ].filter( x => !setB.has( x ) ) );
-}
-
-const syncLocalStorageChangeHistoryAndDatabase = async function() {
-
-	const fromDatabase = await fetchEntireChangeHistoryFromDatabase();
-	const fromLocalStorage = fetchEntireChangeHistoryFromLocalStorage();
-	
-	const databaseIDs = new Set( fromDatabase.map( change => change.id ) );
-	const localStorageIDs = new Set( fromLocalStorage.map( change => change.id ) );
-	
-	const idsInDatabaseButNotInLocalStorage = setDifference( databaseIDs, localStorageIDs );
-	const idsInLocalStorageButNotInDatabase = setDifference( localStorageIDs, databaseIDs );
-	
-	if ( idsInDatabaseButNotInLocalStorage.size > 0 ) {
-		idsInDatabaseButNotInLocalStorage.forEach( id => {
-			const change = fromDatabase.find( c => c.id === id );
-			fromLocalStorage.push( change );
-		} );
-		localStorage.setItem( 'changeHistory', JSON.stringify( fromLocalStorage ) )
-	}
-
-	if ( idsInLocalStorageButNotInDatabase.size > 0 ) {
-		idsInLocalStorageButNotInDatabase.forEach( id => {
-			const change = fromLocalStorage.find( c => c.id === id );
-			postChangeToDatabase( change );
-		} );
-	}
-	
-	return {
-		postedToDatabase: idsInLocalStorageButNotInDatabase.size > 0,
-		postedToLocalStorage: idsInDatabaseButNotInLocalStorage.size > 0
-	}
-	
 }
 
 // where looks like
@@ -289,7 +222,7 @@ const uuid = function() {
 // exports (for node!)
 if (typeof module !== "undefined" && module.exports) {
 	module.exports =  {
-		fetchEntireChangeHistoryFromDatabase,
+		fetchChangeHistoryFromDatabaseWhere,
 		boardStatesFromChangeHistory
 	};
 }
