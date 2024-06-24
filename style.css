@@ -1,9 +1,25 @@
 @font-face {
+  font-family: "Outfit";
+  src: url("/fonts/Outfit-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bungee Shade";
+  src: url("/fonts/BungeeShade-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Noto Emoji";
   src: url("/fonts/NotoEmoji-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
+
+
 
 * {
 	box-sizing: border-box;
