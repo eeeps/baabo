@@ -22,7 +22,7 @@ exports.render = function( data ) {
 	return `
 <div class="mainContain">
 	<header>
-		<h1><a href="/">
+		<h1><a href="/${ game.name }">
 			
 			<ruby>B
 			<rp>(</rp><rt>Bellingham</rt><rp>)</rp>
