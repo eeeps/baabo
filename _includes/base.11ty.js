@@ -11,6 +11,10 @@ return `
 	<title>${ data.title }</title>
 	<meta name="viewport" content="width=765px">
 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+
 	<link rel="stylesheet" href="/style.css">
 
 	<!-- favicon idea from https://endtimes.dev/emojis-as-favicons/ -->
