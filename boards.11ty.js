@@ -10,13 +10,13 @@ exports.data = {
 	}
 };
 
-exports.render = function(data) {
+exports.render = function( data ) {
 		
 	const boardState = data.boardStates.find( boardState =>
 		boardState.game.toLowerCase() === data.board.game.toLowerCase() &&
 		boardState.player.toLowerCase() === data.board.player.toLowerCase()		
 	).boardState;
-	
+		
 	const game = data.games.find( g => g.name.toLowerCase() === data.board.game.toLowerCase() );
 	
 	return `
@@ -130,7 +130,10 @@ updateHtmlFromBoardState(
 );
 
 // go out to the database and update again, asynchronously
-syncLocalStorageChangeHistoryAndDatabase().then( ( result ) => {
+syncLocalStorageChangeHistoryAndDatabaseWhere( {
+	game: gameName,
+	board: playerName
+} ).then( ( result ) => {
 	if ( result.postedToLocalStorage === true ) {
 		updateHtmlFromBoardState(
 			table,

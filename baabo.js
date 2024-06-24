@@ -12,6 +12,41 @@ const fetchEntireChangeHistoryFromDatabase = async function() {
 	} );
 }
 
+const fetchChangeHistoryFromDatabaseWhere = async function( {
+	// all optional; empty obj gives entire history
+	games, // array of strings e.g. [ '2022', '2023' ]
+	game, // string e.g. '2022'
+	board, // string e.g. 'britt'
+	sinceTimestamp // Date object
+} ) {
+
+	const endpoint = new URL( 'https://baabo-db.herokuapp.com/changes' );
+	
+	if ( games ) {
+		endpoint.searchParams.append( 'games', JSON.stringify( games ) );
+	}
+	if ( game ) {
+		endpoint.searchParams.append( 'game', game );
+	}
+	if ( board ) {
+		endpoint.searchParams.append( 'board', board );
+	}
+	if ( sinceTimestamp ) {
+		endpoint.searchParams.append( 'since', sinceTimestamp.toISOString() );
+	}
+	
+	const response = await fetch( endpoint );
+	const json = await response.json();
+		
+	// cast date (which comes down as an ISO8601 string) to an... integer
+	// I love to work with dates in Javascript!
+	return json.map( change => {
+		change.timestamp = Date.parse( change.timestamp );
+		return change;
+	} );
+	
+}
+
 const fetchEntireChangeHistoryFromLocalStorage = function() {
 	const fromLocalStorage = localStorage.getItem( 'changeHistory' );
 	if ( !fromLocalStorage ) {
@@ -30,6 +65,36 @@ const fetchEntireChangeHistoryFromLocalStorage = function() {
 				}
 			} ); 
 			// end transition code
+	}
+}
+
+const fetchChangeHistoryFromLocalStorageWhere = function( {
+	games,
+	game,
+	board,
+	sinceTimestamp
+} ) {
+
+	const fromLocalStorage = localStorage.getItem( 'changeHistory' );
+
+	if ( !fromLocalStorage ) {
+		return [];
+	} else {
+
+		const json = JSON.parse( fromLocalStorage );
+		// console.log(json);
+		
+		return json.filter( c => {
+ 
+			return (
+				( games ? games.includes( c.game ) : true ) &&
+				( game ? c.game === game : true ) &&
+				( board ? c.board === board : true ) &&
+				( sinceTimestamp ? Date.parse( c.timestamp ) >= Date.parse( sinceTimestamp ) : true )
+			);
+
+		} );
+
 	}
 }
 
@@ -69,6 +134,44 @@ const syncLocalStorageChangeHistoryAndDatabase = async function() {
 	}
 	
 }
+
+// where looks like
+// { games, game, board, sinceTimestamp }
+// see fetchChangeHistoryFromDatabaseWhere and  fetchChangeHistoryFromLocalStorageWhere
+const syncLocalStorageChangeHistoryAndDatabaseWhere = async function( where ) {
+
+	const fromDatabase = await fetchChangeHistoryFromDatabaseWhere( where );
+	const fromLocalStorage = fetchChangeHistoryFromLocalStorageWhere( where );
+	
+	const databaseIDs = new Set( fromDatabase.map( change => change.id ) );
+	const localStorageIDs = new Set( fromLocalStorage.map( change => change.id ) );
+	
+	const idsInDatabaseButNotInLocalStorage = setDifference( databaseIDs, localStorageIDs );
+	const idsInLocalStorageButNotInDatabase = setDifference( localStorageIDs, databaseIDs );
+	
+	if ( idsInDatabaseButNotInLocalStorage.size > 0 ) {
+		const everythingFromLocalStorage = fetchChangeHistoryFromLocalStorageWhere( {} );
+		idsInDatabaseButNotInLocalStorage.forEach( id => {
+			const change = fromDatabase.find( c => c.id === id );
+			everythingFromLocalStorage.push( change );
+		} );
+		localStorage.setItem( 'changeHistory', JSON.stringify( everythingFromLocalStorage ) )
+	}
+
+	if ( idsInLocalStorageButNotInDatabase.size > 0 ) {
+		idsInLocalStorageButNotInDatabase.forEach( id => {
+			const change = fromLocalStorage.find( c => c.id === id );
+			postChangeToDatabase( change );
+		} );
+	}
+	
+	return {
+		postedToDatabase: idsInLocalStorageButNotInDatabase.size > 0,
+		postedToLocalStorage: idsInDatabaseButNotInLocalStorage.size > 0
+	}
+	
+}
+
 
 const blankBoard = function() {
 	return [ false, false, false, false, false,

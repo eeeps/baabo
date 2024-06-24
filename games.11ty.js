@@ -11,7 +11,7 @@ exports.data = {
 };
 
 
-exports.render = function(data) {
+exports.render = function( data ) {
 
 	const boards = data.boards
 		.filter( x => x.game === data.game.name );
@@ -19,8 +19,6 @@ exports.render = function(data) {
 		.filter( x => x.game === data.game.name );
 	const prizes = data.prizes
 		.filter( x => x.game === data.game.name );
-
-// console.log( boardStates );
 
 	return `<div class="mainContain" data-game="${ data.game.name }">
 	<header>
@@ -172,7 +170,7 @@ function updateTables( tables ) {
 
 updateTables( tables );
 // go out to the database and update again, asynchronously
-syncLocalStorageChangeHistoryAndDatabase().then( ( result ) => {
+syncLocalStorageChangeHistoryAndDatabaseWhere( { game: '${ data.game.name.toLowerCase() }' } ).then( ( result ) => {
 	if ( result.postedToLocalStorage === true ) {
 		updateTables( tables );
 	}
