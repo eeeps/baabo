@@ -23,7 +23,7 @@ dt {
 
 <div class="mainContain">
 	<header>
-		<h1><a href="/">
+		<h1><a href="/summer2024/">
 			
 			<ruby>B
 			<rp>(</rp><rt>Bellingham</rt><rp>)</rp>
