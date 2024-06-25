@@ -13,7 +13,6 @@ exports.render = function(data) {
 	
 	<ul class="years">
 		<li><a href="summer2024">
-			<span style="display: block; font-size: 0.6em;">Summer</span>
 			<span style="display: block; margin-top: -0.25em;">2024</span>
 		</a></li>
 		<li><a href="winter2023-24">
