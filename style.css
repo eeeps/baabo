@@ -306,3 +306,6 @@ ins {
 .winner::after {
     content: "🏆";
 }
+.smallcaps {
+	font-size: 0.8625em;
+}
