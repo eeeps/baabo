@@ -376,7 +376,7 @@
 		"emoji": "📖",
 		"from": "Caity",
 		"available": true,
-		"howToWin": "Tree"
+		"howToWin": "Tree (<table class=tiny><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td><td class=checked><td><td><tr><td><td><td class=checked><td><td></table>)"
 	},
 	{
 		"game": "summer2024",
@@ -384,7 +384,7 @@
 		"emoji": "🥐",
 		"from": "Mary",
 		"available": true,
-		"howToWin": "Four corners"
+		"howToWin": "Four corners (<table class=tiny><tr><td class=checked><td><td><td><td class=checked><tr><td><td><td><td><td><tr><td><td><td><td><td><tr><td><td><td><td><td><tr><td class=checked><td><td><td><td class=checked></table>)"
 	},
 	{
 		"game": "summer2024",
@@ -392,7 +392,7 @@
 		"emoji": "🍽️",
 		"from": "Lou",
 		"available": true,
-		"howToWin": "L"
+		"howToWin": "L (<table class=tiny><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)"
 	},
 	{
 		"game": "summer2024",
@@ -408,7 +408,7 @@
 		"emoji": "🛍️",
 		"from": "Meg",
 		"available": true,
-		"howToWin": "M (peaks in one row - britt has diagram)"
+		"howToWin": "Little M that kind of looks like an H (<table class=tiny><tr><td><td><td><td><td><tr><td><td><td><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td><td class=checked><td><td class=checked><td></table>)"
 	},
 	{
 		"game": "summer2024",
@@ -424,7 +424,7 @@
 		"emoji": "🛒",
 		"from": "Jamie",
 		"available": true,
-		"howToWin": "Plus sign (anywhere 5 squares)"
+		"howToWin": "Make a five-square plus sign anywhere (e.g. <table class=tiny><tr><td><td class=checked><td><td><td><tr><td class=checked><td class=checked><td class=checked><td><td><tr><td><td class=checked><td><td><td><tr><td><td><td><td><td><tr><td><td><td><td><td></table> or <table class=tiny><tr><td><td><td><td><td><tr><td><td><td><td class=checked><td><tr><td><td><td class=checked><td class=checked><td class=checked><tr><td><td><td><td class=checked><td><tr><td><td><td><td><td></table>)"
 	},
 	{
 		"game": "summer2024",
