@@ -172,6 +172,10 @@ ul.players {
 	grid-template-rows: repeat(6, 1fr);
 }
 
+.mainContain[data-game="summer2024"] ul.players {
+	grid-template-rows: repeat(5, 1fr);
+}
+
 .players li {
 	list-style: none;
 }
