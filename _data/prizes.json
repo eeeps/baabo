@@ -353,5 +353,85 @@
 		"howToWin": "First bingo",
 		"wonBy": "Mary",
 		"claimDate": "2024-01-06"
+	},
+	{
+		"game": "summer2024",
+		"what": "A batch of homemade ice cream of your choice",
+		"emoji": "🍦",
+		"from": "Celeste",
+		"available": true,
+		"howToWin": "First non-free-space bingo"
+	},
+	{
+		"game": "summer2024",
+		"what": "Bells apparel of your choice",
+		"emoji": "⚾️",
+		"from": "Britt",
+		"available": true,
+		"howToWin": "First person to get two bingos"
+	},
+	{
+		"game": "summer2024",
+		"what": "Notable Native People book",
+		"emoji": "📖",
+		"from": "Caity",
+		"available": true,
+		"howToWin": "Tree"
+	},
+	{
+		"game": "summer2024",
+		"what": "To be determined baked good of your choosing",
+		"emoji": "🥐",
+		"from": "Mary",
+		"available": true,
+		"howToWin": "Four corners"
+	},
+	{
+		"game": "summer2024",
+		"what": "Take you out to dinner at Otherlands",
+		"emoji": "🍽️",
+		"from": "Lou",
+		"available": true,
+		"howToWin": "L"
+	},
+	{
+		"game": "summer2024",
+		"what": "Will serenade you with your song of choice",
+		"emoji": "🎤",
+		"from": "Jasper",
+		"available": true,
+		"howToWin": "First bingo"
+	},
+	{
+		"game": "summer2024",
+		"what": "Go shopping together at Penny Lane (pick something up to $10)",
+		"emoji": "🛍️",
+		"from": "Meg",
+		"available": true,
+		"howToWin": "M (peaks in one row - britt has diagram)"
+	},
+	{
+		"game": "summer2024",
+		"what": "I will send you mail art",
+		"emoji": "📬",
+		"from": "Eric",
+		"available": true,
+		"howToWin": "First two people to get postage stamps (<table class=tiny><tr><td><td><td><td class=checked><td class=checked><tr><td><td><td><td class=checked><td class=checked><tr><td><td><td><td><td><tr><td><td><td><td><td><tr><td><td><td><td><td></table>)"
+	},
+	{
+		"game": "summer2024",
+		"what": "Go shopping at Goodwill (pick something up to $20)",
+		"emoji": "🛒",
+		"from": "Jamie",
+		"available": true,
+		"howToWin": "Plus sign (anywhere 5 squares)"
+	},
+	{
+		"game": "summer2024",
+		"what": "Suprise prize",
+		"emoji": "❓",
+		"from": "Jason",
+		"available": true,
+		"howToWin": "Jason thinks you have the most asthetically pleasing board"
 	}
 ]

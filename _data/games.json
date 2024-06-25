@@ -1,5 +1,15 @@
 [
 	{
+		"name": "summer2024",
+		"startDate": "2024-06-24",
+		"active": true
+	},
+	{
+		"name": "test-2024",
+		"startDate": "2024-06-21",
+		"active": true
+	},
+	{
 		"name": "winter2023-24",
 		"startDate": "2023-12-10",
 		"active": false

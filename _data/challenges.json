@@ -1,58 +1,100 @@
 [
-	"See live music three times",
-	"Go to a new-to-you coffee shop and read",
-	"Organize a brewery hang",
-	"Hike in the snow",
-	"Ride a bike outside",
-	"Go to Blue Canyon ghost town",
-	"Buy something from a local artist and tell the group about the artist",
-	"Make a drunken or high story video of either a friendship or an embarrassing story",
-	"Learn five new photography skills and showcase them to the group",
-	"Take a picture of a black squirrel",
-	"Take a friend out on a date and you MUST dress up",
-	"Naked hot tub",
-	"Be in bed by 7:30pm with tea and a book",
-	"Find fresh pow pow and make a snow-cone with maple syrup",
-	"Snow-shoe on Mt. Baker",
-	"Take a walk in the snow at night",
-	"Go camping",
-	"Bake cookies",
-	"Drink eggnog (or a substitute)",
-	"Plant a seed of your choice",
-	"Host or put on a themed photoshoot for yourself or a small group",
-	"Host or attend a craft night",
-	"Ride on a ferry",
-	"Go to Volli",
-	"Attend a local high school or community theater event",
-	"Attend a Western sporting event",
-	"Walk or use your feet for 50 cumulative miles",
-	"See a movie at the Pickford",
-	"See a show at the Mt. Baker Theaer",
-	"Visit a casino and play a game of your choice",
-	"Take somebody else’s dog for a walk",
-	"Go to the Whatcom Museum",
-	"Hold a Master Chef inspired cooking competition (with at least one BAABO member and have one BAABO member judge)",
-	"Go to Terramar",
-	"Make a snowman out of any materials you like",
-	"Cook and deliver a meal to a friend",
-	"Help a friend with a friend",
-	"Visit five county parks you haven’t been to before",
-	"Go three consecutive days without travelling in a car",
-	"Turn off your phone for 24 hours",
-	"Learn a song on the insturment of your choice and play it for someone",
-	"Bike 100 miles outside cumulatively",
-	"Listen to or read the book “The Hidden Messages in Water”",
-	"Dedicate some time to learn about native people in our PNW area",
-	"Go on a personal retreat, solo, at least one night away",
-	"Ferment something and share it with other BAABO players",
-	"Be vulnerable with someone",
-	"Organize and put together a silly event for friends",
-	"Visit a new-to-you church, worship, or spiritual gathering event",
-	"Research a bird of your choice, create a poster-board presentation, and present to the group (or anyone who will listen)",
-	"Roller-skate at the Lynden Skateway",
-	"Host a beach bonfire at Birch Bay",
-	"See live music at Honey Moon Mead",
-	"Go to the Bow Sanctuary and feed the koi",
-	"Go line dancing",
-	"Go to a trivia night with friends"
+	{
+		"player": "Celeste",
+		"challenges": [
+			"Hike Chain Lakes Loop",
+			"Play golf (traditional? frisbee? mini? card game? top golf? you choose!)",
+			"See a drive-in movie at Blue Fox Drive-In Theatre",
+			"Trash pick up walk with a friend",
+			"Attend three outdoor music events",
+			"Visit a u-pick farm (Britt and Eric’s plum tree counts)",
+			"Find a cause you want to donate to, volunteer for, become a member of, etc."
+		]
+	},
+	{
+		"player": "Eric",
+		"challenges": [
+			"Have fun in Canada",
+			"Sign a register on a mountain",
+			"Get a request played on the radio",
+			"Do a cannonball (must shout, “CANNONBALL!”)",
+			"Beat Britt at toss-your-balls (AKA ladder ball)",
+			"Make tea from a native foraged plant",
+			"Attend (or host!) a block party"
+		]
+	},
+	{
+		"player": "Mary",
+		"challenges": [
+			"Learn to salsa dance at Cof&amp;",
+			"Do something in North County that you’ve never done before",
+			"Organize an after work hangout",
+			"Make or eat an ethnic dish that you’ve never had",
+			"Use and develop a disposable camera"
+		]
+	},
+	{
+		"player": "Britt",
+		"challenges": [
+			"Visit Mindport",
+			"Help or participate three times in BAABO activities not on your board",
+			"Eat tacos with at least two other BAABO players",
+			"Swim in the Salish Sea",
+			"Go to an Elizabeth Park concert",
+			"Print one photo taken this summer (Polaroid OK)"
+		]
+	},
+	{
+		"player": "Jason",
+		"challenges": [
+			"Go swimming in a lake",
+			"Go visit a waterfall",
+			"Fly a kite"
+		]
+	},
+	{
+		"player": "Jamie",
+		"challenges": [
+			"Commandeer (or just go) on a water vehicle",
+			"Pay it foward to a stranger",
+			"Cold plunge in two different bodies of water"
+		]
+	},
+	{
+		"player": "Lou",
+		"challenges": [
+			"Take a friend out to coffee",
+			"Make a picnic happen",
+			"Go to ecstatic dance Presence Studio",
+			"Go visit Q Center"
+		]
+	},
+	{
+		"player": "Jasper",
+		"challenges": [
+			"Make a meal entirely from items from the farmer’s market",
+			"Swim with bioluminescence",
+			"Identify a pretty flower on a hike and text the group with some information about it",
+			"Moon an epic sunset (or sunrise)",
+			"Go dancing"
+		]
+	},
+	{
+		"player": "Meg",
+		"challenges": [
+			"Attend one of the canoe landing events",
+			"Watch an outdoor movie",
+			"Get a tattoo (permanent only)",
+			"Host or attend a game night",
+			"Do a themed photoshoot with friends"
+		]
+	},
+	{
+		"player": "Caity",
+		"challenges": [
+			"Watch a Seattle Reign game at Menace Brewing",
+			"Learn a new card game",
+			"Play a game of tennis"
+		]
+	}
 ]

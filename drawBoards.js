@@ -2,7 +2,10 @@
 
 const fs = require('fs');
 
-const challenges = JSON.parse( fs.readFileSync('_data/challenges.json') );
+const gameName = 'summer2024';
+
+const playersChallenges = JSON.parse( fs.readFileSync('_data/challenges.json') );
+const flatChallenges = playersChallenges.reduce( ( acc, cv ) => acc.concat( cv.challenges ), [] );
 const players = JSON.parse( fs.readFileSync('_data/players.json') );
 
 const drawABoard = ( challenges ) => {
@@ -36,13 +39,14 @@ const drawABoard = ( challenges ) => {
 //
 const boards = players.map( playerName => {
 	return {
+		"game": gameName,
 		"player": playerName,
-		"challenges": drawABoard( challenges )
+		"challenges": drawABoard( flatChallenges )
 	}
 } );
 
 try {
-  fs.writeFileSync('_data/boards-Winter_2023-24.json', JSON.stringify( boards, null, 2 ), 'utf8');
+  fs.writeFileSync(`_data/boards-${ gameName }.json`, JSON.stringify( boards, null, 2 ), 'utf8');
   console.log('Data successfully saved to disk');
 } catch (error) {
   console.log('An error has occurred ', error);
