@@ -162,7 +162,7 @@ const postChangeToDatabase = function( change ) {
 }
 
 const postChangeToLocalStorage = function( change ) {
-	const changeHistory = fetchEntireChangeHistoryFromLocalStorage();
+	const changeHistory = fetchChangeHistoryFromLocalStorageWhere( {} );
 	changeHistory.push( change );
 	localStorage.setItem( 'changeHistory', JSON.stringify( changeHistory ) );
 }
@@ -175,10 +175,11 @@ const postChange = function( change ) {
 // boardsFromLocalStorage ::
 // ( [ { game: String, player: String} ] )
 // -> [ { game: String, player: String, boardState: [ Boolean{25} ] } ]
+// TODO this can prpbably get a lot smarter
 const boardsFromLocalStorage = function( gameAndPlayerNames ) {
 	return boardStatesFromChangeHistory(
 		gameAndPlayerNames,
-		fetchEntireChangeHistoryFromLocalStorage()
+		fetchChangeHistoryFromLocalStorageWhere( {} )
 	);
 }
 
