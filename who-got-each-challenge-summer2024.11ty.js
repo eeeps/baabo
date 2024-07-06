@@ -59,17 +59,21 @@ dt {
 <dd>Eric</dd>
 <dd>Mary</dd>
 <dd>Jason</dd>
+<dd>Cassi</dd>
+<dd>Christina</dd>
 </div>
 
 
 <div>
-<dt>Do a cannonball (must shout, “CANNONBALL!”)</dt>
+<dt>Do a cannonball (must shout, <span class=smallcaps>“CANNONBALL!”</span>)</dt>
 <dd>Celeste</dd>
 <dd>Britt</dd>
 <dd>Eric</dd>
 <dd>Jasper</dd>
 <dd>Lou</dd>
 <dd>Jason</dd>
+<dd>Jeff</dd>
+<dd>Cassi</dd>
 </div>
 
 
@@ -80,6 +84,8 @@ dt {
 <dd>Mary</dd>
 <dd>Lou</dd>
 <dd>Jason</dd>
+<dd>Jeff</dd>
+<dd>Christina</dd>
 </div>
 
 
@@ -90,6 +96,7 @@ dt {
 <dd>Jasper</dd>
 <dd>Lou</dd>
 <dd>Meg</dd>
+<dd>Jeff</dd>
 </div>
 
 
@@ -101,6 +108,9 @@ dt {
 <dd>Jason</dd>
 <dd>Jamie</dd>
 <dd>Caity</dd>
+<dd>Jeff</dd>
+<dd>Cassi</dd>
+<dd>Christina</dd>
 </div>
 
 
@@ -113,6 +123,8 @@ dt {
 <dd>Jason</dd>
 <dd>Caity</dd>
 <dd>Meg</dd>
+<dd>Jeff</dd>
+<dd>Christina</dd>
 </div>
 
 
@@ -123,6 +135,8 @@ dt {
 <dd>Jasper</dd>
 <dd>Jason</dd>
 <dd>Caity</dd>
+<dd>Jeff</dd>
+<dd>Cassi</dd>
 </div>
 
 
@@ -140,6 +154,9 @@ dt {
 <dd>Celeste</dd>
 <dd>Lou</dd>
 <dd>Meg</dd>
+<dd>Jeff</dd>
+<dd>Cassi</dd>
+<dd>Christina</dd>
 </div>
 
 
@@ -153,6 +170,8 @@ dt {
 <dd>Jason</dd>
 <dd>Caity</dd>
 <dd>Meg</dd>
+<dd>Jeff</dd>
+<dd>Christina</dd>
 </div>
 
 
@@ -165,6 +184,7 @@ dt {
 <dd>Jason</dd>
 <dd>Caity</dd>
 <dd>Meg</dd>
+<dd>Cassi</dd>
 </div>
 
 
@@ -178,6 +198,7 @@ dt {
 <dd>Jamie</dd>
 <dd>Caity</dd>
 <dd>Meg</dd>
+<dd>Christina</dd>
 </div>
 
 
@@ -187,6 +208,9 @@ dt {
 <dd>Mary</dd>
 <dd>Jason</dd>
 <dd>Caity</dd>
+<dd>Jeff</dd>
+<dd>Cassi</dd>
+<dd>Christina</dd>
 </div>
 
 
@@ -200,6 +224,8 @@ dt {
 <dd>Jason</dd>
 <dd>Caity</dd>
 <dd>Meg</dd>
+<dd>Cassi</dd>
+<dd>Christina</dd>
 </div>
 
 
@@ -210,6 +236,8 @@ dt {
 <dd>Jasper</dd>
 <dd>Lou</dd>
 <dd>Jamie</dd>
+<dd>Cassi</dd>
+<dd>Christina</dd>
 </div>
 
 
@@ -233,6 +261,7 @@ dt {
 <dd>Jasper</dd>
 <dd>Lou</dd>
 <dd>Meg</dd>
+<dd>Cassi</dd>
 </div>
 
 
@@ -243,6 +272,8 @@ dt {
 <dd>Eric</dd>
 <dd>Jason</dd>
 <dd>Jamie</dd>
+<dd>Jeff</dd>
+<dd>Cassi</dd>
 </div>
 
 
@@ -251,6 +282,8 @@ dt {
 <dd>Celeste</dd>
 <dd>Lou</dd>
 <dd>Caity</dd>
+<dd>Jeff</dd>
+<dd>Christina</dd>
 </div>
 
 
@@ -260,6 +293,7 @@ dt {
 <dd>Jasper</dd>
 <dd>Lou</dd>
 <dd>Caity</dd>
+<dd>Cassi</dd>
 </div>
 
 
@@ -272,6 +306,8 @@ dt {
 <dd>Jason</dd>
 <dd>Caity</dd>
 <dd>Meg</dd>
+<dd>Cassi</dd>
+<dd>Christina</dd>
 </div>
 
 
@@ -283,6 +319,8 @@ dt {
 <dd>Lou</dd>
 <dd>Jason</dd>
 <dd>Meg</dd>
+<dd>Jeff</dd>
+<dd>Christina</dd>
 </div>
 
 
@@ -294,6 +332,7 @@ dt {
 <dd>Jasper</dd>
 <dd>Lou</dd>
 <dd>Jamie</dd>
+<dd>Jeff</dd>
 </div>
 
 
@@ -304,6 +343,8 @@ dt {
 <dd>Jasper</dd>
 <dd>Jamie</dd>
 <dd>Caity</dd>
+<dd>Cassi</dd>
+<dd>Christina</dd>
 </div>
 
 
@@ -313,6 +354,8 @@ dt {
 <dd>Jasper</dd>
 <dd>Jamie</dd>
 <dd>Meg</dd>
+<dd>Jeff</dd>
+<dd>Christina</dd>
 </div>
 
 
@@ -326,6 +369,7 @@ dt {
 <dd>Jamie</dd>
 <dd>Caity</dd>
 <dd>Meg</dd>
+<dd>Jeff</dd>
 </div>
 
 
@@ -348,6 +392,7 @@ dt {
 <dd>Jamie</dd>
 <dd>Caity</dd>
 <dd>Meg</dd>
+<dd>Cassi</dd>
 </div>
 
 
@@ -358,6 +403,8 @@ dt {
 <dd>Lou</dd>
 <dd>Jamie</dd>
 <dd>Caity</dd>
+<dd>Jeff</dd>
+<dd>Christina</dd>
 </div>
 
 
@@ -367,6 +414,7 @@ dt {
 <dd>Mary</dd>
 <dd>Jason</dd>
 <dd>Meg</dd>
+<dd>Cassi</dd>
 </div>
 
 
@@ -377,6 +425,8 @@ dt {
 <dd>Mary</dd>
 <dd>Caity</dd>
 <dd>Meg</dd>
+<dd>Jeff</dd>
+<dd>Christina</dd>
 </div>
 
 
@@ -386,6 +436,9 @@ dt {
 <dd>Mary</dd>
 <dd>Jasper</dd>
 <dd>Jamie</dd>
+<dd>Jeff</dd>
+<dd>Cassi</dd>
+<dd>Christina</dd>
 </div>
 
 
@@ -398,6 +451,7 @@ dt {
 <dd>Lou</dd>
 <dd>Jason</dd>
 <dd>Jamie</dd>
+<dd>Cassi</dd>
 </div>
 
 
@@ -406,6 +460,8 @@ dt {
 <dd>Britt</dd>
 <dd>Jasper</dd>
 <dd>Jason</dd>
+<dd>Jeff</dd>
+<dd>Cassi</dd>
 </div>
 
 
@@ -415,6 +471,7 @@ dt {
 <dd>Eric</dd>
 <dd>Jamie</dd>
 <dd>Meg</dd>
+<dd>Jeff</dd>
 </div>
 
 
@@ -436,6 +493,7 @@ dt {
 <dd>Jasper</dd>
 <dd>Jason</dd>
 <dd>Caity</dd>
+<dd>Cassi</dd>
 </div>
 
 
@@ -446,6 +504,8 @@ dt {
 <dd>Lou</dd>
 <dd>Jason</dd>
 <dd>Jamie</dd>
+<dd>Cassi</dd>
+<dd>Christina</dd>
 </div>
 
 
@@ -474,6 +534,7 @@ dt {
 <dd>Jamie</dd>
 <dd>Caity</dd>
 <dd>Meg</dd>
+<dd>Christina</dd>
 </div>
 
 
@@ -483,6 +544,8 @@ dt {
 <dd>Jasper</dd>
 <dd>Lou</dd>
 <dd>Jamie</dd>
+<dd>Cassi</dd>
+<dd>Christina</dd>
 </div>
 
 
@@ -490,6 +553,7 @@ dt {
 <dt>Play golf (traditional? frisbee? mini? card game? top golf? you choose!)</dt>
 <dd>Eric</dd>
 <dd>Jamie</dd>
+<dd>Jeff</dd>
 </div>
 
 
@@ -498,6 +562,8 @@ dt {
 <dd>Mary</dd>
 <dd>Jasper</dd>
 <dd>Meg</dd>
+<dd>Cassi</dd>
+<dd>Christina</dd>
 </div>
 
 
@@ -507,6 +573,7 @@ dt {
 <dd>Lou</dd>
 <dd>Jason</dd>
 <dd>Caity</dd>
+<dd>Christina</dd>
 </div>
 
 
@@ -515,6 +582,8 @@ dt {
 <dd>Mary</dd>
 <dd>Jamie</dd>
 <dd>Meg</dd>
+<dd>Jeff</dd>
+<dd>Cassi</dd>
 </div>
 
 
@@ -524,17 +593,22 @@ dt {
 <dd>Jamie</dd>
 <dd>Caity</dd>
 <dd>Meg</dd>
+<dd>Jeff</dd>
+<dd>Christina</dd>
 </div>
 
 
 <div>
 <dt>Beat Britt at toss-your-balls (AKA ladder ball)</dt>
 <dd>Meg</dd>
+<dd>Jeff</dd>
 </div>
+
 
 </dl>
 
 
-</div>
+
+</div><!-- /.mainContain -->
 `;
 }
