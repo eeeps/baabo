@@ -1523,7 +1523,7 @@
       "Trash pick up walk with a friend",
       "Beat Britt at toss-your-balls (AKA ladder ball)",
       "Attend one of the canoe landing events",
-      "Do a cannonball (must shout, “CANNONBALL!”)",
+      "Do a cannonball (must shout, <span class=smallcaps>“CANNONBALL!”</span>)",
       "Make a picnic happen",
       "Make tea from a native foraged plant",
       "Sign a register on a mountain",
@@ -1536,7 +1536,7 @@
     "challenges": [
       "Eat tacos with at least two other BAABO players",
       "Print one photo taken this summer (Polaroid OK)",
-      "Do a cannonball (must shout, “CANNONBALL!”)",
+      "Do a cannonball (must shout, <span class=smallcaps>“CANNONBALL!”</span>)",
       "Swim in the Salish Sea",
       "Commandeer (or just go) on a water vehicle",
       "Make a meal entirely from items from the farmer’s market",
@@ -1588,6 +1588,36 @@
       "Make a meal entirely from items from the farmer’s market",
       "Get a request played on the radio",
       "Moon an epic sunset (or sunrise)"
+	]
+  },
+  {
+    "game": "summer2024",
+    "player": "Aleta",
+    "challenges": [
+      "Help or participate three times in BAABO activities not on your board",
+      "Eat tacos with at least two other BAABO players",
+      "Find a cause you want to donate to, volunteer for, become a member of, etc.",
+      "Attend three outdoor music events",
+      "Commandeer (or just go) on a water vehicle",
+      "Hike Chain Lakes Loop",
+      "Attend one of the canoe landing events",
+      "Attend (or host!) a block party",
+      "Organize an after work hangout",
+      "Print one photo taken this summer (Polaroid OK)",
+      "Swim with bioluminescence",
+      "Sign a register on a mountain",
+      "Make a meal entirely from items from the farmer’s market",
+      "See a drive-in movie at Blue Fox Drive-In Theatre",
+      "Moon an epic sunset (or sunrise)",
+      "Go dancing",
+      "Go swimming in a lake",
+      "Get a tattoo (permanent only)",
+      "Make or eat an ethnic dish that you’ve never had",
+      "Get a request played on the radio",
+      "Cold plunge in two different bodies of water",
+      "Watch an outdoor movie",
+      "Make a picnic happen",
+      "Watch a Seattle Reign game at Menace Brewing"
 	]
   }
 ]
