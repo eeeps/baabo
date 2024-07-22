@@ -24,24 +24,26 @@ exports.render = function( data ) {
 	<header>
 		<h1><a href="/${ game.name }">
 			
-			<ruby>B
-			<rp>(</rp><rt>Bellingham</rt><rp>)</rp>
+			<!-- need rb to work around https://bugs.webkit.org/show_bug.cgi?id=275828 -->
+			<!-- can't have a space between /rb and rp on safari -->
+			<ruby>
+			<rb>B</rb><rp>(</rp><rt>Bellingham</rt><rp>)</rp>
 			</ruby>
 				
-			<ruby>A
-			<rp>(</rp><rt>Adults</rt><rp>)</rp>
+			<ruby>
+			<rb>A</rb><rp>(</rp><rt>Adults</rt><rp>)</rp>
 			</ruby>
 				
-			<ruby>A
-			<rp>(</rp><rt>Against</rt><rp>)</rp>
+			<ruby>
+			<rb>A</rb><rp>(</rp><rt>Against</rt><rp>)</rp>
 			</ruby>
 			
-			<ruby>B
-			<rp>(</rp><rt>B-</rt><rp>)</rp>
+			<ruby>
+			<rb>B</rb><rp>(</rp><rt>B-</rt><rp>)</rp>
 			</ruby>
 
-			<ruby>o
-			<rp>(</rp><rt>-oredom</rt><rp>)</rp>
+			<ruby>
+			<rb>o</rb><rp>(</rp><rt>-oredom</rt><rp>)</rp>
 			</ruby>
 
 		</a></h1>
