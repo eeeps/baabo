@@ -399,8 +399,10 @@
 		"what": "Will serenade you with your song of choice",
 		"emoji": "🎤",
 		"from": "Jasper",
-		"available": true,
+		"available": false,
 		"howToWin": "First bingo"
+		"wonBy": "Jamie",
+		"claimDate": "2024-07-23"
 	},
 	{
 		"game": "summer2024",
