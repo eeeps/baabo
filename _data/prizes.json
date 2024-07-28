@@ -425,8 +425,10 @@
 		"what": "Go shopping at Goodwill (pick something up to $20)",
 		"emoji": "🛒",
 		"from": "Jamie",
-		"available": true,
-		"howToWin": "Make a five-square plus sign anywhere (e.g. <table class=tiny><tr><td><td class=checked><td><td><td><tr><td class=checked><td class=checked><td class=checked><td><td><tr><td><td class=checked><td><td><td><tr><td><td><td><td><td><tr><td><td><td><td><td></table> or <table class=tiny><tr><td><td><td><td><td><tr><td><td><td><td class=checked><td><tr><td><td><td class=checked><td class=checked><td class=checked><tr><td><td><td><td class=checked><td><tr><td><td><td><td><td></table>)"
+		"available": false,
+		"howToWin": "Make a five-square plus sign anywhere (e.g. <table class=tiny><tr><td><td class=checked><td><td><td><tr><td class=checked><td class=checked><td class=checked><td><td><tr><td><td class=checked><td><td><td><tr><td><td><td><td><td><tr><td><td><td><td><td></table> or <table class=tiny><tr><td><td><td><td><td><tr><td><td><td><td class=checked><td><tr><td><td><td class=checked><td class=checked><td class=checked><tr><td><td><td><td class=checked><td><tr><td><td><td><td><td></table>)",
+		"wonBy": "Celeste",
+		"claimDate": "2024-07-26"
 	},
 	{
 		"game": "summer2024",
