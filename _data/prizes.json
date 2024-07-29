@@ -367,8 +367,10 @@
 		"what": "Bells apparel of your choice",
 		"emoji": "⚾️",
 		"from": "Britt",
-		"available": true,
-		"howToWin": "First person to get two bingos"
+		"available": false,
+		"howToWin": "First person to get two bingos",
+		"wonBy": "Celeste",
+		"claimDate": "2024-07-28"
 	},
 	{
 		"game": "summer2024",
