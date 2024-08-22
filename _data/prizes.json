@@ -359,9 +359,9 @@
 		"what": "A batch of homemade ice cream of your choice",
 		"emoji": "🍦",
 		"from": "Celeste",
-		"available": false,
-		"howToWin": "First non-free-space bingo",
-		"wonBy": "Britt",
+		"available": true,
+		"howToWin": "First <em>three</em> people to get a non-free-space bingo",
+		"wonBy": "Britt, Mary",
 		"claimDate": "2024-08-18"
 	},
 	{
@@ -395,8 +395,10 @@
 		"what": "Take you out to dinner at Otherlands",
 		"emoji": "🍽️",
 		"from": "Lou",
-		"available": true,
-		"howToWin": "L (<table class=tiny><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)"
+		"available": false,
+		"howToWin": "L (<table class=tiny><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)",
+		"wonBy": "Celeste",
+		"claimDate": "2024-08-22"
 	},
 	{
 		"game": "summer2024",
