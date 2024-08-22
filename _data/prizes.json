@@ -359,8 +359,10 @@
 		"what": "A batch of homemade ice cream of your choice",
 		"emoji": "🍦",
 		"from": "Celeste",
-		"available": true,
-		"howToWin": "First non-free-space bingo"
+		"available": false,
+		"howToWin": "First non-free-space bingo",
+		"wonBy": "Britt",
+		"claimDate": "2024-08-18"
 	},
 	{
 		"game": "summer2024",
