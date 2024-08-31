@@ -441,8 +441,10 @@
 		"what": "Suprise prize",
 		"emoji": "❓",
 		"from": "Jason",
-		"available": true,
-		"howToWin": "Jason thinks you have the most asthetically pleasing board"
+		"available": false,
+		"howToWin": "Jason thinks you have the most asthetically pleasing board",
+		"wonBy": "Celeste",
+		"claimDate": "2024-08-31"
 	},
 	{
 		"game": "summer2024",
