@@ -1,4 +1,4 @@
-exports.data = {
+export const data = {
 	layout: "base.11ty.js",
 	pagination: {
 		data: "boards",
@@ -10,7 +10,7 @@ exports.data = {
 	}
 };
 
-exports.render = function( data ) {
+export function render(data) {
 		
 	const boardState = data.boardStates.find( boardState =>
 		boardState.game.toLowerCase() === data.board.game.toLowerCase() &&

@@ -1,4 +1,4 @@
-exports.data = {
+export const data = {
 	pagination: {
 		data: "games",
 		size: 1,
@@ -11,7 +11,7 @@ exports.data = {
 };
 
 
-exports.render = function( data ) {
+export function render(data) {
 
 	const boards = data.boards
 		.filter( x => x.game === data.game.name );

@@ -1,8 +1,8 @@
-exports.data = {
+export const data = {
 	layout: "base.11ty.js"
 };
 
-exports.render = function(data) {
+export function render(data) {
 
 // console.log( data.boardStates );
 

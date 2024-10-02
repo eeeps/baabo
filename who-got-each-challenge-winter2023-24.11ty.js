@@ -1,10 +1,9 @@
-exports.data = {
+export const data = {
 	layout: "base.11ty.js",
 	permalink: `winter2023-24/who-got-each-challenge/`
-
 };
 
-exports.render = function(data) {
+export function render(data) {
 
 	return `
 <style>

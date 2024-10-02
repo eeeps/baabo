@@ -1,4 +1,4 @@
-module.exports = function( eleventyConfig ) {
+export default function ( eleventyConfig ) {
 	eleventyConfig.addPassthroughCopy( 'style.css' );
 	eleventyConfig.addPassthroughCopy( '_redirects' );
 	eleventyConfig.addPassthroughCopy( 'fonts' );

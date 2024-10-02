@@ -1,8 +1,8 @@
-exports.data = {
+export const data = {
 	title: "BAABO"
 };
 
-exports.render = function(data) {
+export function render(data) {
 return `
 <!doctype html>
 <html lang="en">
