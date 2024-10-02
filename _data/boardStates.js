@@ -25,13 +25,15 @@ Now I need it to look like this...
 
 */
 
-const baaboJs = require( '../baabo.js' );
-const boards = require( './boards.json' );
+import fetchChangeHistoryFromDatabaseWhere from '../lib/fetchChangeHistoryFromDatabaseWhere.js';
+import boardStatesFromChangeHistory from '../lib/boardStatesFromChangeHistory.js';
 
-module.exports = async function() {
+import boards from './boards.json' with { type: 'json' };
+
+export default async function() {
 
 	// fetch entire change history
-	const changeHistory = await baaboJs.fetchChangeHistoryFromDatabaseWhere( {} );
+	const changeHistory = await fetchChangeHistoryFromDatabaseWhere( {} );
 	
 	let gameAndPlayerNames = boards.reduce( ( acc, cv ) => {
 
@@ -45,6 +47,6 @@ module.exports = async function() {
 		return acc;
 	}, [] );
 	
-	return baaboJs.boardStatesFromChangeHistory( gameAndPlayerNames, changeHistory );
+	return boardStatesFromChangeHistory( gameAndPlayerNames, changeHistory );
 	
 };

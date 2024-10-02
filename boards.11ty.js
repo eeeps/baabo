@@ -83,7 +83,8 @@ exports.render = function( data ) {
 	</table>
 </div>
 
-<script>
+<script type="module">
+
 const table = document.querySelector( 'table' );
 const tds = [ ...table.querySelectorAll( 'td' ) ];
 
@@ -103,6 +104,13 @@ tds.forEach( td => {
 } );
 
 ${ ( game.active ? `
+
+import uuid from '/lib/uuid.js';
+import postChange from '/lib/postChange.js';
+import updateHtmlFromBoardState from '/lib/updateHtmlFromBoardState.js';
+import boardsFromLocalStorage from '/lib/boardsFromLocalStorage.js';
+import syncLocalStorageChangeHistoryAndDatabaseWhere from '/lib/syncLocalStorageChangeHistoryAndDatabaseWhere.js';
+
 tds.forEach( ( td, index ) => {
 	if ( index === 12 ) { return; } // free space
 	td.classList.add('clickable');

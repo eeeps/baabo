@@ -151,7 +151,13 @@ exports.render = function( data ) {
 </div>
 
 ${ data.game.active ? `
-<script>
+<script type="module"">
+
+import boardsFromLocalStorage from '/lib/boardsFromLocalStorage.js';
+import updateHtmlFromBoardState from '/lib/updateHtmlFromBoardState.js';
+import syncLocalStorageChangeHistoryAndDatabaseWhere from '/lib/syncLocalStorageChangeHistoryAndDatabaseWhere.js';
+
+
 const tables = document.querySelectorAll( 'table:not(.tiny)' );
 
 function updateTables( tables ) {
