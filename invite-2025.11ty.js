@@ -131,7 +131,9 @@ address {
 	aspect-ratio: 1/1;
 	position: relative;
 	top: -1rem;
+	left: 0;
 	z-index: -2;
+	overflow: hidden;
 	background-image: url(/assets/burst2.svg);
 	background-repeat: no-repeat;
 	background-position: center center;
