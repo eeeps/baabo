@@ -16,7 +16,6 @@ export function render(data) {
   font-display: swap;
 }
 
-
 .mainContain {
 	padding-bottom: 5rem;
 }
@@ -33,25 +32,31 @@ hgroup {
 	margin-top: -14rem;
 	margin-bottom: -8rem;
 }
+
 hgroup > * {
 	grid-column: 1/1;
 	grid-row: 1/1;
 }
+
 h1 {
 	transform: skew( 0, 7deg );
 }
+
 h2 {
 	font-size: 1.25rem;
 	padding-top: 0.5625rem;
 	padding-bottom: 0.5625rem;
 }
+
 h2:first-child {
 	margin-top: 6rem;
 }
+
 h2:not(:first-child) {
 	margin-top: 3rem;
 	margin-bottom: 3rem;
 }
+
 .baabo-and-year {
 	display: block;
 	text-align: center;
@@ -59,12 +64,14 @@ h2:not(:first-child) {
 	font-weight: normal;
 	position: relative;
 }
+
 .baabo {
 	display: block;
 	margin-left: 2rem;
 	font-size: 8rem;
 	margin-top: -2.5rem;
 }
+
 .baabo::after {
 	content: "BAABO";
 	color: white;
@@ -74,6 +81,7 @@ h2:not(:first-child) {
 	position: relative;
 	z-index: -1;
 }
+
 .year {
 	display: block;
 	margin-left: 2rem;
@@ -81,6 +89,7 @@ h2:not(:first-child) {
 	margin-top: -0.375em;
 	z-index: 2;
 }
+
 .year::after {
 	content: "2025";
 	color: white;
@@ -90,6 +99,7 @@ h2:not(:first-child) {
 	position: relative;
 	z-index: -1;
 }
+
 .kickoff-party {
 	display: block;
 	font-weight: 800;
@@ -112,19 +122,6 @@ address {
 	font-style: normal;
 	text-align: center;
 }
-
-/* 
-.what-to-bring-list strong {
-	font-weight: normal;
-	background: black;
-	color: white;
-	padding-left: 0.25ch;
-	padding-right: 0.25ch;
-	padding-bottom: 0.125ch;
-	display: inline-block;
-	transform: skew( -10deg, 0 );
-}
-*/
 
 .burst {
 	width: 110%;
@@ -192,9 +189,9 @@ What to bring
 </h2>
 
 <ul class="what-to-bring-list">
-<li>A few <em>challenges</em> (more than zero, less than... seven)
-<li>One idea for a <em>prize</em>
-<li>The <em>criteria</em> that other players must meet in order to win your prize
+<li>A few challenges (more than zero, less than... seven)
+<li>One idea for a prize
+<li>The criteria that other players must meet in order to win your prize
 <li>Beverages and/or snacks to share.
 </ul>
 
