@@ -1,7 +1,11 @@
 export const data = {
 	layout: "base.11ty.js",
-	permalink: `invite-2025/`
-
+	permalink: `invite-2025/`,
+	title: `BAABO 2025`,
+	head: `
+		<meta property="og:image" content="/assets/baabo-2025-kickoff.png" />
+		<meta property="og:title" content="BAABO 2025" />
+	`
 };
 
 export function render(data) {
@@ -16,12 +20,29 @@ export function render(data) {
   font-display: swap;
 }
 
+body {
+	padding: 0;
+	margin: 0;
+}
+@media (min-width: 748px) {
+	body, html {
+		overflow-x: clip;
+	}
+}
+
 .mainContain {
+	padding-top: 6rem;
 	padding-bottom: 5rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
 }
 
 p, address, ul {
 	font-size: 1.5rem;
+}
+p {
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 
 hgroup {
@@ -46,10 +67,6 @@ h2 {
 	font-size: 1.25rem;
 	padding-top: 0.5625rem;
 	padding-bottom: 0.5625rem;
-}
-
-h2:first-child {
-	margin-top: 6rem;
 }
 
 h2:not(:first-child) {
@@ -171,7 +188,7 @@ When
 
 <p class="when">
 Sunday, June 1st<br>
-3pm
+4pm
 </p>
 
 <h2>
@@ -189,13 +206,15 @@ What to bring
 </h2>
 
 <ul class="what-to-bring-list">
-<li>A few challenges (more than zero, less than... seven)
+<li>A few challenges (more than zero, less than... seven),
 <li>One idea for a prize
 <li>The criteria that other players must meet in order to win your prize
-<li>Beverages and/or snacks to share.
+<li>Any and all BAABO-curious friends – everybody’s welcome!
 </ul>
 
-<p>(Look at <a href="/">previous years</a> for inspiration!)</p>
+<p>(Look at <a href="/">previous years</a> for inspiration.)</p>
+
+<p>As for food, we’ll have a salad bar with greens, veggies, and dressings. Feel free to bring proteins, sides, and/or beverages to share.</p>
 
 <h2>What if I want to play but can't attend?</h2>
 
