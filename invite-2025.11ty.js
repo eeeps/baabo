@@ -218,7 +218,7 @@ What to bring
 Food
 </h2>
 
-<p>We’ll have a salad bar with greens, veggies, toppings, and dressings. Feel free to bring proteins, sides, and/or beverages to share.</p>
+<p>We’ll have a salad bar with greens, veggies, and dressings. Feel free to bring proteins, toppings, sides, and/or beverages to share.</p>
 
 <h2>What if I want to play but can't attend?</h2>
 
