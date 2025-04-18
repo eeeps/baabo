@@ -214,7 +214,11 @@ What to bring
 
 <p>(Look at <a href="/">previous years</a> for inspiration.)</p>
 
-<p>As for food, we’ll have a salad bar with greens, veggies, and dressings. Feel free to bring proteins, sides, and/or beverages to share.</p>
+<h2>
+Food
+</h2>
+
+<p>We’ll have a salad bar with greens, veggies, and dressings. Feel free to bring proteins, sides, and/or beverages to share.</p>
 
 <h2>What if I want to play but can't attend?</h2>
 
