@@ -1,6 +1,6 @@
 export const data = {
 	layout: "base.11ty.js",
-	permalink: `invite-2025/`,
+	permalink: `2025/invite/`,
 	title: `BAABO 2025`,
 	head: `
 		<meta property="og:image" content="/assets/baabo-2025-kickoff.png" />
@@ -71,7 +71,7 @@ h2 {
 
 h2:not(:first-child) {
 	margin-top: 3rem;
-	margin-bottom: 3rem;
+	margin-bottom: 2.5rem;
 }
 
 .baabo-and-year {
