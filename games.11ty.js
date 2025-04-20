@@ -73,17 +73,12 @@ export function render(data) {
 		} ).join('\n\t\t') }
 	</ul>
 	
-	${ (
-		data.game.name === '2023' || data.game.name === 'winter2023-24' || data.game.name === 'summer2024' ?
-			`<p style="margin: 3em; text-align: center;">
-				<a href="who-got-each-challenge/"
-				   style="font-size: 2rem; text-underline-offset: 0.1em; padding: 0.125ch 0.5ch 0.25ch 0.5ch;">
-				   	Who got each challenge?
-				</a>
-			</p>`
-		:
-			''
-	) }
+	<p style="margin: 3em; text-align: center;">
+		<a href="who-got-each-challenge/"
+		   style="font-size: 2rem; text-underline-offset: 0.1em; padding: 0.125ch 0.5ch 0.25ch 0.5ch;">
+			Who got each challenge?
+		</a>
+	</p>
 	
 	
 	<h2>Prizes</h2>
