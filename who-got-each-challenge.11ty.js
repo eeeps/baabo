@@ -10,6 +10,14 @@ export const data = {
 	}
 };
 
+// well this is frustrating
+function accountForFreeSpace( index ) {
+	if (index > 11) {
+		return index + 1;
+	}
+	return index;
+}
+
 export function render(data) {
 
 	const boards = data.boards
@@ -17,12 +25,29 @@ export function render(data) {
 	
 	const challengesPlayers = boards.reduce( ( challengesPlayersMap, board ) => {
 		const player = board.player;
-		board.challenges.forEach( challenge => {
+		
+		const boardState = data.boardStates.find( bs => {
+			console.log(player.toLowerCase());
+			console.log(data.game.name);
+			return bs.player.toLowerCase() === player.toLowerCase() && 
+			bs.game.toLowerCase() === data.game.name.toLowerCase()
+		}
+		).boardState;
+		
+		
+		
+		board.challenges.forEach( ( challenge, index ) => {
 			if ( challengesPlayersMap.has( challenge ) ) {
 				const existingPlayers = challengesPlayersMap.get( challenge );
-				challengesPlayersMap.set( challenge, existingPlayers.concat( [ player ] ) );
+				challengesPlayersMap.set( challenge, existingPlayers.concat( [ {
+					player,
+					done: boardState[accountForFreeSpace(index)]
+				} ] ) );
 			} else {
-				challengesPlayersMap.set( challenge, [ player ] );
+				challengesPlayersMap.set( challenge, [ {
+					player,
+					done: boardState[accountForFreeSpace(index)]
+				} ] );
 			}
 		} );
 		return challengesPlayersMap;
@@ -42,6 +67,9 @@ dt {
 	background: black;
 	color: white;
 	padding: 0.25ch 0.5ch;
+}
+.done {
+	text-decoration: line-through;
 }
 </style>
 
@@ -81,7 +109,7 @@ ${ challengesPlayersArray.map( ( [ challenge, players ] ) => `
 <div>
 <dt>${ challenge }</dt>
 ${
-	players.map( p => `<dd>${p}</dd>`).join('\n')
+	players.map( p => `<dd${ p.done ? ` class="done"` : '' }>${p.player}</dd>`).join('\n')
 }
 </div>
 ` ).join('\n') }
