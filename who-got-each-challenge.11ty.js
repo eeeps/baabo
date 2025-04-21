@@ -27,8 +27,8 @@ export function render(data) {
 		const player = board.player;
 		
 		const boardState = data.boardStates.find( bs => {
-			console.log(player.toLowerCase());
-			console.log(data.game.name);
+			// console.log(player.toLowerCase());
+			// console.log(data.game.name);
 			return bs.player.toLowerCase() === player.toLowerCase() && 
 			bs.game.toLowerCase() === data.game.name.toLowerCase()
 		}
@@ -41,11 +41,13 @@ export function render(data) {
 				const existingPlayers = challengesPlayersMap.get( challenge );
 				challengesPlayersMap.set( challenge, existingPlayers.concat( [ {
 					player,
+					index,
 					done: boardState[accountForFreeSpace(index)]
 				} ] ) );
 			} else {
 				challengesPlayersMap.set( challenge, [ {
 					player,
+					index,
 					done: boardState[accountForFreeSpace(index)]
 				} ] );
 			}
@@ -70,6 +72,7 @@ dt {
 }
 .done {
 	text-decoration: line-through;
+	text-decoration-thickness: 0.1875ch;
 }
 </style>
 
@@ -109,12 +112,69 @@ ${ challengesPlayersArray.map( ( [ challenge, players ] ) => `
 <div>
 <dt>${ challenge }</dt>
 ${
-	players.map( p => `<dd${ p.done ? ` class="done"` : '' }>${p.player}</dd>`).join('\n')
+	players.map( p => `
+<dd
+	class="player ${ p.done ? ` done` : '' }"
+	data-player="${ p.player.toLowerCase() }"
+	data-index="${ p.index }"
+>
+	${ p.player }
+</dd>
+	` ).join('\n')
 }
 </div>
 ` ).join('\n') }
 
 </dl>
+
+${ data.game.active ? `
+<script type="module"">
+
+import boardsFromLocalStorage from '/lib/boardsFromLocalStorage.js';
+import updateHtmlFromBoardState from '/lib/updateHtmlFromBoardState.js';
+import syncLocalStorageChangeHistoryAndDatabaseWhere from '/lib/syncLocalStorageChangeHistoryAndDatabaseWhere.js';
+
+const playerNameDds = [...document.querySelectorAll( '.player' )];
+
+// well this is frustrating
+function accountForFreeSpace( index ) {
+	if (index > 11) {
+		return index + 1;
+	}
+	return index;
+}
+
+function updatePlayerNameDds(playerNameDds) {
+	const playerNames = [ ${ boards.map( b => `"${ b.player.toLowerCase() }"` ).join(', ') } ];
+	const gameBoards = boardsFromLocalStorage( playerNames.map( pn => ( {
+		game: "${ data.game.name.toLowerCase() }",
+		player: pn,
+	} ) ) );
+	playerNameDds.forEach( dd  => {
+		const player = dd.dataset.player;
+		const index = parseInt( dd.dataset.index );
+		const playerBoard = gameBoards.find( b => b.player === player );
+		const done = playerBoard.boardState[ accountForFreeSpace( index ) ];
+		if ( done ) {
+			dd.classList.add( 'done' );
+		} else {
+			dd.classList.remove( 'done' );
+		}
+	} );
+}
+
+updatePlayerNameDds( playerNameDds );
+// go out to the database and update again, asynchronously
+syncLocalStorageChangeHistoryAndDatabaseWhere( { game: '${ data.game.name.toLowerCase() }' } ).then( ( result ) => {
+	if ( result.postedToLocalStorage === true ) {
+		updatePlayerNameDds( updatePlayerNameDds );
+	}
+} );
+
+
+</script>
+` : '' }
+
 `;
 
 };
