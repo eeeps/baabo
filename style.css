@@ -254,6 +254,7 @@ table.tiny td {
 
 .prizes.claimed .what {
 	text-decoration: line-through;
+	text-decoration-thickness: 0.125ch;
 }
 
 ins {
