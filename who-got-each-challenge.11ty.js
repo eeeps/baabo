@@ -103,7 +103,7 @@ dt {
 		</a></h1>
 	</header>
 	
-	<h2>Who got each challenge??</h2>
+	<h2>Who got each challenge?</h2>
 	
 	
 <dl>
