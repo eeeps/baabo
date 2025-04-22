@@ -1,3 +1,5 @@
+import monochromize from './lib/monochromizeEmoji.js';
+
 export const data = {
 	pagination: {
 		data: "games",
@@ -91,7 +93,7 @@ export function render(data) {
 			.filter( prize => prize.available )
 			.map( prize => `
 		<li>
-			<p class="emoji">${ prize.emoji }</p>
+			<p class="emoji">${ monochromize( prize.emoji ) }</p>
 			<div>
 				<h4 class=what>${ prize.what }</h4>
 				<dl>
@@ -118,7 +120,7 @@ export function render(data) {
 			.filter( prize => !prize.available )
 			.map( prize => `
 		<li>
-			<p class="emoji">${ prize.emoji }</p>
+			<p class="emoji">${ monochromize(prize.emoji) }</p>
 			<div>
 				<h4 class=what>${ prize.what }</h4>
 				<dl>
