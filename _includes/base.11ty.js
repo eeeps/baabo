@@ -14,7 +14,8 @@ return `
 
 	<link rel="stylesheet" href="/style.css">
 
-	<link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+	<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" type="image/png">
 	
 	${ data.head ? data.head : '' }
 	
