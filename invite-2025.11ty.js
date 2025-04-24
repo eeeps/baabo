@@ -2,10 +2,10 @@ export const data = {
 	layout: "base.11ty.js",
 	permalink: `2025/invite/`,
 	title: `BAABO 2025`,
-	head: `
-		<meta property="og:image" content="/assets/baabo-2025-kickoff.png" />
-		<meta property="og:title" content="BAABO 2025" />
-	`
+	og_image: "https://baabo.ericportis.com/assets/baabo-2025-kickoff.png",
+	og_image_width: "1590",
+	og_image_height: "1600",
+	og_description: "It’s BAABO time!"
 };
 
 export function render(data) {
