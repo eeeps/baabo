@@ -17,6 +17,7 @@ return `
 	<link rel="icon" href="/favicon.ico" sizes="32x32">
 	<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 	<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" type="image/png">
+	<link rel="manifest" href="/manifest.webmanifest">
 	
 	${ data.head ? data.head : '' }
 	

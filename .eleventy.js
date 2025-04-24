@@ -5,4 +5,5 @@ export default function ( eleventyConfig ) {
 	eleventyConfig.addPassthroughCopy( 'lib' );
 	eleventyConfig.addPassthroughCopy( 'assets' );
 	eleventyConfig.addPassthroughCopy( 'favicon.ico' );
+	eleventyConfig.addPassthroughCopy( 'manifest.webmanifest' );
 } 
