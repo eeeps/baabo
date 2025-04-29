@@ -27,14 +27,9 @@ export function render(data) {
 		const player = board.player;
 		
 		const boardState = data.boardStates.find( bs => {
-			// console.log(player.toLowerCase());
-			// console.log(data.game.name);
 			return bs.player.toLowerCase() === player.toLowerCase() && 
-			bs.game.toLowerCase() === data.game.name.toLowerCase()
-		}
-		).boardState;
-		
-		
+			       bs.game.toLowerCase() === data.game.name.toLowerCase()
+		} ).boardState;
 		
 		board.challenges.forEach( ( challenge, index ) => {
 			if ( challengesPlayersMap.has( challenge ) ) {
