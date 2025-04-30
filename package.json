@@ -1,7 +1,8 @@
 {
 	"type": "module",
 	"dependencies": {
+		"@11ty/dependency-tree-esm": "^1.0.1",
 		"@11ty/eleventy": "^3.0.0",
-		"@11ty/dependency-tree-esm": "^1.0.1"
+		"dotenv": "^16.5.0"
 	}
 }

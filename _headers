@@ -1,0 +1,5 @@
+# idk better than nothing
+# if we ever password protect the whole site, change this to /*
+/env.js
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: private
