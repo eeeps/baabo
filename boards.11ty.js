@@ -118,7 +118,7 @@ tds.forEach( ( td, index ) => {
 		this.classList.toggle( 'checked' );
 		const change = {
 			id: uuid(),
-			timestamp: Date.now(),
+			timestamp: new Date(),
 			game: '${ data.board.game.toLowerCase() }',
 			board: '${ data.board.player.toLowerCase() }',
 			index: index,
