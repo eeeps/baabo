@@ -111,6 +111,9 @@ import updateHtmlFromBoardState from '/lib/updateHtmlFromBoardState.js';
 import boardsFromLocalStorage from '/lib/boardsFromLocalStorage.js';
 import syncLocalStorageChangeHistoryAndDatabaseWhere from '/lib/syncLocalStorageChangeHistoryAndDatabaseWhere.js';
 
+const gameName = '${ data.board.game.toLowerCase() }';
+const playerName = '${ data.board.player.toLowerCase() }';
+
 tds.forEach( ( td, index ) => {
 	if ( index === 12 ) { return; } // free space
 	td.classList.add('clickable');
@@ -119,17 +122,14 @@ tds.forEach( ( td, index ) => {
 		const change = {
 			id: uuid(),
 			timestamp: new Date(),
-			game: '${ data.board.game.toLowerCase() }',
-			board: '${ data.board.player.toLowerCase() }',
+			game: gameName,
+			board: playerName,
 			index: index,
 			state: this.classList.contains( 'checked' )
 		};
 		postChange( change );
 	} );
 } );
-
-const gameName = '${ data.board.game.toLowerCase() }';
-const playerName = '${ data.board.player.toLowerCase() }';
 
 updateHtmlFromBoardState(
 	table,
