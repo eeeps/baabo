@@ -144,7 +144,8 @@ syncLocalStorageChangeHistoryAndDatabaseWhere( {
 	game: gameName,
 	board: playerName
 } ).then( ( result ) => {
-	if ( result.postedToLocalStorage === true ) {
+	if ( result.postedToLocalStorage === true ||
+	     result.deletedFromLocalStorage === true ) {
 		updateHtmlFromBoardState(
 			table,
 			boardsFromLocalStorage( [ { 

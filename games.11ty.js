@@ -176,7 +176,8 @@ function updateTables( tables ) {
 updateTables( tables );
 // go out to the database and update again, asynchronously
 syncLocalStorageChangeHistoryAndDatabaseWhere( { game: '${ data.game.name.toLowerCase() }' } ).then( ( result ) => {
-	if ( result.postedToLocalStorage === true ) {
+	if ( result.postedToLocalStorage === true ||
+	     result.deletedFromLocalStorage === true ) {
 		updateTables( tables );
 	}
 } );
