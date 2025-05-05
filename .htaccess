@@ -1,0 +1,20 @@
+# the plan, if baabo ever breaks contain
+# 1. sleep db in heroku backend
+# 2. turn existing netlify site off
+# 3. move DNS to dreamhost
+# 4. rotate db token in heroku
+# 5. restart heroku
+# 6. clean up db by marking erroneous things deleted
+# 7. change .env db_token and db_url
+# 8. add this .htaccess as a passthrough copy (and remove _headers) in .eleventy.js
+# 8. build 11ty
+# 9. publish to dreamhost 
+#
+# to come up with this .htaccess for basic auth
+# I followed instructions from https://help.dreamhost.com/hc/en-us/articles/216363187-Password-protecting-your-site-with-an-htaccess-file
+
+AuthName "Log in to BAABO"
+AuthType Basic
+# put this one dir up from the root, out of caution
+AuthUserFile /home/etportis/.baabo-test.htpasswd
+Require valid-user
