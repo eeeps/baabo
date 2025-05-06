@@ -14,7 +14,7 @@ return `
 
 	<meta charset="utf-8">
 	<title>${ data.title }</title>
-	<meta name="viewport" content="width=765px">
+	<meta name="viewport" content="width=765">
 
 	<link rel="stylesheet" href="/style.css">
 
