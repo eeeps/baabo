@@ -24,7 +24,7 @@ export function render(data) {
 
 	return `<div class="mainContain" data-game="${ data.game.name }">
 	<header>
-		<h1><a href="/">
+		<h1 class="baaboHeader"><a href="/">
 			
 			<!-- need rb to work around https://bugs.webkit.org/show_bug.cgi?id=275828 -->
 			<!-- can't have a space between /rb and rp on safari -->
@@ -62,7 +62,8 @@ export function render(data) {
 			return `
 		<li>
 			<a href="/${ board.game.toLowerCase() }/boards/${ board.player.toLowerCase() }"><div>
-				<table class="thumb" data-player="${ board.player.toLowerCase() }">
+				<table class="thumb" data-player="${ board.player.toLowerCase() }"
+				 style="view-transition-name: ${ board.player.toLowerCase() }-board;">
 					<tr>${ tds[ 0 ] }${ tds[ 1 ] }${ tds[ 2 ] }${ tds[ 3 ] }${ tds[ 4 ] }
 					<tr>${ tds[ 5 ] }${ tds[ 6 ] }${ tds[ 7 ] }${ tds[ 8 ] }${ tds[ 9 ] }
 					<tr>${ tds[ 10 ] }${ tds[ 11 ] }<td class="checked">${ tds[ 13 ] }${ tds[ 14 ] }

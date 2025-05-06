@@ -22,7 +22,7 @@ export function render(data) {
 	return `
 <div class="mainContain">
 	<header>
-		<h1><a href="/${ game.name }">
+		<h1 class="baaboHeader"><a href="/${ game.name }">
 			
 			<!-- need rb to work around https://bugs.webkit.org/show_bug.cgi?id=275828 -->
 			<!-- can't have a space between /rb and rp on safari -->
@@ -49,7 +49,9 @@ export function render(data) {
 		</a></h1>
 		<h2><span ${ game.winner === data.board.player.toLowerCase() ? 'class="winner"' : '' }>${ data.board.player }</span></h2>
 	</header>
-	<table>
+	<table
+		style="view-transition-name: ${ data.board.player.toLowerCase() }-board;"
+	>
 		<tr>
 			${ data.board.challenges.slice( 0, 5 ).map( function( item, index ) {
 				const tdIndex = index;
