@@ -315,3 +315,7 @@ ins {
 @view-transition {
     navigation: auto;
 }
+
+:root::view-transition-group(*) {
+  animation-duration: 0.5s;
+}

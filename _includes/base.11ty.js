@@ -31,9 +31,11 @@ return `
 	<meta property="og:description" content="${ data.og_description }">
 	
 	${ data.head ? data.head : '' }
+
+    <link rel="expect" href="#body" blocking="render">
 	
 </head>
-<body>
+<body id=body>
 
 ${data.content}
 
