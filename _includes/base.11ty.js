@@ -33,7 +33,8 @@ return `
 	${ data.head ? data.head : '' }
 
     <link rel="expect" href="#body" blocking="render">
-	
+	<script>'render-blocking workaround https://bsky.app/profile/nomster.bsky.social/post/3loxku2sppk2j'</script>
+
 </head>
 <body id=body>
 
