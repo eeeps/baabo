@@ -308,14 +308,11 @@ ins {
 	font-size: 0.8625em;
 }
 
-.baaboHeader {
-	view-transition-name: baaboHeader;
-}
 
 @view-transition {
     navigation: auto;
 }
 
 :root::view-transition-group(*) {
-  animation-duration: 0.5s;
+  animation-duration: 0.125s;
 }
