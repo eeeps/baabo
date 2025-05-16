@@ -1,3 +1,5 @@
+import urlSlugify from './lib/urlSlugify.js';
+
 export const data = {
 	layout: "base.11ty.js",
 	pagination: {
@@ -6,18 +8,18 @@ export const data = {
 		alias: 'board'
 	},
 	eleventyComputed: {
-		permalink: data => `${ data.board.game.toLowerCase() }/boards/${ data.board.player.toLowerCase() }/`
+		permalink: data => `${ urlSlugify( data.board.game ) }/boards/${ urlSlugify( data.board.player ) }/`
 	}
 };
 
 export function render(data) {
 		
 	const boardState = data.boardStates.find( boardState =>
-		boardState.game.toLowerCase() === data.board.game.toLowerCase() &&
-		boardState.player.toLowerCase() === data.board.player.toLowerCase()		
+		urlSlugify( boardState.game ) === urlSlugify( data.board.game ) &&
+		urlSlugify( boardState.player ) === urlSlugify( data.board.player )
 	).boardState;
 		
-	const game = data.games.find( g => g.name.toLowerCase() === data.board.game.toLowerCase() );
+	const game = data.games.find( g => urlSlugify( g.name ) === urlSlugify( data.board.game ) );
 	
 	return `
 <div class="mainContain">
@@ -47,10 +49,10 @@ export function render(data) {
 			</ruby>
 
 		</a></h1>
-		<h2><span ${ game.winner === data.board.player.toLowerCase() ? 'class="winner"' : '' }>${ data.board.player }</span></h2>
+		<h2><span ${ game.winner && ( urlSlugify( game.winner ) === urlSlugify( data.board.player ) ) ? 'class="winner"' : '' }>${ data.board.player }</span></h2>
 	</header>
 	<table
-		style="view-transition-name: ${ data.board.player.toLowerCase() }-board;"
+		style="view-transition-name: ${ urlSlugify( data.board.player ) }-board;"
 	>
 		<tr>
 			${ data.board.challenges.slice( 0, 5 ).map( function( item, index ) {
@@ -113,8 +115,8 @@ import updateHtmlFromBoardState from '/lib/updateHtmlFromBoardState.js';
 import boardsFromLocalStorage from '/lib/boardsFromLocalStorage.js';
 import syncLocalStorageChangeHistoryAndDatabaseWhere from '/lib/syncLocalStorageChangeHistoryAndDatabaseWhere.js';
 
-const gameName = '${ data.board.game.toLowerCase() }';
-const playerName = '${ data.board.player.toLowerCase() }';
+const gameName = '${ urlSlugify( data.board.game ) }';
+const playerName = '${ urlSlugify( data.board.player ) }';
 
 tds.forEach( ( td, index ) => {
 	if ( index === 12 ) { return; } // free space

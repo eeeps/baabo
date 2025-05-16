@@ -1,4 +1,5 @@
 import monochromize from './lib/monochromizeEmoji.js';
+import urlSlugify from './lib/urlSlugify.js';
 
 export const data = {
 	pagination: {
@@ -56,21 +57,21 @@ export function render(data) {
 	<ul class=players>
 		${ boards.map( board => {
 			const boardState = boardStates.find( bs => 
-				bs.player.toLowerCase() === board.player.toLowerCase()
+				urlSlugify( bs.player ) === urlSlugify( board.player )
 			).boardState;
 			const tds = boardState.map( checked => `<td${ ( checked ? ' class="checked"' : '' ) }>` );
 			return `
 		<li>
-			<a href="/${ board.game.toLowerCase() }/boards/${ board.player.toLowerCase() }"><div>
-				<table class="thumb" data-player="${ board.player.toLowerCase() }"
-				 style="view-transition-name: ${ board.player.toLowerCase() }-board;">
+			<a href="/${ urlSlugify( board.game ) }/boards/${ urlSlugify( board.player ) }"><div>
+				<table class="thumb" data-player="${ urlSlugify( board.player ) }"
+				 style="view-transition-name: ${ urlSlugify( board.player ) }-board;">
 					<tr>${ tds[ 0 ] }${ tds[ 1 ] }${ tds[ 2 ] }${ tds[ 3 ] }${ tds[ 4 ] }
 					<tr>${ tds[ 5 ] }${ tds[ 6 ] }${ tds[ 7 ] }${ tds[ 8 ] }${ tds[ 9 ] }
 					<tr>${ tds[ 10 ] }${ tds[ 11 ] }<td class="checked">${ tds[ 13 ] }${ tds[ 14 ] }
 					<tr>${ tds[ 15 ] }${ tds[ 16 ] }${ tds[ 17 ] }${ tds[ 18 ] }${ tds[ 19 ] }
 					<tr>${ tds[ 20 ] }${ tds[ 21 ] }${ tds[ 22 ] }${ tds[ 23 ] }${ tds[ 24 ] }
 				</table>
-				<h4 class="name ${ data.game.winner === board.player.toLowerCase() ? 'winner' : '' }">${ board.player }</h4>
+				<h4 class="name ${ data.game.winner &&  ( urlSlugify( data.game.winner ) === urlSlugify( board.player ) ) ? 'winner' : '' }">${ board.player }</h4>
 			</div></a>
 			`
 		} ).join('\n\t\t') }
@@ -100,11 +101,11 @@ export function render(data) {
 				<dl>
 					<div>
 						<dt>From</dt>
-						<dd ${ data.game.winner === prize.from.toLowerCase() ? 'class="winner"' : '' }>${ prize.from }
+						<dd ${ data.game.winner && ( urlSlugify( data.game.winner ) === urlSlugify( prize.from ) ) ? 'class="winner"' : '' }>${ prize.from }</dd>
 					</div>
 					<div>
 						<dt>How to win</dt>
-						<dd>${ prize.howToWin }
+						<dd>${ prize.howToWin }</dd>
 					</div>
 				</dl>
 			</div>
@@ -127,15 +128,15 @@ export function render(data) {
 				<dl>
 					<div>
 						<dt>From</dt>
-						<dd ${ data.game.winner === prize.from.toLowerCase() ? 'class="winner"' : '' }>${ prize.from }
+						<dd ${ data.game.winner && ( urlSlugify( data.game.winner ) === urlSlugify( prize.from ) ) ? 'class="winner"' : '' }>${ prize.from }</dd>
 					</div>
 					<div>
 						<dt>How to win</dt>
-						<dd>${ prize.howToWin }
+						<dd>${ prize.howToWin }</dd>
 					</div>
 					<div>
 						<dt>Won by</dt>
-						<dd ${ data.game.winner === prize.wonBy.toLowerCase() ? 'class="winner"' : '' }>${ prize.wonBy }
+						<dd ${ data.game.winner && ( urlSlugify( data.game.winner ) === urlSlugify( prize.wonBy ) ) ? 'class="winner"' : '' }>${ prize.wonBy }</dd>
 					</div>
 				</dl>
 			</div>
@@ -154,29 +155,30 @@ ${ data.game.active ? `
 import boardsFromLocalStorage from '/lib/boardsFromLocalStorage.js';
 import updateHtmlFromBoardState from '/lib/updateHtmlFromBoardState.js';
 import syncLocalStorageChangeHistoryAndDatabaseWhere from '/lib/syncLocalStorageChangeHistoryAndDatabaseWhere.js';
-
+import urlSlugify from '/lib/urlSlugify.js';
 
 const tables = document.querySelectorAll( 'table:not(.tiny)' );
 
 function updateTables( tables ) {
 	
-	const playerNames = [ ${ boards.map( b => `"${ b.player.toLowerCase() }"` ).join(', ') } ];
+	const playerNames = [ ${ boards.map( b => `"${ urlSlugify( b.player ) }"` ).join(', ') } ];
 	const allBoards = boardsFromLocalStorage( playerNames.map( pn => ( {
-		game: "${ data.game.name.toLowerCase() }",
+		game: "${ urlSlugify( data.game.name ) }",
 		player: pn,
 	} ) ) );
 	
 	tables.forEach( table => {
-		const playerName = table.dataset.player.toLowerCase();
-		// console.log( allBoards.find( b => b.player.toLowerCase() === playerName ).boardState );
-		updateHtmlFromBoardState( table, allBoards.find( b => b.player.toLowerCase() === playerName ).boardState );
+		const playerName = urlSlugify( table.dataset.player );
+		// console.log( allBoards.find( b => urlSlugify( b.player ) === playerName ).boardState );
+		updateHtmlFromBoardState( table, allBoards.find( b => urlSlugify( b.player ) === playerName ).boardState );
 	} );
 	
 }
 
 updateTables( tables );
+
 // go out to the database and update again, asynchronously
-syncLocalStorageChangeHistoryAndDatabaseWhere( { game: '${ data.game.name.toLowerCase() }' } ).then( ( result ) => {
+syncLocalStorageChangeHistoryAndDatabaseWhere( { game: '${ urlSlugify( data.game.name ) }' } ).then( ( result ) => {
 	if ( result.postedToLocalStorage === true ||
 	     result.deletedFromLocalStorage === true ) {
 		updateTables( tables );

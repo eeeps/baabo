@@ -1,3 +1,5 @@
+import urlSlugify from './lib/urlSlugify.js';
+
 export const data = {
 	layout: "base.11ty.js",
 	pagination: {
@@ -6,7 +8,7 @@ export const data = {
 		alias: 'game'
 	},
 	eleventyComputed: {
-		permalink: data => `${ data.game.name.toLowerCase() }/who-got-each-challenge/`
+		permalink: data => `${ urlSlugify( data.game.name ) }/who-got-each-challenge/`
 	}
 };
 
@@ -27,8 +29,8 @@ export function render(data) {
 		const player = board.player;
 		
 		const boardState = data.boardStates.find( bs => {
-			return bs.player.toLowerCase() === player.toLowerCase() && 
-			       bs.game.toLowerCase() === data.game.name.toLowerCase()
+			return urlSlugify( bs.player ) === urlSlugify( player ) && 
+			       urlSlugify( bs.game ) === urlSlugify( data.game.name )
 		} ).boardState;
 		
 		board.challenges.forEach( ( challenge, index ) => {
@@ -110,7 +112,7 @@ ${
 	players.map( p => `
 <dd
 	class="player ${ p.done ? ` done` : '' }"
-	data-player="${ p.player.toLowerCase() }"
+	data-player="${ urlSlugify( p.player ) }"
 	data-index="${ p.index }"
 >
 	${ p.player }
@@ -140,9 +142,9 @@ function accountForFreeSpace( index ) {
 }
 
 function updatePlayerNameDds(playerNameDds) {
-	const playerNames = [ ${ boards.map( b => `"${ b.player.toLowerCase() }"` ).join(', ') } ];
+	const playerNames = [ ${ boards.map( b => `"${ urlSlugify( b.player ) }"` ).join(', ') } ];
 	const gameBoards = boardsFromLocalStorage( playerNames.map( pn => ( {
-		game: "${ data.game.name.toLowerCase() }",
+		game: "${ urlSlugify( data.game.name ) }",
 		player: pn,
 	} ) ) );
 	playerNameDds.forEach( dd  => {
@@ -160,7 +162,7 @@ function updatePlayerNameDds(playerNameDds) {
 
 updatePlayerNameDds( playerNameDds );
 // go out to the database and update again, asynchronously
-syncLocalStorageChangeHistoryAndDatabaseWhere( { game: '${ data.game.name.toLowerCase() }' } ).then( ( result ) => {
+syncLocalStorageChangeHistoryAndDatabaseWhere( { game: '${ urlSlugify( data.game.name ) }' } ).then( ( result ) => {
 	if ( result.postedToLocalStorage === true ) {
 		updatePlayerNameDds( updatePlayerNameDds );
 	}

@@ -27,6 +27,7 @@ Now I need it to look like this...
 
 import fetchChangeHistoryFromDatabaseWhere from '../lib/fetchChangeHistoryFromDatabaseWhere.js';
 import boardStatesFromChangeHistory from '../lib/boardStatesFromChangeHistory.js';
+import urlSlugify from '../lib/urlSlugify.js';
 
 import boards from './boards.json' with { type: 'json' };
 
@@ -38,10 +39,10 @@ export default async function() {
 	let gameAndPlayerNames = boards.reduce( ( acc, cv ) => {
 
 		if ( !acc.find( item => {
-			item.game === cv.game.toLowerCase() &&
-			item.player === cv.player.toLowerCase()
+			item.game === urlSlugify( cv.game ) &&
+			item.player === urlSlugify( cv.player )
 		} ) ) {
-			acc.push( { game: cv.game.toLowerCase(), player: cv.player.toLowerCase() } )
+			acc.push( { game: urlSlugify( cv.game ), player: urlSlugify( cv.player ) } )
 		}
 
 		return acc;
