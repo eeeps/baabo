@@ -6,10 +6,26 @@
 }
 
 @font-face {
+  font-family: "Outfit Fallback";
+  src: local('Verdana');
+  ascent-override: 115.1027%;
+  descent-override: 29.9267%;
+  size-adjust: 86.8789%;
+}
+
+@font-face {
   font-family: "Bungee Shade";
   src: url("/fonts/BungeeShade-Regular.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
+}
+
+@font-face {
+  font-family: "Bungee Shade Fallback";
+  src: local('Courier New'), local('CourierNewPSMT');
+  ascent-override: 85.2506%;
+  descent-override: 25.0737%;
+  size-adjust: 119.6472%;
 }
 
 @font-face {
@@ -18,6 +34,8 @@
   font-weight: normal;
   font-style: normal;
 }
+
+
 
 
 
@@ -31,10 +49,11 @@
 }
 
 html {
-	--display-font: 'Bungee Shade', monospace;
-	--body-font: Outfit, Futura, system-ui, sans-serif;
+	--display-font: 'Bungee Shade', 'Bungee Shade Fallback', monospace;
+	--body-font: Outfit, 'Outfit Fallback', system-ui, sans-serif;
 	font-family: var(--body-font);
 }
+
 a {
 	color: black;
 }

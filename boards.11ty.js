@@ -45,7 +45,7 @@ export function render(data) {
 			</ruby>
 
 			<ruby>
-			<rb>o</rb><rp>(</rp><rt>-oredom</rt><rp>)</rp>
+			<rb>O</rb><rp>(</rp><rt>-oredom</rt><rp>)</rp>
 			</ruby>
 
 		</a></h1>
