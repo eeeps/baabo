@@ -149,7 +149,7 @@ export function render(data) {
 </div>
 
 ${ data.game.active ? `
-<script type="module"">
+<script type="module" blocking="render">
 
 import boardsFromLocalStorage from '/lib/boardsFromLocalStorage.js';
 import updateHtmlFromBoardState from '/lib/updateHtmlFromBoardState.js';

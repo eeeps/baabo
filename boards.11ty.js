@@ -85,7 +85,7 @@ export function render(data) {
 	</table>
 </div>
 
-<script type="module">
+<script type="module" blocking="render">
 
 const table = document.querySelector( 'table' );
 const tds = [ ...table.querySelectorAll( 'td' ) ];
