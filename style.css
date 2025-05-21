@@ -308,7 +308,7 @@ ins {
 	font-size: 0.8625em;
 }
 
-
+/*
 @view-transition {
     navigation: auto;
 }
@@ -316,3 +316,4 @@ ins {
 :root::view-transition-group(*) {
   animation-duration: 0.125s;
 }
+*/
