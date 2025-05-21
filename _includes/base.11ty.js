@@ -16,6 +16,21 @@ return `
 	<title>${ data.title }</title>
 	<meta name="viewport" content="width=765">
 
+	<link
+	  rel="preload"
+	  href="/fonts/Outfit-Medium.woff2"
+	  as="font"
+	  type="font/woff2"
+	  crossorigin="anonymous"
+	>
+	<link
+	  rel="preload"
+	  href="/fonts/BungeeShade-Regular.woff2"
+	  as="font"
+	  type="font/woff2"
+	  crossorigin="anonymous"
+	>
+
 	<link rel="stylesheet" href="/style.css">
 
 	<!-- icons -->
