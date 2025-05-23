@@ -29,6 +29,14 @@
 }
 
 @font-face {
+  font-family: "Bungee Regular";
+  src: url("/fonts/Bungee-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Noto Emoji";
   src: url("/fonts/NotoEmoji-Regular.woff2") format("woff2");
   font-weight: normal;
@@ -149,22 +157,45 @@ td.super.extra.long {
 td.super.duper.extra.long {
 	font-size: 0.625rem;
 }
-td.freespace {
-	background: black;
-}
-.freespace img {
-	display: block;
-	position: relative;
-	z-index: 9;
-	width: calc(100% + 2.25rem);
-	height: auto;
-	margin-left: -1.125rem;
-	margin-right: -1.125rem;
-}
+
 td.checked {
 	background-color: black;
 	color: white;
 }
+
+td.freespace {
+	background: black;
+/*	position: relative; this makes safari paint a thin white line at the bottom?? */
+	padding: 0;
+}
+
+td.freespace > div {
+	width: 100%;
+	height: 100%;
+	position: relative; /* so we're wrapping it... */
+}
+
+td.freespace .free {
+	display: block;
+	color: black;
+	font-family: var(--display-font);
+	font-size: 3.35rem;
+	position: absolute;
+	top: 2.3rem;
+	left: -0.55rem;
+	z-index: 2;
+}
+
+td.freespace .free::after {
+	content: "FREE";
+	color: white;
+	font-family: "Bungee Regular";
+	letter-spacing: 0.137ch;
+	margin-left: -4.1ch;
+	z-index: -1;
+	position: relative;
+}
+
 
 table.thumb {
 	--tableWidth: 5.125rem;
@@ -326,6 +357,8 @@ ins {
 .smallcaps {
 	font-size: 0.8625em;
 }
+
+
 
 /*
 @view-transition {

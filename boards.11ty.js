@@ -49,7 +49,7 @@ export function render(data) {
 			</ruby>
 
 		</a></h1>
-		<h2><span ${ game.winner && ( urlSlugify( game.winner ) === urlSlugify( data.board.player ) ) ? 'class="winner"' : '' }>${ data.board.player }</span></h2>
+		<h2><span ${ data.game.winner && ( urlSlugify( data.game.winner ) === urlSlugify( data.board.player ) ) ? 'class="winner"' : '' }>${ data.board.player }</span></h2>
 	</header>
 	<table>
 		<tr>
@@ -67,7 +67,7 @@ export function render(data) {
 				const tdIndex = 10 + index;
 				return `<td${ ( boardState[ tdIndex ] ? ' class="checked"' : '' ) }>${ item }`;
 			} ).join("") }
-			<td class="freespace"><img src="https://o.img.rodeo/image/upload/v1653428416/q1wweqagv9qwh5dwh6dl.svg">
+			<td class="freespace"><div><span class="free">FREE</span></div>
 			${ data.board.challenges.slice( 12, 14 ).map( function( item, index ) {
 				const tdIndex = 13 + index;
 				return `<td${ ( boardState[ tdIndex ] ? ' class="checked"' : '' ) }>${ item }`;
