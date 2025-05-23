@@ -8,7 +8,8 @@ export const data = {
 		alias: 'board'
 	},
 	eleventyComputed: {
-		permalink: data => `${ urlSlugify( data.board.game ) }/boards/${ urlSlugify( data.board.player ) }/`
+		permalink: data => `${ urlSlugify( data.board.game ) }/boards/${ urlSlugify( data.board.player ) }/`,
+		game: data => data.games.find( g => urlSlugify( g.name ) === urlSlugify( data.board.game ) )
 	}
 };
 
@@ -18,13 +19,11 @@ export function render(data) {
 		urlSlugify( boardState.game ) === urlSlugify( data.board.game ) &&
 		urlSlugify( boardState.player ) === urlSlugify( data.board.player )
 	).boardState;
-		
-	const game = data.games.find( g => urlSlugify( g.name ) === urlSlugify( data.board.game ) );
-	
+			
 	return `
 <div class="mainContain">
 	<header>
-		<h1 class="baaboHeader"><a href="/${ game.name }">
+		<h1 class="baaboHeader"><a href="/${ data.game.name }">
 			
 			<!-- need rb to work around https://bugs.webkit.org/show_bug.cgi?id=275828 -->
 			<!-- can't have a space between /rb and rp on safari -->
@@ -105,13 +104,29 @@ tds.forEach( td => {
 	}
 } );
 
-${ ( game.active ? `
+${ ( data.game.active ? `
 
 import uuid from '/lib/uuid.js';
 import postChange from '/lib/postChange.js';
 import updateHtmlFromBoardState from '/lib/updateHtmlFromBoardState.js';
 import boardsFromLocalStorage from '/lib/boardsFromLocalStorage.js';
 import syncLocalStorageChangeHistoryAndDatabaseWhere from '/lib/syncLocalStorageChangeHistoryAndDatabaseWhere.js';
+
+/* hoisted
+   https://bsky.app/profile/mayank.co/post/3lpucuvplic2d */
+import '/lib/postChangeToDatabase.js';
+import '/lib/boardStatesFromChangeHistory.js';
+import '/lib/fetchChangeHistoryFromLocalStorageWhere.js';
+import '/lib/postChangeToLocalStorage.js';
+import '/lib/fetchChangeHistoryFromDatabaseWhere.js';
+import '/lib/setDifference.js';
+import '/lib/deleteChangeFromLocalStorage.js';
+import '/lib/db.js';
+import '/lib/oneBoardStateFromChangeHistory.js';
+import '/lib/timestampReviver.js';
+import '/lib/applyChangesToBoard.js';
+import '/lib/blankBoard.js';
+import '/env.js'; 
 
 const gameName = '${ urlSlugify( data.board.game ) }';
 const playerName = '${ urlSlugify( data.board.player ) }';

@@ -156,6 +156,21 @@ import updateHtmlFromBoardState from '/lib/updateHtmlFromBoardState.js';
 import syncLocalStorageChangeHistoryAndDatabaseWhere from '/lib/syncLocalStorageChangeHistoryAndDatabaseWhere.js';
 import urlSlugify from '/lib/urlSlugify.js';
 
+/* hoisted
+   https://bsky.app/profile/mayank.co/post/3lpucuvplic2d */
+import '/lib/boardStatesFromChangeHistory.js';
+import '/lib/fetchChangeHistoryFromLocalStorageWhere.js';
+import '/lib/oneBoardStateFromChangeHistory.js';
+import '/lib/fetchChangeHistoryFromDatabaseWhere.js';
+import '/lib/setDifference.js';
+import '/lib/postChangeToDatabase.js';
+import '/lib/timestampReviver.js';
+import '/lib/db.js';
+import '/lib/deleteChangeFromLocalStorage.js';
+import '/lib/applyChangesToBoard.js';
+import '/lib/blankBoard.js';
+import '/env.js'; 
+
 const tables = document.querySelectorAll( 'table:not(.tiny)' );
 
 function updateTables( tables ) {
