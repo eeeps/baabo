@@ -63,8 +63,7 @@ export function render(data) {
 			return `
 		<li>
 			<a href="/${ urlSlugify( board.game ) }/boards/${ urlSlugify( board.player ) }"><div>
-				<table class="thumb" data-player="${ urlSlugify( board.player ) }"
-				 style="view-transition-name: ${ urlSlugify( board.player ) }-board;">
+				<table class="thumb" data-player="${ urlSlugify( board.player ) }">
 					<tr>${ tds[ 0 ] }${ tds[ 1 ] }${ tds[ 2 ] }${ tds[ 3 ] }${ tds[ 4 ] }
 					<tr>${ tds[ 5 ] }${ tds[ 6 ] }${ tds[ 7 ] }${ tds[ 8 ] }${ tds[ 9 ] }
 					<tr>${ tds[ 10 ] }${ tds[ 11 ] }<td class="checked">${ tds[ 13 ] }${ tds[ 14 ] }
@@ -150,7 +149,7 @@ export function render(data) {
 </div>
 
 ${ data.game.active ? `
-<script type="module" blocking="render">
+<script type="module">
 
 import boardsFromLocalStorage from '/lib/boardsFromLocalStorage.js';
 import updateHtmlFromBoardState from '/lib/updateHtmlFromBoardState.js';

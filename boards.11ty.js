@@ -50,9 +50,7 @@ export function render(data) {
 		</a></h1>
 		<h2><span ${ data.game.winner && ( urlSlugify( data.game.winner ) === urlSlugify( data.board.player ) ) ? 'class="winner"' : '' }>${ data.board.player }</span></h2>
 	</header>
-	<table
-		style="view-transition-name: ${ urlSlugify( data.board.player ) }-board;"
-	>
+	<table>
 		<tr>
 			${ data.board.challenges.slice( 0, 5 ).map( function( item, index ) {
 				const tdIndex = index;
@@ -86,7 +84,7 @@ export function render(data) {
 	</table>
 </div>
 
-<script type="module" blocking="render">
+<script type="module">
 
 const table = document.querySelector( 'table' );
 const tds = [ ...table.querySelectorAll( 'td' ) ];
