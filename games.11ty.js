@@ -17,6 +17,7 @@ ${ data.game.active ? `
 import boardsFromLocalStorage from '/lib/boardsFromLocalStorage.js';
 import updateHtmlFromBoardState from '/lib/updateHtmlFromBoardState.js';
 import urlSlugify from '/lib/urlSlugify.js';
+import syncLocalStorageChangeHistoryAndDatabaseWhere from '/lib/syncLocalStorageChangeHistoryAndDatabaseWhere.js';
 
 /* hoisted
    https://bsky.app/profile/mayank.co/post/3lpucuvplic2d */
@@ -53,7 +54,6 @@ function updateTables( tables ) {
 
 updateTables( tables );
 
-import syncLocalStorageChangeHistoryAndDatabaseWhere from '/lib/syncLocalStorageChangeHistoryAndDatabaseWhere.js';
 
 // go out to the database and update again, asynchronously
 syncLocalStorageChangeHistoryAndDatabaseWhere( { game: '${ urlSlugify( data.game.name ) }' } ).then( ( result ) => {

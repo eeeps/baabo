@@ -37,6 +37,8 @@ import uuid from '/lib/uuid.js';
 import postChange from '/lib/postChange.js';
 import updateHtmlFromBoardState from '/lib/updateHtmlFromBoardState.js';
 import boardsFromLocalStorage from '/lib/boardsFromLocalStorage.js';
+import syncLocalStorageChangeHistoryAndDatabaseWhere from '/lib/syncLocalStorageChangeHistoryAndDatabaseWhere.js';
+
 
 /* hoisted
    https://bsky.app/profile/mayank.co/post/3lpucuvplic2d */
@@ -81,13 +83,6 @@ updateHtmlFromBoardState(
 		player: playerName
 	} ] )[ 0 ].boardState
 );
-
-import syncLocalStorageChangeHistoryAndDatabaseWhere from '/lib/syncLocalStorageChangeHistoryAndDatabaseWhere.js';
-import updateHtmlFromBoardState from '/lib/updateHtmlFromBoardState.js';
-import boardsFromLocalStorage from '/lib/boardsFromLocalStorage.js';
-
-const gameName = '${ urlSlugify( data.board.game ) }';
-const playerName = '${ urlSlugify( data.board.player ) }';
 
 // go out to the database and update again, asynchronously
 syncLocalStorageChangeHistoryAndDatabaseWhere( {
