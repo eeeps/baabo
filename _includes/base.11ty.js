@@ -46,6 +46,10 @@ return `
 	<meta property="og:description" content="${ data.og_description }">
 	
 	${ data.head ? data.head : '' }
+	
+	<!-- todo don't block on whole body, or on every page?	-->
+    <link rel="expect" href="#body" blocking="render">
+	<script>'render-blocking workaround https://bsky.app/profile/nomster.bsky.social/post/3loxku2sppk2j'</script>
 
 </head>
 <body id=body>

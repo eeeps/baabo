@@ -8,7 +8,65 @@ export const data = {
 		alias: 'game'
 	},
 	eleventyComputed: {
-		permalink: data => `${ data.game.name }/`
+		permalink: data => `${ data.game.name }/`,
+		boards: data => data.boards.filter( x => x.game === data.game.name ),
+		head: data => `
+${ data.game.active ? `
+<script type="module" blocking="render">
+
+import boardsFromLocalStorage from '/lib/boardsFromLocalStorage.js';
+import updateHtmlFromBoardState from '/lib/updateHtmlFromBoardState.js';
+import urlSlugify from '/lib/urlSlugify.js';
+
+/* hoisted
+   https://bsky.app/profile/mayank.co/post/3lpucuvplic2d */
+import '/lib/boardStatesFromChangeHistory.js';
+import '/lib/fetchChangeHistoryFromLocalStorageWhere.js';
+import '/lib/oneBoardStateFromChangeHistory.js';
+import '/lib/fetchChangeHistoryFromDatabaseWhere.js';
+import '/lib/setDifference.js';
+import '/lib/postChangeToDatabase.js';
+import '/lib/timestampReviver.js';
+import '/lib/db.js';
+import '/lib/deleteChangeFromLocalStorage.js';
+import '/lib/applyChangesToBoard.js';
+import '/lib/blankBoard.js';
+import '/env.js'; 
+
+const tables = document.querySelectorAll( 'table:not(.tiny)' );
+
+function updateTables( tables ) {
+	
+	const playerNames = [ ${ data.boards.map( b => `"${ urlSlugify( b.player ) }"` ).join(', ') } ];
+	const allBoards = boardsFromLocalStorage( playerNames.map( pn => ( {
+		game: "${ urlSlugify( data.game.name ) }",
+		player: pn,
+	} ) ) );
+	
+	tables.forEach( table => {
+		const playerName = urlSlugify( table.dataset.player );
+		// console.log( allBoards.find( b => urlSlugify( b.player ) === playerName ).boardState );
+		updateHtmlFromBoardState( table, allBoards.find( b => urlSlugify( b.player ) === playerName ).boardState );
+	} );
+	
+}
+
+updateTables( tables );
+
+import syncLocalStorageChangeHistoryAndDatabaseWhere from '/lib/syncLocalStorageChangeHistoryAndDatabaseWhere.js';
+
+// go out to the database and update again, asynchronously
+syncLocalStorageChangeHistoryAndDatabaseWhere( { game: '${ urlSlugify( data.game.name ) }' } ).then( ( result ) => {
+	if ( result.postedToLocalStorage === true ||
+	     result.deletedFromLocalStorage === true ) {
+		updateTables( tables );
+	}
+} );
+
+
+</script>
+` : '' }
+		`
 	},
 	layout: "base.11ty.js"
 };
@@ -16,8 +74,6 @@ export const data = {
 
 export function render(data) {
 
-	const boards = data.boards
-		.filter( x => x.game === data.game.name );
 	const boardStates = data.boardStates
 		.filter( x => x.game === data.game.name );
 	const prizes = data.prizes
@@ -55,7 +111,7 @@ export function render(data) {
 	<h2>Players</h2>
 	
 	<ul class=players>
-		${ boards.map( board => {
+		${ data.boards.map( board => {
 			const boardState = boardStates.find( bs => 
 				urlSlugify( bs.player ) === urlSlugify( board.player )
 			).boardState;
@@ -63,8 +119,8 @@ export function render(data) {
 			return `
 		<li>
 			<a href="/${ urlSlugify( board.game ) }/boards/${ urlSlugify( board.player ) }"><div>
-				<table class="thumb" data-player="${ urlSlugify( board.player ) }">
-					<tr>${ tds[ 0 ] }${ tds[ 1 ] }${ tds[ 2 ] }${ tds[ 3 ] }${ tds[ 4 ] }
+				<table class="thumb" data-player="${ urlSlugify( board.player ) }"
+				 style="view-transition-name: ${ urlSlugify( board.player ) }-board;">					<tr>${ tds[ 0 ] }${ tds[ 1 ] }${ tds[ 2 ] }${ tds[ 3 ] }${ tds[ 4 ] }
 					<tr>${ tds[ 5 ] }${ tds[ 6 ] }${ tds[ 7 ] }${ tds[ 8 ] }${ tds[ 9 ] }
 					<tr>${ tds[ 10 ] }${ tds[ 11 ] }<td class="checked">${ tds[ 13 ] }${ tds[ 14 ] }
 					<tr>${ tds[ 15 ] }${ tds[ 16 ] }${ tds[ 17 ] }${ tds[ 18 ] }${ tds[ 19 ] }
@@ -148,59 +204,5 @@ export function render(data) {
 
 </div>
 
-${ data.game.active ? `
-<script type="module">
-
-import boardsFromLocalStorage from '/lib/boardsFromLocalStorage.js';
-import updateHtmlFromBoardState from '/lib/updateHtmlFromBoardState.js';
-import syncLocalStorageChangeHistoryAndDatabaseWhere from '/lib/syncLocalStorageChangeHistoryAndDatabaseWhere.js';
-import urlSlugify from '/lib/urlSlugify.js';
-
-/* hoisted
-   https://bsky.app/profile/mayank.co/post/3lpucuvplic2d */
-import '/lib/boardStatesFromChangeHistory.js';
-import '/lib/fetchChangeHistoryFromLocalStorageWhere.js';
-import '/lib/oneBoardStateFromChangeHistory.js';
-import '/lib/fetchChangeHistoryFromDatabaseWhere.js';
-import '/lib/setDifference.js';
-import '/lib/postChangeToDatabase.js';
-import '/lib/timestampReviver.js';
-import '/lib/db.js';
-import '/lib/deleteChangeFromLocalStorage.js';
-import '/lib/applyChangesToBoard.js';
-import '/lib/blankBoard.js';
-import '/env.js'; 
-
-const tables = document.querySelectorAll( 'table:not(.tiny)' );
-
-function updateTables( tables ) {
-	
-	const playerNames = [ ${ boards.map( b => `"${ urlSlugify( b.player ) }"` ).join(', ') } ];
-	const allBoards = boardsFromLocalStorage( playerNames.map( pn => ( {
-		game: "${ urlSlugify( data.game.name ) }",
-		player: pn,
-	} ) ) );
-	
-	tables.forEach( table => {
-		const playerName = urlSlugify( table.dataset.player );
-		// console.log( allBoards.find( b => urlSlugify( b.player ) === playerName ).boardState );
-		updateHtmlFromBoardState( table, allBoards.find( b => urlSlugify( b.player ) === playerName ).boardState );
-	} );
-	
-}
-
-updateTables( tables );
-
-// go out to the database and update again, asynchronously
-syncLocalStorageChangeHistoryAndDatabaseWhere( { game: '${ urlSlugify( data.game.name ) }' } ).then( ( result ) => {
-	if ( result.postedToLocalStorage === true ||
-	     result.deletedFromLocalStorage === true ) {
-		updateTables( tables );
-	}
-} );
-
-
-</script>
-` : '' }
 `;
 }

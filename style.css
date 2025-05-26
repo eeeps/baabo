@@ -359,7 +359,6 @@ ins {
 }
 
 
-/*
 @view-transition {
     navigation: auto;
 }
@@ -367,4 +366,3 @@ ins {
 :root::view-transition-group(*) {
   animation-duration: 0.125s;
 }
-*/
