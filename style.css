@@ -358,11 +358,16 @@ ins {
 	font-size: 0.8625em;
 }
 
+/* view transitions */
 
-@view-transition {
-    navigation: auto;
-}
+@media screen and (prefers-reduced-motion: no-preference) {
 
-:root::view-transition-group(*) {
-  animation-duration: 0.125s;
+	@view-transition {
+		navigation: auto;
+	}
+	
+	:root::view-transition-group(*) {
+		animation-duration: 0.125s;
+	}
+
 }
