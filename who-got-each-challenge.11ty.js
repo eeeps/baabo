@@ -75,7 +75,7 @@ dt {
 
 <div class="mainContain">
 	<header>
-		<h1><a href="/summer2024/">
+		<h1><a href="/${ urlSlugify( data.game.name ) }/">
 			
 			<ruby>B
 			<rp>(</rp><rt>Bellingham</rt><rp>)</rp>
