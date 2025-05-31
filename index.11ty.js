@@ -12,6 +12,7 @@ export function render(data) {
 	<h2>BAABO</h2>
 	
 	<ul class="years">
+		<li><a href="2025">2025</a></li>
 		<li><a href="summer2024">2024</a></li>
 		<li><a href="winter2023-24">
 			<span style="display: block; font-size: 0.625em;">Winter</span>
