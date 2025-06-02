@@ -483,7 +483,7 @@
 	{
 		"game": "2025",
 		"what": "Brewery t-shirt of your choice",
-		"emoji": "🆕",
+		"emoji": "👕",
 		"from": "Britt",
 		"available": true,
 		"howToWin": "Fourth person to get a bingo"
@@ -491,31 +491,31 @@
 	{
 		"game": "2025",
 		"what": "Ambo gift card",
-		"emoji": "🆕",
+		"emoji": "🫓",
 		"from": "Jasper",
 		"available": true,
 		"howToWin": "First horizontal bingo"
 	},
 	{
 		"game": "2025",
-		"what": "A day at the bow sanctuary sauna",
-		"emoji": "🆕",
+		"what": "A day at the Bow Sanctuary sauna",
+		"emoji": "🧖",
 		"from": "Lou",
 		"available": true,
-		"howToWin": "Make an L"
+		"howToWin": "Make an L (<table class=tiny><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)"
 	},
 	{
 		"game": "2025",
-		"what": "Elongated bagel",
-		"emoji": "🆕",
+		"what": "Sourdough loaf and a pair of polymer clay earrings",
+		"emoji": "👂",
 		"from": "Aleta",
 		"available": true,
-		"howToWin": "Sourdough loaf and a pair of polyumer clay earrings"
+		"howToWin": "Elongated bagel (<table class=tiny><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td><td class=checked><td><td class=checked><td><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td></table>)"
 	},
 	{
 		"game": "2025",
 		"what": "Your own pair of finger hands",
-		"emoji": "🆕",
+		"emoji": "👐",
 		"from": "Caity",
 		"available": true,
 		"howToWin": "Best finger hand video"
@@ -523,26 +523,26 @@
 	{
 		"game": "2025",
 		"what": "A loaf of date bread",
-		"emoji": "🆕",
+		"emoji": "🍞",
 		"from": "Mary",
 		"available": true,
-		"howToWin": "Four corners"
+		"howToWin": "Four corners (<table class=tiny><tr><td class=checked><td><td><td><td class=checked><tr><td><td><td><td><td><tr><td><td><td><td><td><tr><td><td><td><td><td><tr><td class=checked><td><td><td><td class=checked></table>)"
 	},
 	{
 		"game": "2025",
 		"what": "Homemade hot honey",
-		"emoji": "🆕",
+		"emoji": "🍯",
 		"from": "Zach M.",
 		"available": true,
-		"howToWin": "First two people to make the letter Z"
+		"howToWin": "First two people to make the letter Z (<table class=tiny><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td><td><td class=checked><td><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)"
 	},
 	{
 		"game": "2025",
 		"what": "Frame a piece of artwork for you",
-		"emoji": "🆕",
+		"emoji": "🖼️",
 		"from": "Jeff",
 		"available": true,
-		"howToWin": "First person to get a J (miss two corners in bottom) (two space swoop up)"
+		"howToWin": "First person to get a J (<table class=tiny><tr><td><td><td><td><td class=checked><tr><td><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td><td class=checked><td class=checked><td class=checked><td></table>)"
 	},
 	{
 		"game": "2025",
@@ -555,7 +555,7 @@
 	{
 		"game": "2025",
 		"what": "A half-dozen homemade bagels",
-		"emoji": "🆕",
+		"emoji": "🥯",
 		"from": "Celeste",
 		"available": true,
 		"howToWin": "First vertical bingo"
@@ -563,64 +563,64 @@
 	{
 		"game": "2025",
 		"what": "A pair of handmade mugs",
-		"emoji": "🆕",
+		"emoji": "☕️",
 		"from": "Tessa",
 		"available": true,
-		"howToWin": "Big X"
+		"howToWin": "Big X (<table class=tiny><tr><td class=checked><td><td><td><td class=checked><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td class=checked><td><td><td><td class=checked></table>)"
 	},
 	{
 		"game": "2025",
 		"what": "The board game Scythe",
-		"emoji": "🆕",
+		"emoji": "♟️",
 		"from": "Steph and Will",
 		"available": true,
-		"howToWin": "Upside-down J (scythe)"
+		"howToWin": "Upside-down J (scythe) (<table class=tiny><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td></table>)"
 	},
 	{
 		"game": "2025",
 		"what": "Hand-made beanie of your color choosing",
-		"emoji": "🆕",
-		"from": "Cassie",
+		"emoji": "🧶",
+		"from": "Cassi",
 		"available": true,
-		"howToWin": "Outer square"
+		"howToWin": "Outer square (<table class=tiny><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)"
 	},
 	{
 		"game": "2025",
 		"what": "Bread-making kit",
-		"emoji": "🆕",
+		"emoji": "🥖",
 		"from": "Zack",
 		"available": true,
-		"howToWin": "Peace sign upside down"
+		"howToWin": "Peace sign upside down (<table class=tiny><tr><td class=checked><td><td class=checked><td><td class=checked><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td><td><td class=checked><td><td><tr><td><td><td class=checked><td><td><tr><td><td><td class=checked><td><td></table>)"
 	},
 	{
 		"game": "2025",
 		"what": "Twenty-five dollar gift certificate to The Crooked Spoon",
-		"emoji": "🆕",
+		"emoji": "🍦",
 		"from": "Ellie",
 		"available": true,
-		"howToWin": "Downward triangle (any level)"
+		"howToWin": "Downward triangle at any level (<table class=tiny><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td><tr><td><td><td><td><td><tr><td><td><td><td><td></table>, <table class=tiny><tr><td><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td><tr><td><td><td><td><td></table>, or <table class=tiny><tr><td><td><td><td><td><tr><td><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td></table>)"
 	},
 	
 	{
 		"game": "2025",
-		"what": "",
-		"emoji": "🆕",
+		"what": "Make you rhubarb raspberry cornbread cobbler (with dietary requirements met)",
+		"emoji": "😋",
 		"from": "Jamie",
 		"available": true,
-		"howToWin": ""
+		"howToWin": "Second bingo"
 	},
 	{
 		"game": "2025",
-		"what": "",
-		"emoji": "🆕",
+		"what": "Two loaves of sourdough bread",
+		"emoji": "🥖",
 		"from": "Jason",
 		"available": true,
-		"howToWin": ""
+		"howToWin": "Third bingo"
 	},
 	{
 		"game": "2025",
 		"what": "Framed watercolor by Sarah Dickinson",
-		"emoji": "🖼️",
+		"emoji": "🖌️",
 		"from": "Marguerite",
 		"available": true,
 		"howToWin": "First “Sunshine Bingo” (<table class=tiny><tr><td class=checked><td><td class=checked><td><td class=checked><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td class=checked><td class=checked><td><td class=checked><td class=checked><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td class=checked><td><td class=checked><td><td class=checked></table>)"
@@ -631,6 +631,6 @@
 		"emoji": "🍩",
 		"from": "Zach C.",
 		"available": true,
-		"howToWin": "First to finish “The closest to a tooth Zach could get” (TODO)"
+		"howToWin": "First to finish “The closest to a tooth Zach could get” (<table class=tiny><tr><td><td class=checked><td><td class=checked><td><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td><td class=checked><td><td class=checked><td><tr><td><td class=checked><td><td class=checked><td></table>)"
 	}
 ]
