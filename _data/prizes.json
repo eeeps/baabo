@@ -476,5 +476,161 @@
 		"wonBy": "Britt",
 		"claimDate": "2024-09-22"
 		
+	},
+	
+	
+
+	{
+		"game": "2025",
+		"what": "Brewery t-shirt of your choice",
+		"emoji": "🆕",
+		"from": "Britt",
+		"available": true,
+		"howToWin": "Fourth person to get a bingo"
+	},
+	{
+		"game": "2025",
+		"what": "Ambo gift card",
+		"emoji": "🆕",
+		"from": "Jasper",
+		"available": true,
+		"howToWin": "First horizontal bingo"
+	},
+	{
+		"game": "2025",
+		"what": "A day at the bow sanctuary sauna",
+		"emoji": "🆕",
+		"from": "Lou",
+		"available": true,
+		"howToWin": "Make an L"
+	},
+	{
+		"game": "2025",
+		"what": "Elongated bagel",
+		"emoji": "🆕",
+		"from": "Aleta",
+		"available": true,
+		"howToWin": "Sourdough loaf and a pair of polyumer clay earrings"
+	},
+	{
+		"game": "2025",
+		"what": "Your own pair of finger hands",
+		"emoji": "🆕",
+		"from": "Caity",
+		"available": true,
+		"howToWin": "Best finger hand video"
+	},
+	{
+		"game": "2025",
+		"what": "A loaf of date bread",
+		"emoji": "🆕",
+		"from": "Mary",
+		"available": true,
+		"howToWin": "Four corners"
+	},
+	{
+		"game": "2025",
+		"what": "Homemade hot honey",
+		"emoji": "🆕",
+		"from": "Zach M.",
+		"available": true,
+		"howToWin": "First two people to make the letter Z"
+	},
+	{
+		"game": "2025",
+		"what": "Frame a piece of artwork for you",
+		"emoji": "🆕",
+		"from": "Jeff",
+		"available": true,
+		"howToWin": "First person to get a J (miss two corners in bottom) (two space swoop up)"
+	},
+	{
+		"game": "2025",
+		"what": "$50 gift certificate to Skyline Printworks",
+		"emoji": "🌄",
+		"from": "Eric",
+		"available": true,
+		"howToWin": "Mountain (<table class=tiny><tr><td><td><td><td><td><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td class=checked><td><td><td><td class=checked><tr><td><td><td><td><td></table>)"
+	},
+	{
+		"game": "2025",
+		"what": "A half-dozen homemade bagels",
+		"emoji": "🆕",
+		"from": "Celeste",
+		"available": true,
+		"howToWin": "First bingo"
+	},
+	{
+		"game": "2025",
+		"what": "A pair of handmade mugs",
+		"emoji": "🆕",
+		"from": "Tessa",
+		"available": true,
+		"howToWin": "Big X"
+	},
+	{
+		"game": "2025",
+		"what": "The board game Scythe",
+		"emoji": "🆕",
+		"from": "Steph and Will",
+		"available": true,
+		"howToWin": "Upside-down J (scythe)"
+	},
+	{
+		"game": "2025",
+		"what": "Hand-made beanie of your color choosing",
+		"emoji": "🆕",
+		"from": "Cassie",
+		"available": true,
+		"howToWin": "Outer square"
+	},
+	{
+		"game": "2025",
+		"what": "Bread-making kit",
+		"emoji": "🆕",
+		"from": "Zack",
+		"available": true,
+		"howToWin": "Peace sign upside down"
+	},
+	{
+		"game": "2025",
+		"what": "Twenty-five dollar gift certificate to The Crooked Spoon",
+		"emoji": "🆕",
+		"from": "Ellie",
+		"available": true,
+		"howToWin": "Downward triangle (any level)"
+	},
+	
+	{
+		"game": "2025",
+		"what": "",
+		"emoji": "🆕",
+		"from": "Jamie",
+		"available": true,
+		"howToWin": ""
+	},
+	{
+		"game": "2025",
+		"what": "",
+		"emoji": "🆕",
+		"from": "Jason",
+		"available": true,
+		"howToWin": ""
+	},
+	{
+		"game": "2025",
+		"what": "Framed watercolor by Sarah Dickinson",
+		"emoji": "🖼️",
+		"from": "Marguerite",
+		"available": true,
+		"howToWin": "First “Sunshine Bingo” (<table class=tiny><tr><td class=checked><td><td class=checked><td><td class=checked><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td class=checked><td class=checked><td><td class=checked><td class=checked><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td class=checked><td><td class=checked><td><td class=checked></table>)"
+	},
+	{
+		"game": "2025",
+		"what": "11 donuts from Lafeens",
+		"emoji": "🍩",
+		"from": "Zach C.",
+		"available": true,
+		"howToWin": "First to finish “The closest to a tooth Zach could get” (TODO)"
 	}
 ]

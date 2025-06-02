@@ -1,100 +1,193 @@
 [
 	{
-		"player": "Celeste",
-		"challenges": [
-			"Hike Chain Lakes Loop",
-			"Play golf (traditional? frisbee? mini? card game? top golf? you choose!)",
-			"See a drive-in movie at Blue Fox Drive-In Theatre",
-			"Trash pick up walk with a friend",
-			"Attend three outdoor music events",
-			"Visit a u-pick farm (Britt and Eric’s plum tree counts)",
-			"Find a cause you want to donate to, volunteer for, become a member of, etc."
-		]
-	},
-	{
-		"player": "Eric",
-		"challenges": [
-			"Have fun in Canada",
-			"Sign a register on a mountain",
-			"Get a request played on the radio",
-			"Do a cannonball (must shout, <span class=smallcaps>“CANNONBALL!”</span>)",
-			"Beat Britt at toss-your-balls (AKA ladder ball)",
-			"Make tea from a native foraged plant",
-			"Attend (or host!) a block party"
-		]
-	},
-	{
-		"player": "Mary",
-		"challenges": [
-			"Learn to salsa dance at Cof&amp;",
-			"Do something in North County that you’ve never done before",
-			"Organize an after work hangout",
-			"Make or eat an ethnic dish that you’ve never had",
-			"Use and develop a disposable camera"
-		]
-	},
-	{
 		"player": "Britt",
 		"challenges": [
-			"Visit Mindport",
-			"Help or participate three times in BAABO activities not on your board",
-			"Eat tacos with at least two other BAABO players",
-			"Swim in the Salish Sea",
-			"Go to an Elizabeth Park concert",
-			"Print one photo taken this summer (Polaroid OK)"
-		]
-	},
-	{
-		"player": "Jason",
-		"challenges": [
-			"Go swimming in a lake",
-			"Go visit a waterfall",
-			"Fly a kite"
-		]
-	},
-	{
-		"player": "Jamie",
-		"challenges": [
-			"Commandeer (or just go) on a water vehicle",
-			"Pay it foward to a stranger",
-			"Cold plunge in two different bodies of water"
-		]
-	},
-	{
-		"player": "Lou",
-		"challenges": [
-			"Take a friend out to coffee",
-			"Make a picnic happen",
-			"Go to ecstatic dance Presence Studio",
-			"Go visit Q Center"
+			"Go to Boundary’s goodbye party",
+			"Draw and print a temporary tattoo and get five people to wear it",
+			"Curate an art show and host an opening",
+			"Watch “Origins: The Last Reefnetters”"
 		]
 	},
 	{
 		"player": "Jasper",
 		"challenges": [
-			"Make a meal entirely from items from the farmer’s market",
-			"Swim with bioluminescence",
-			"Identify a pretty flower on a hike and text the group with some information about it",
-			"Moon an epic sunset (or sunrise)",
-			"Go dancing"
+			"Bring lunch to a friend at their workplace",
+			"Go on a nightswim (clothing optional)",
+			"Research and implement one change to your lifestyle that makes you more sustainable",
+			"Record a music video to your favorite song"
 		]
 	},
 	{
-		"player": "Meg",
+		"player": "Lou",
 		"challenges": [
-			"Attend one of the canoe landing events",
-			"Watch an outdoor movie",
-			"Get a tattoo (permanent only)",
-			"Host or attend a game night",
-			"Do a themed photoshoot with friends"
+			"Give a friend a haircut",
+			"Perform at an open mic (karaoke inclusive)",
+			"Go horseback riding (fake horses OK)"
+		]
+	},
+	{
+		"player": "Aleta",
+		"challenges": [
+			"Take a sunset selfie with a cocktail or mocktail on Squalicum Pier",
+			"Master a set of ten cartwheels in a row and share a video of them",
+			"Ride on the Interurban trail to Clayton Beach",
+			"Participate as a participant, volunteer, or heckler at an race event",
+			"Go to a local farm and pick berries",
+			"Ride the ferry to Lummi Island",
+			"Make crafty art using foraged glass from Glass Beach"
 		]
 	},
 	{
 		"player": "Caity",
 		"challenges": [
-			"Watch a Seattle Reign game at Menace Brewing",
-			"Learn a new card game",
-			"Play a game of tennis"
+			"See a show at the Wild Buffalo",
+			"Have a Fairhaven morning (coffee at Cafe Blue, pastry at Iron Rooster, stroll Village Books)",
+			"Bake or cook something that highlights a seasonal agreement",
+			"Go to Drayton Harbor Oysters",
+			"Sun you buns for twenty minutes",
+			"Borrow Caity's finger hands and make a one minute short film"
+		]
+	},
+	{
+		"player": "Mary",
+		"challenges": [
+			"Get a waffle cone at Snow Goose Produce",
+			"Go to Clayton Beach",
+			"Take a selfie with a slug",
+			"Support a business in Point Roberts"
+		]
+	},
+	{
+		"player": "Zach M.",
+		"challenges": [
+			"Play cards at your favorite coffee shop or brewery",
+			"Visit the Rosario State Park tide pools",
+			"Go to a rodeo",
+			"Tandem sky dive"
+		]
+	},	
+	{
+		"player": "Jeff",
+		"challenges": [
+			"Make a meal entirely from farmer’s market items",
+			"Go to an outdoor movie at either the Pickford or the Village Green",
+			"Go up to Artist’s Point for a sunrise (need photographic proof)",
+			"Volunteer for a day for a conservation project"
+		]
+	},
+	{
+		"player": "Eric",
+		"challenges": [
+			"Take the bus (in Bellingham)",
+			"Bake a cake in the shape of Old City Hall",
+			"Film a commercial on Commercial Street",
+			"Discover a podcast you love, don't say anything about it to anybody, and present about it at BAABO close",
+			"Smell a new smell at the Hovander Fragrance Garden",
+			"Call your congressional representative"
+		]
+	},
+	{
+		"player": "Celeste",
+		"challenges": [
+			"Set Celeste up on a date",
+			"Bring a trash bag with you on three hikes or walks and clean up trail",
+			"Visit all three of Washington's National Parks",
+			"Eat a sammie on Samish Overlook, on Samish Lake, or on Samish Crest",
+			"Lady and the Tramp a food item of your choosing with someone who is not your partner (video evidence required, dogs count)"
+		]
+	},
+	{
+		"player": "Tessa",
+		"challenges": [
+			"Introduce someone to your favorite something in town",
+			"Take a selfie with your favorite tree",
+			"Take a dance class"
+		]
+	},
+	{
+		"player": "Steph",
+		"challenges": [
+			"Start a fire Survivor-style (no man-made tools)"
+		]
+	},
+	{
+		"player": "Will",
+		"challenges": [
+			"Mow a lawn (9 square feet) using a traditional scythe"
+		]
+	},	
+
+	{
+		"player": "Cassi",
+		"challenges": [
+			"Go to the library, check out a cookbook from a new-to-you author or cuisine and make a food item",
+			"Visit Jeff at an art market this summer and take a selfie with him",
+			"Go to a Paper Whale arts event or consume a Paper Whale arts item"
+		]
+	},
+	{
+		"player": "Zack",
+		"challenges": [
+			"Make yourself a new hat and wear it for an entire day",
+			"Make a sculpture of your totem animal or an animal you like",
+			"Do not use speech (including writing) for an entire day",
+			"If you usually shave your legs, stop for two weeks, if you don't, shave them for two weeks"
+		]
+	},
+	{
+		"player": "Ellie",
+		"challenges": [
+			"Make a portrait of a friend/partner (must try)",
+			"Spend at least one night doing a solo retreat",
+			"Learn a new game and teach it to a friend",
+			"Make a mask out of paper mache",
+			"Host a movie night for your favorite 90s film",
+			"Go to Sunday Morning dance at Presence Studio",
+			"Get involved with a political issue (go to a rally, write your rep, do something!)"
+		]
+	},
+	{
+		"player": "Jamie",
+		"challenges": [
+			"Jump off Taylor Dock",
+			"See a shooting star",
+			"Make popsicles",
+			"Give a bouquet of flowers to someone",
+			"See bioluminescence"
+		]
+	},
+	{
+		"player": "Jason",
+		"challenges": [
+			"Hike to Welcome Pass",
+			"Go to Downtown Sounds",
+			"Concert at Elizabeth Park",
+			"Go see a drive-in movie theater",
+			"Host a BBQ",
+			"Take a self defense class"
+		]
+	},
+	{
+		"player": "Marguerite",
+		"challenges": [
+			"Spread the love—give 5 favorite used books or plant starters to a friend",
+			"Celebrate love and community—join the magic at a queer event at El Suenito!",
+			"Take a stroll down Little Squalicum Pier… can you spot the mysterious green rock with an eye?",
+			"Grab a donut at Lafeen’s and ask Tyler about his wild, wonderful pets",
+			"Catch a Bell’s game and snag a high-five from Dinger",
+			"Buy something fun from the Pocket Box vending machine at Black Cat",
+			"Take a stroll through Bellingham's First Friday Downtown Art Walk"
+		]
+	},
+	{
+		"player": "Zach C.",
+		"challenges": [
+			"Have an ice cream flavor you've already had at Mallards, because why risk it?",
+			"Watch somebody take a cold plunge and judge them",
+			"Find a male brewer without a beard",
+			"Witness a couple arguing at a restaurant",
+			"Shake your head at a slackliner",
+			"Park within 3 blocks of Mount Baker Theater during a showtime"
 		]
 	}
 ]
