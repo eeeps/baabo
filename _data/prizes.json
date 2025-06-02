@@ -578,7 +578,7 @@
 	},
 	{
 		"game": "2025",
-		"what": "Hand-made beanie of your color choosing",
+		"what": "Hand-made beanie in the color of your choice",
 		"emoji": "🧶",
 		"from": "Cassi",
 		"available": true,
@@ -587,7 +587,7 @@
 	{
 		"game": "2025",
 		"what": "Bread-making kit",
-		"emoji": "🥖",
+		"emoji": "🥣",
 		"from": "Zack",
 		"available": true,
 		"howToWin": "Peace sign upside down (<table class=tiny><tr><td class=checked><td><td class=checked><td><td class=checked><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td><td><td class=checked><td><td><tr><td><td><td class=checked><td><td><tr><td><td><td class=checked><td><td></table>)"
@@ -600,7 +600,6 @@
 		"available": true,
 		"howToWin": "Downward triangle at any level (<table class=tiny><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td><tr><td><td><td><td><td><tr><td><td><td><td><td></table>, <table class=tiny><tr><td><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td><tr><td><td><td><td><td></table>, or <table class=tiny><tr><td><td><td><td><td><tr><td><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td></table>)"
 	},
-	
 	{
 		"game": "2025",
 		"what": "Make you rhubarb raspberry cornbread cobbler (with dietary requirements met)",
