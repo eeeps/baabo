@@ -2279,6 +2279,35 @@
       "Call your congressional representative",
       "Make popsicles"
     ]
+  },
+  {
+    "game": "2025",
+    "player": "Andrea",
+	"challenges": [
+		"Shake your head at a slackliner",
+		"Go to a rodeo",
+		"Go to a Paper Whale arts event or consume a Paper Whale arts project",
+		"Hike to Welcome Pass",
+		"Take a selfie with a slug",
+		"Sun your buns for twenty minutes",
+		"Start a fire Survivor-style (no man-made tools)",
+		"Go to Clayton Beach",
+		"Get a waffle cone at Snow Goose Produce",
+		"Concert at Elizabeth Park",
+		"Go to the library, check out a cookbook from a new-to-you author or cuisine and make a food item",
+		"Make a sculpture of your totem animal or an animal you like",
+		"Take the bus (in Bellingham)",
+		"Introduce someone to your favorite something in town",
+		"Go to Drayton Harbor Oysters",
+		"Go on a night swim (clothing optional)",
+		"Participate as a participant, volunteer, or heckler at a race event",
+		"Spend at least one night doing a solo retreat",
+		"Set Celeste up on a date",
+		"Record a music video to your favorite song",
+		"Make a mask out of paper mache",
+		"Take a stroll down Little Squalicum Pier… can you spot the mysterious green rock with an eye?",
+		"Discover a podcast you love, don’t say anything about it to anybody, and present about it at BAABO close",
+		"Park within three blocks of Mount Baker Theater during a showtime"
+	]
   }
-
 ]

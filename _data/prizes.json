@@ -631,5 +631,13 @@
 		"from": "Zach C.",
 		"available": true,
 		"howToWin": "First to finish “The closest to a tooth Zach could get” (<table class=tiny><tr><td><td class=checked><td><td class=checked><td><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td><td class=checked><td><td class=checked><td><tr><td><td class=checked><td><td class=checked><td></table>)"
-	}
+	},
+	{
+		"game": "2025",
+		"what": "Homemade marshmallows, graham crackers, and store-bought good chocolate for fancy s’mores",
+		"emoji": "🍫",
+		"from": "Andrea",
+		"available": true,
+		"howToWin": "Square around the center space (<table class=tiny><tr><td><td><td><td><td><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td><td class=checked><td><td class=checked><td><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td><td><td><td><td></table>)"
+	}	
 ]
