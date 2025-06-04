@@ -37,22 +37,21 @@ const drawABoard = ( challenges ) => {
 // draw all boards and replace the boards.json
 // only do this once!
 //
-const boards = players.map( playerName => {
-	return {
-		"game": gameName,
-		"player": playerName,
-		"challenges": drawABoard( flatChallenges )
-	}
-} );
-
-try {
-  fs.writeFileSync(`_data/boards-${ gameName }.json`, JSON.stringify( boards, null, 2 ), 'utf8');
-  console.log('Data successfully saved to disk');
-} catch (error) {
-  console.log('An error has occurred ', error);
-}
+// const boards = players.map( playerName => {
+// 	return {
+// 		"game": gameName,
+// 		"player": playerName,
+// 		"challenges": drawABoard( flatChallenges )
+// 	}
+// } );
+// 
+// try {
+//   fs.writeFileSync(`_data/boards-${ gameName }.json`, JSON.stringify( boards, null, 2 ), 'utf8');
+//   console.log('Data successfully saved to disk');
+// } catch (error) {
+//   console.log('An error has occurred ', error);
+// }
 
 
 // draw one board
-// for julie
-// console.log( drawABoard( flatChallenges ) );
+console.log( drawABoard( flatChallenges ) );
