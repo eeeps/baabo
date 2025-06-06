@@ -639,5 +639,13 @@
 		"from": "Andrea",
 		"available": true,
 		"howToWin": "Square around the center space (<table class=tiny><tr><td><td><td><td><td><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td><td class=checked><td><td class=checked><td><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td><td><td><td><td></table>)"
-	}	
+	},
+	{
+		"game": "2025",
+		"what": "Your choice of any of Meg’s handmade pottery pieces",
+		"emoji": "🍵",
+		"from": "Meg",
+		"available": true,
+		"howToWin": "Second vertical bingo"
+	}
 ]

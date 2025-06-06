@@ -2369,5 +2369,35 @@
 		"Mow a lawn (9 square feet) using a traditional scythe",
 		"Eat a sammie on Samish Overlook, on Samish Lake, or on Samish Crest"
 	]
+  },
+  {
+    "game": "2025",
+    "player": "Meg",
+	"challenges": [
+		"Take a selfie with a slug",
+		"Spend at least one night doing a solo retreat",
+		"Go to Clayton Beach",
+		"Eat a sammie on Samish Overlook, on Samish Lake, or on Samish Crest",
+		"Make a portrait of a friend/partner (must try)",
+		"Take a sunset selfie with a cocktail or mocktail on Squalicum Pier",
+		"Discover a podcast you love, don’t say anything about it to anybody, and present about it at BAABO close",
+		"Learn a new game and teach it to a friend",
+		"Get a waffle cone at Snow Goose Produce",
+		"Hike to Welcome Pass",
+		"Bring a trash bag with you on three hikes or walks and clean up trail",
+		"Participate as a participant, volunteer, or heckler at a race event",
+		"Go to a rodeo",
+		"Visit all three of Washington’s National Parks",
+		"Tandem sky dive",
+		"Have an ice cream flavor you’ve already had at Mallards, because why risk it?",
+		"Draw and print a temporary tattoo and get five BAABO players to wear it",
+		"Buy something fun from the Pocket Box vending machine at Black Sheep",
+		"Film a commercial on Commercial Street",
+		"Concert at Elizabeth Park",
+		"Record a music video to your favorite song",
+		"Take a self defense class",
+		"Give a friend a haircut",
+		"Visit Jeff at an art market this summer and take a selfie with him"
+	]
   }
 ]
