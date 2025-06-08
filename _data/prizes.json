@@ -493,8 +493,10 @@
 		"what": "Ambo gift card",
 		"emoji": "🫓",
 		"from": "Jasper",
-		"available": true,
-		"howToWin": "First horizontal bingo"
+		"available": false,
+		"howToWin": "First horizontal bingo",
+		"wonBy": "Ellie",
+		"claimDate": "2025-06-08"
 	},
 	{
 		"game": "2025",
@@ -557,8 +559,10 @@
 		"what": "A half-dozen homemade bagels",
 		"emoji": "🥯",
 		"from": "Celeste",
-		"available": true,
-		"howToWin": "First vertical bingo"
+		"available": false,
+		"howToWin": "First vertical or diagonal bingo",
+		"wonBy": "Caity",
+		"claimDate": "2025-06-07"
 	},
 	{
 		"game": "2025",
