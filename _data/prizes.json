@@ -651,5 +651,13 @@
 		"from": "Meg",
 		"available": true,
 		"howToWin": "Second vertical bingo"
+	},
+	{
+		"game": "2025",
+		"what": "SURI toothbrush",
+		"emoji": "🪥",
+		"from": "Celeste",
+		"available": true,
+		"howToWin": "Baseball diamond (<table class=tiny><tr><td><td><td class=checked><td><td><tr><td><td><td><td><td><tr><td class=checked><td><td class=checked><td><td class=checked><tr><td><td><td><td><td><tr><td><td><td class=checked><td><td></table>)"
 	}
 ]
