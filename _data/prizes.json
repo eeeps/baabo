@@ -619,8 +619,10 @@
 		"what": "Two loaves of sourdough bread",
 		"emoji": "🥖",
 		"from": "Jason",
-		"available": true,
-		"howToWin": "Third bingo"
+		"available": false,
+		"howToWin": "Third bingo",
+		"wonBy": "Marguerite",
+		"claimDate": "2025-06-16"
 	},
 	{
 		"game": "2025",
@@ -651,8 +653,10 @@
 		"what": "Your choice of any of Meg’s handmade pottery pieces",
 		"emoji": "🍵",
 		"from": "Meg",
-		"available": true,
-		"howToWin": "Second vertical bingo"
+		"available": false,
+		"howToWin": "Second vertical bingo",
+		"wonBy": "Aleta",
+		"claimDate": "2025-06-16"
 	},
 	{
 		"game": "2025",
