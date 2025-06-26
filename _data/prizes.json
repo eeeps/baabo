@@ -485,8 +485,10 @@
 		"what": "Brewery t-shirt of your choice",
 		"emoji": "👕",
 		"from": "Britt",
-		"available": true,
-		"howToWin": "Fourth person to get a bingo"
+		"available": false,
+		"howToWin": "Fourth person to get a bingo",
+		"wonBy": "Ellie",
+		"claimDate": "2025-06-25"
 	},
 	{
 		"game": "2025",
