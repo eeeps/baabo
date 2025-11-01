@@ -559,8 +559,10 @@
 		"what": "$50 gift certificate to Skyline Printworks",
 		"emoji": "🌄",
 		"from": "Eric",
-		"available": true,
-		"howToWin": "Mountain (<table class=tiny><tr><td><td><td><td><td><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td class=checked><td><td><td><td class=checked><tr><td><td><td><td><td></table>)"
+		"available": false,
+		"howToWin": "Mountain (<table class=tiny><tr><td><td><td><td><td><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td class=checked><td><td><td><td class=checked><tr><td><td><td><td><td></table>)",
+		"wonBy": "Celeste",
+		"claimDate": "2025-09-07"
 	},
 	{
 		"game": "2025",
