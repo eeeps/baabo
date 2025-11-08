@@ -523,8 +523,10 @@
 		"what": "Your own pair of finger hands",
 		"emoji": "👐",
 		"from": "Caity",
-		"available": true,
+		"available": false,
 		"howToWin": "Best finger hand video"
+		"wonBy": "Eric",
+		"claimDate": "2025-11-08"
 	},
 	{
 		"game": "2025",
