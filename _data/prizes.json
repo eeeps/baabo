@@ -543,8 +543,10 @@
 		"what": "Homemade hot honey",
 		"emoji": "🍯",
 		"from": "Zach M.",
-		"available": true,
-		"howToWin": "First two people to make the letter Z (<table class=tiny><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td><td><td class=checked><td><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)"
+		"available": false,
+		"howToWin": "First two people to make the letter Z (<table class=tiny><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td><td><td class=checked><td><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)",
+		"wonBy": "Ellie",
+		"claimDate": "2025-11-02"
 	},
 	{
 		"game": "2025",
