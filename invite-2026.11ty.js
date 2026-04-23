@@ -226,7 +226,7 @@ What to bring
 Food
 </h2>
 
-<p>We’ll have a baked potato bar with potatos and toppings. Feel free to bring a side, dessert, and/or beverages to share.</p>
+<p>We’ll have a baked potato bar with potatoes and toppings. Feel free to bring a side, dessert, and/or beverages to share.</p>
 
 <h2>What if I want to play but can't attend?</h2>
 
