@@ -203,7 +203,7 @@ Bellingham
 
 <h2>What the heck is BAABO?</h2>
 
-<p>It's a summer-long game of bingo with friends. Everybody comes to the kickoff with a handful of fun or challenging <i>challenges</i> (e.g., "jump off of Taylor Dock" or "introduce yourself to a new neighbor"). At the kickoff, we conduct a random draw of challenges to give everyone their own unique BAABO board.</p>
+<p>It's a summer-long game of bingo with friends. Everybody comes to the kickoff with a handful of fun or challenging <i>challenges</i> (e.g., "jump off of Taylor Dock" or "introduce yourself to a new neighbor"). At the kickoff, we conduct a random draw of challenges to make everyone their own unique BAABO board.</p>
 
 <p>At the kickoff party, each player also announces the prize they will give to other players who check off a certian configuration of squares (e.g., "I'll bake cookies for everyone who gets four corners").</p>  
 
@@ -226,7 +226,7 @@ What to bring
 Food
 </h2>
 
-<p>We’ll have a salad bar with greens, veggies, and dressings. Feel free to bring proteins, toppings, sides, and/or beverages to share.</p>
+<p>We’ll have a baked potato bar with potatos and toppings. Feel free to bring a side, dessert, and/or beverages to share.</p>
 
 <h2>What if I want to play but can't attend?</h2>
 
