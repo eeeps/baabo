@@ -693,6 +693,14 @@
 		"claimDate": "2025-11-13"
 	},
 	{
+		"game": "test",
+		"what": "Toothbrush",
+		"emoji": "🪥",
+		"from": "Celeste",
+		"available": true,
+		"howToWin": "Baseball diamond (<table class=tiny><tr><td><td><td class=checked><td><td><tr><td><td><td><td><td><tr><td class=checked><td><td class=checked><td><td class=checked><tr><td><td><td><td><td><tr><td><td><td class=checked><td><td></table>)"
+	},
+	{
 		"game": "2026",
 		"what": "Custom made mug",
 		"emoji": "🍵",

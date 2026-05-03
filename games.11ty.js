@@ -152,7 +152,8 @@ export function render(data) {
 		<li>
 			<p class="emoji">${ monochromize( prize.emoji ) }</p>
 			<div>
-				<h4 class=what>${ prize.what }</h4>
+				<h4 class=what id="prize-${ urlSlugify( prize.what ) }"><a href="/${ urlSlugify( prize.game ) }/prizes/${ urlSlugify( prize.what ) }/">${ prize.what }</a>
+				</h4>
 				<dl>
 					<div>
 						<dt>From</dt>
@@ -179,7 +180,8 @@ export function render(data) {
 		<li>
 			<p class="emoji">${ monochromize(prize.emoji) }</p>
 			<div>
-				<h4 class=what>${ prize.what }</h4>
+				<h4 class=what id="prize-${ urlSlugify( prize.what ) }"><a href="/${ urlSlugify( prize.game ) }/prizes/${ urlSlugify( prize.what ) }/">${ prize.what }</a>
+				</h4>
 				<dl>
 					<div>
 						<dt>From</dt>
