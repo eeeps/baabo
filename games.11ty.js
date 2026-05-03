@@ -71,7 +71,6 @@ syncLocalStorageChangeHistoryAndDatabaseWhere( { game: '${ urlSlugify( data.game
 	layout: "base.11ty.js"
 };
 
-
 export function render(data) {
 
 	const boardStates = data.boardStates
@@ -150,18 +149,34 @@ export function render(data) {
 			.filter( prize => prize.available )
 			.map( prize => `
 		<li>
-			<p class="emoji">${ monochromize( prize.emoji ) }</p>
+			<p
+				class="emoji"
+				style="view-transition-name: prize-${ urlSlugify( prize.what ) }-emoji"
+			>${ monochromize( prize.emoji ) }</p>
 			<div>
-				<h4 class=what id="prize-${ urlSlugify( prize.what ) }"><a href="/${ urlSlugify( prize.game ) }/prizes/${ urlSlugify( prize.what ) }/">${ prize.what }</a>
+				<h4
+					class=what
+					id="prize-${ urlSlugify( prize.what ) }"
+				><a href="/${ urlSlugify( prize.game ) }/prizes/${ urlSlugify( prize.what ) }/" style="view-transition-name: prize-${ urlSlugify( prize.what ) }-what">${ prize.what }</a>
 				</h4>
 				<dl>
 					<div>
-						<dt>From</dt>
-						<dd ${ data.game.winner && ( urlSlugify( data.game.winner ) === urlSlugify( prize.from ) ) ? 'class="winner"' : '' }>${ prize.from }</dd>
+						<dt
+							style="view-transition-name: prize-${ urlSlugify( prize.what ) }-from-dt"
+						>From</dt>
+						<dd
+							${ data.game.winner && ( urlSlugify( data.game.winner ) === urlSlugify( prize.from ) ) ? 'class="winner"' : '' }
+							style="view-transition-name: prize-${ urlSlugify( prize.what ) }-from-dd"
+						>${ prize.from }</dd>
 					</div>
 					<div>
-						<dt>How to win</dt>
-						<dd>${ prize.howToWin }</dd>
+						<dt
+							style="view-transition-name: prize-${ urlSlugify( prize.what ) }-how-to-win-dt"
+						>How to win</dt>
+						<dd
+							style="view-transition-name: prize-${ urlSlugify( prize.what ) }-how-to-win-dd"
+
+						>${ prize.howToWin }</dd>
 					</div>
 				</dl>
 			</div>
@@ -178,22 +193,42 @@ export function render(data) {
 			.filter( prize => !prize.available )
 			.map( prize => `
 		<li>
-			<p class="emoji">${ monochromize(prize.emoji) }</p>
+			<p
+				class="emoji"
+				style="view-transition-name: prize-${ urlSlugify( prize.what ) }-emoji"
+			>${ monochromize( prize.emoji ) }</p>
 			<div>
-				<h4 class=what id="prize-${ urlSlugify( prize.what ) }"><a href="/${ urlSlugify( prize.game ) }/prizes/${ urlSlugify( prize.what ) }/">${ prize.what }</a>
-				</h4>
+				<h4
+					class=what
+					id="prize-${ urlSlugify( prize.what ) }"><a
+						href="/${ urlSlugify( prize.game ) }/prizes/${ urlSlugify( prize.what ) }/" 
+						style="view-transition-name: prize-${ urlSlugify( prize.what ) }-what">${ prize.what }</a
+				></h4>
 				<dl>
 					<div>
-						<dt>From</dt>
-						<dd ${ data.game.winner && ( urlSlugify( data.game.winner ) === urlSlugify( prize.from ) ) ? 'class="winner"' : '' }>${ prize.from }</dd>
+						<dt
+							style="view-transition-name: prize-${ urlSlugify( prize.what ) }-from-dt"
+						>From</dt>
+						<dd
+							${ data.game.winner && ( urlSlugify( data.game.winner ) === urlSlugify( prize.from ) ) ? 'class="winner"' : '' }
+							style="view-transition-name: prize-${ urlSlugify( prize.what ) }-from-dd"
+						>${ prize.from }</dd>
 					</div>
 					<div>
-						<dt>How to win</dt>
-						<dd>${ prize.howToWin }</dd>
+						<dt
+							style="view-transition-name: prize-${ urlSlugify( prize.what ) }-how-to-win-dt"
+						>How to win</dt>
+						<dd
+							style="view-transition-name: prize-${ urlSlugify( prize.what ) }-how-to-win-dd"
+						>${ prize.howToWin }</dd>
 					</div>
 					<div>
-						<dt>Won by</dt>
-						<dd ${ data.game.winner && ( urlSlugify( data.game.winner ) === urlSlugify( prize.wonBy ) ) ? 'class="winner"' : '' }>${ prize.wonBy }</dd>
+						<dt
+							style="view-transition-name: prize-${ urlSlugify( prize.what ) }-won-by-dt"
+						>Won by</dt>
+						<dd
+							${ data.game.winner && ( urlSlugify( data.game.winner ) === urlSlugify( prize.wonBy ) ) ? 'class="winner"' : '' }
+						>${ prize.wonBy }</dd>
 					</div>
 				</dl>
 			</div>

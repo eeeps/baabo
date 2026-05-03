@@ -20,22 +20,31 @@ export const data = {
 export function render(data) {
 			
 	return `
-<div class="mainContain" style="display: grid; grid-template-columns: 8rem 1fr;">
+<div class="mainContain prizes" style="display: grid; grid-template-columns: 8rem 1fr;">
 	<p style="grid-column: 1/3; text-align: center; font-size: 2rem;"><a href="/${ urlSlugify( data.game.name ) }/#prize-${ urlSlugify( data.prize.what ) }">← Back</a></p>
-	<p class="emoji" style="text-align: center;">${ monochromize( data.prize.emoji ) }</p>
+	<p class="emoji" style="text-align: center; view-transition-name: prize-${ urlSlugify( data.prize.what ) }-emoji">${ monochromize( data.prize.emoji ) }</p>
 	<div>
-		<h4 class=what>${ data.prize.what }</h4>
-		<dl style="font-size: 1.25em;">
+		<h4 class=what style="view-transition-name: prize-${ urlSlugify( data.prize.what ) }-what">${ data.prize.what }</h4>
+		<dl>
 			<div>
-				<dt>From</dt>
-				<dd ${ data.game.winner && ( urlSlugify( data.game.winner ) === urlSlugify( data.prize.from ) ) ? 'class="winner"' : '' }>${ data.prize.from }</dd>
+				<dt style="view-transition-name: prize-${ urlSlugify( data.prize.what ) }-from-dt">From</dt>
+				<dd
+					${ data.game.winner && ( urlSlugify( data.game.winner ) === urlSlugify( data.prize.from ) ) ? 'class="winner"' : '' }
+					style="view-transition-name: prize-${ urlSlugify( data.prize.what ) }-from-dd"
+				>${ data.prize.from }</dd>
 			</div>
 			<div>
-				<dt>How to win</dt>
-				<dd>${ data.prize.howToWin }</dd>
+				<dt
+					style="view-transition-name: prize-${ urlSlugify( data.prize.what ) }-how-to-win-dt"
+				>How to win</dt>
+				<dd
+					style="view-transition-name: prize-${ urlSlugify( data.prize.what ) }-how-to-win-dd"
+				>${ data.prize.howToWin }</dd>
 			</div>
 			<div>
-				<dt>Won by</dt>
+				<dt
+					style="view-transition-name: prize-${ urlSlugify( data.prize.what ) }-won-by-dt"
+				>Won by</dt>
 				<dd><p>${data.prize.wonBy}</p><form style='display: grid; grid-template-columns: repeat( auto-fit, minmax(10ch, 1fr) );
 '>
 				${ data.players.map( player => `

@@ -379,6 +379,7 @@ ins {
 	
 	:root::view-transition-group(*) {
 		animation-duration: 0.125s;
+		/* animation-duration: 1s; /* debug */
 	}
 
 }
