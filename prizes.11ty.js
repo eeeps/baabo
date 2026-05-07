@@ -1,5 +1,6 @@
 import monochromize from './lib/monochromizeEmoji.js';
 import urlSlugify from './lib/urlSlugify.js';
+import remainingPrizeCount from './lib/remainingPrizeCount.js';
 
 export const data = {
 	layout: "base.11ty.js",
@@ -45,29 +46,23 @@ export function render(data) {
 				<dt
 					style="view-transition-name: prize-${ urlSlugify( data.prize.what ) }-won-by-dt"
 				>Won by</dt>
-				<dd><p>${data.prize.wonBy}</p><form style='display: grid; grid-template-columns: repeat( auto-fit, minmax(10ch, 1fr) );
+				<dd><form style='display: grid; grid-template-columns: repeat( auto-fit, minmax(10ch, 1fr) );
 '>
 				${ data.players.map( player => `
 					<label>
-						<!-- todo wonby needs to be an array now... -->
-						<input type=checkbox${ ( data.prize.wonBy?.toLowerCase().includes( player.toLowerCase() ) ? ' checked' : '' ) }></input>
+						<input type=checkbox${ ( data.prize.wonBy.map( d => d.player.toLowerCase() ).includes( player.toLowerCase() ) ? ' checked' : '' ) }></input>
 						${ player }
 					</label>
 				`).join('\n\n')}
 				</form></dd>
 			</div>
 			<div>
-				<dt>Availability</dt>
-				<dd><form style='display: grid;'>
-					<label>
-						<input type=radio name=availability${ ( data.prize.available ? ' checked' : '')} />
-						Available
-					</label>
-					<label>
-						<input type=radio name=availability${ ( !data.prize.available ? ' checked' : '')} />
-						Claimed
-					</label>
-				</form></dd>
+				<dt>
+					Still available
+				</dt>
+				<dd>
+					${ remainingPrizeCount( data.prize ) }
+				</dd>
 			</div>
 		</dl>
 	</div>
