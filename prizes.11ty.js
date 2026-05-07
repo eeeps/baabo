@@ -48,12 +48,16 @@ export function render(data) {
 				>Won by</dt>
 				<dd><form style='display: grid; grid-template-columns: repeat( auto-fit, minmax(10ch, 1fr) );
 '>
-				${ data.players.map( player => `
+				${ data.players.map( player => { 
+						
+						const didThisPlayerWin = data.prize.wonBy.map( d => d.player.toLowerCase() ).includes( player.toLowerCase() );
+					
+					return `
 					<label>
-						<input type=checkbox${ ( data.prize.wonBy.map( d => d.player.toLowerCase() ).includes( player.toLowerCase() ) ? ' checked' : '' ) }></input>
+						<input type=checkbox${ ( didThisPlayerWin ? ' checked' : '' ) } disabled></input>
 						${ player }
 					</label>
-				`).join('\n\n')}
+				` } ).join('\n\n')}
 				</form></dd>
 			</div>
 			<div>
