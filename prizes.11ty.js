@@ -1,6 +1,7 @@
 import monochromize from './lib/monochromizeEmoji.js';
 import urlSlugify from './lib/urlSlugify.js';
 import remainingPrizeCount from './lib/remainingPrizeCount.js';
+import prettyRemainingPrizeCount from './lib/prettyRemainingPrizeCount.js';
 
 export const data = {
 	layout: "base.11ty.js",
@@ -65,7 +66,7 @@ export function render(data) {
 					Still available
 				</dt>
 				<dd>
-					${ remainingPrizeCount( data.prize ) }
+					${ prettyRemainingPrizeCount( data.prize ) }
 				</dd>
 			</div>
 		</dl>
