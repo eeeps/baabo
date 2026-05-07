@@ -369,10 +369,27 @@ ins {
 	font-size: 0.8625em;
 }
 
+label {
+	font-size: 1.75rem;
+}
+@media (min-width: 766px) {
+	label {
+		font-size: inherit;
+	}
+}
+.prizesDetail {
+	margin: auto;
+}
+
+
 label:has(input[type=checkbox]) {
 	display: flex;
+	align-items: center;
 	gap: 0.5ch;
 	padding: 0.5ch;
+}
+label:has(input[type=checkbox]:not([disabled])) {
+	cursor: pointer;
 }
 label:has(:checked) {
 	color: white;
@@ -388,7 +405,8 @@ label:has(:checked) {
 input[type=checkbox] {
 	appearance: none;
 	width: 1.5lh;
-	aspect-ratio: 1;
+	height: 1.5lh;
+	border-radius: 0;
 	border: 2px solid black;
 }
 input[type=checkbox]:checked {
