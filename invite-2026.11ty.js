@@ -205,7 +205,7 @@ Bellingham
 
 <p>It's a summer-long game of bingo with friends. Everybody comes to the kickoff with a handful of fun or challenging <i>challenges</i> (e.g., "jump off of Taylor Dock" or "introduce yourself to a new neighbor"). At the kickoff, we conduct a random draw of challenges to make everyone their own unique BAABO board.</p>
 
-<p>At the kickoff party, each player also announces the prize they will give to other players who check off a certian configuration of squares (e.g., "I'll bake cookies for everyone who gets four corners").</p>  
+<p>At the kickoff, each player also announces the prize they will give to other players who check off a certian configuration of squares (e.g., "I'll bake cookies for everyone who gets four corners").</p>  
 
 <p>That's BAABO!</p>
 
