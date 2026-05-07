@@ -49,14 +49,14 @@ export function render(data) {
 				>Won by</dt>
 				<dd><form style='display: grid; grid-template-columns: repeat( auto-fit, minmax(10ch, 1fr) );'
 				  ${ ( remainingPrizeCount( data.prize ) <= 0 ? 'class=noneAvailable' : '' ) }
+				  ${ ( remainingPrizeCount( data.prize ) !== null && remainingPrizeCount( data.prize ) <= 0 ? 'class=noneAvailable' : '' ) }
 				>
 				${ data.players.map( player => { 
 						
 						const didThisPlayerWin = data.prize.wonBy.map( d => d.player.toLowerCase() ).includes( player.toLowerCase() );
 					
 					return `
-					<label>
-						<input type=checkbox${ ( didThisPlayerWin ? ' checked' : '' ) } disabled></input>
+					<label>						<input type=checkbox${ ( didThisPlayerWin ? ' checked' : '' ) } disabled></input>
 						${ player }
 					</label>
 				` } ).join('\n\n')}

@@ -214,7 +214,7 @@ export function render(data) {
 	<ul class="prizes claimed">
 
 		${ prizes
-		.filter( prize => remainingPrizeCount( prize ) <= 0 )
+		.filter( prize => prize.maxWinners !== null && remainingPrizeCount( prize ) <= 0 )
 		.map( prize => prize.html )
 		.join('\n\t\t')
 	}
