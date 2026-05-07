@@ -56,7 +56,8 @@ export function render(data) {
 						const didThisPlayerWin = data.prize.wonBy.map( d => d.player.toLowerCase() ).includes( player.toLowerCase() );
 					
 					return `
-					<label>						<input type=checkbox${ ( didThisPlayerWin ? ' checked' : '' ) } disabled></input>
+					<label>
+						<input type=checkbox${ ( didThisPlayerWin ? ' checked' : '' ) } disabled></input>
 						${ player }
 					</label>
 				` } ).join('\n\n')}
