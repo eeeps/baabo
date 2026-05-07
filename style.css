@@ -369,6 +369,40 @@ ins {
 	font-size: 0.8625em;
 }
 
+label:has(input[type=checkbox]) {
+	display: flex;
+	gap: 0.5ch;
+	padding: 0.5ch;
+}
+label:has(:checked) {
+	color: white;
+	background-color: black;
+}
+
+.noneAvailable label:not(:has(:checked)) {
+	text-decoration: line-through;
+}
+
+
+/* scope to .prizeDetail? */
+input[type=checkbox] {
+	appearance: none;
+	width: 1.5lh;
+	aspect-ratio: 1;
+	border: 2px solid black;
+}
+input[type=checkbox]:checked {
+	border-color: white;
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><style>line { stroke: white; stroke-width: 2px; }</style><line x1="0" y1="0" x2="16" y2="16" /><line x1="16" y1="0" x2="0" y2="16" /></svg>');
+}
+input[type=checkbox][disabled] {
+	border-style: dashed;
+}
+input[type=checkbox][disabled]:checked {
+	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><style>line { stroke: white; stroke-width: 2px; stroke-dasharray: 3 2;  }</style><line x1="0" y1="0" x2="16" y2="16" /><line x1="16" y1="0" x2="0" y2="16" /></svg>');
+}
+
+
 /* view transitions */
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -383,3 +417,4 @@ ins {
 	}
 
 }
+
