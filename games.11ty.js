@@ -91,12 +91,17 @@ export function render(data) {
 						style="view-transition-name: prize-${ urlSlugify( prize.what ) }-emoji"
 					>${ monochromize( prize.emoji ) }</p>
 					<div>
-						<h4
-							class=what
-							id="prize-${ urlSlugify( prize.what ) }"><a
-								href="/${ urlSlugify( prize.game ) }/prizes/${ urlSlugify( prize.what ) }/" 
-								style="view-transition-name: prize-${ urlSlugify( prize.what ) }-what">${ prize.what }</a
-						></h4>
+						<hgroup>
+							<h4
+								class=what
+								id="prize-${ urlSlugify( prize.what ) }"><a
+									href="/${ urlSlugify( prize.game ) }/prizes/${ urlSlugify( prize.what ) }/" 
+									style="view-transition-name: prize-${ urlSlugify( prize.what ) }-what">${ prize.what }</a
+							></h4>
+							${ ( prize.subhead ? `<p style="view-transition-name: prize-${ urlSlugify( prize.what ) }-subhead">
+								${ prize.subhead }
+							</p>` : '' ) }
+						</hgroup>
 						<dl>
 							<div>
 								<dt

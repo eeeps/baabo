@@ -26,7 +26,12 @@ export function render(data) {
 	<p style="grid-column: 1/3; text-align: center; font-size: 2rem;"><a href="/${ urlSlugify( data.game.name ) }/#prize-${ urlSlugify( data.prize.what ) }">← Back</a></p>
 	<p class="emoji" style="text-align: center; view-transition-name: prize-${ urlSlugify( data.prize.what ) }-emoji">${ monochromize( data.prize.emoji ) }</p>
 	<div>
-		<h4 class=what style="view-transition-name: prize-${ urlSlugify( data.prize.what ) }-what">${ data.prize.what }</h4>
+		<hgroup>
+			<h1 class=what style="view-transition-name: prize-${ urlSlugify( data.prize.what ) }-what">${ data.prize.what }</h1>
+			${ ( data.prize.subhead ? `<p style="view-transition-name: prize-${ urlSlugify( data.prize.what ) }-subhead">
+				${ data.prize.subhead }
+			</p>` : '' ) }
+		</hgroup>
 		<dl>
 			<div>
 				<dt style="view-transition-name: prize-${ urlSlugify( data.prize.what ) }-from-dt">From</dt>

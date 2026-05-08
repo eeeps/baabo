@@ -11,7 +11,8 @@
 	},
 	{
 		"game": "2022",
-		"what": "A trophy <small>which will be passed down for BAABO generations</small>",
+		"what": "A trophy",
+		"subhead": "which will be passed down for BAABO generations",
 		"emoji": "🏆",
 		"from": "Ellie",
 		"howToWin": "Do the thing on your board that is the most scary (or challenging) to you",
@@ -181,7 +182,8 @@
 	},
 	{
 		"game": "2023",
-		"what": "Cookies of your choice <small>(possibly off of a helpful list)</small>",
+		"what": "Cookies of your choice",
+		"subhead": "(possibly off of a helpful list)",
 		"emoji": "🍪",
 		"from": "Megan",
 		"howToWin": "First five people to complete an “M” (<table class=tiny><tr><td class=checked><td class=checked><td><td class=checked><td class=checked><tr><td class=checked><td><td class=checked><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked></table>)",
@@ -218,7 +220,8 @@
 	},	
 	{
 		"game": "2023",
-		"what": "Nepali package <small>Includes: 15 rupees, a blessing scarf, and a canvas print of one of Jasper’s photos from the Himalayas</small>",
+		"what": "Nepali package",
+		"subhead": "Includes: 15 rupees, a blessing scarf, and a canvas print of one of Jasper’s photos from the Himalayas",
 		"emoji": "🏔️",
 		"from": "Jasper",
 		"howToWin": "Complete an “X” (<table class=tiny><tr><td class=checked><td><td><td><td class=checked><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td class=checked><td><td><td><td class=checked></table>)",
