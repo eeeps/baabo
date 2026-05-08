@@ -1,7 +1,6 @@
 import monochromize from './lib/monochromizeEmoji.js';
 import urlSlugify from './lib/urlSlugify.js';
 import remainingPrizeCount from './lib/remainingPrizeCount.js';
-import prettyRemainingPrizeCount from './lib/prettyRemainingPrizeCount.js';
 
 export const data = {
 	layout: "base.11ty.js",
@@ -66,14 +65,6 @@ export function render(data) {
 					</label>
 				` } ).join('\n\n')}
 				</form></dd>
-			</div>
-			<div>
-				<dt>
-					How many are available
-				</dt>
-				<dd>
-					${ prettyRemainingPrizeCount( data.prize ) }
-				</dd>
 			</div>
 		</dl>
 	</div>
