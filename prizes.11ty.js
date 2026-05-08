@@ -21,7 +21,10 @@ export const data = {
 export function render(data) {
 			
 	return `
-<div class="mainContain prizes prizesDetail" style="display: grid; grid-template-columns: 8rem 1fr;">
+<div
+	class="mainContain prizes prizesDetail ${ ( remainingPrizeCount( data.prize ) !== null && remainingPrizeCount( data.prize ) <= 0 ? 'noneAvailable' : '' ) }"
+	style="display: grid; grid-template-columns: 8rem 1fr;"
+>
 	<p style="grid-column: 1/3; text-align: center; font-size: 2rem;"><a href="/${ urlSlugify( data.game.name ) }/#prize-${ urlSlugify( data.prize.what ) }">← Back</a></p>
 	<p class="emoji" style="text-align: center; view-transition-name: prize-${ urlSlugify( data.prize.what ) }-emoji">${ monochromize( data.prize.emoji ) }</p>
 	<div>
@@ -51,9 +54,7 @@ export function render(data) {
 				<dt
 					style="view-transition-name: prize-${ urlSlugify( data.prize.what ) }-won-by-dt"
 				>Won by</dt>
-				<dd><form style='display: grid; grid-template-columns: repeat( auto-fit, minmax(15ch, 1fr) );'
-				  ${ ( remainingPrizeCount( data.prize ) !== null && remainingPrizeCount( data.prize ) <= 0 ? 'class=noneAvailable' : '' ) }
-				>
+				<dd><form style='display: grid; grid-template-columns: repeat( auto-fit, minmax(15ch, 1fr) );'>
 				${ data.players.map( player => { 
 						
 						const didThisPlayerWin = data.prize.wonBy.map( d => d.player.toLowerCase() ).includes( player.toLowerCase() );
@@ -107,13 +108,13 @@ checkboxes.forEach( c => {
 				.forEach( d => {
 					d.setAttribute('disabled', 'disabled');
 				} )
-			event.target.form.classList.add('noneAvailable');
+			document.querySelector('.mainContain').classList.add('noneAvailable');
 		} else {
 			[...document.querySelectorAll( 'input[type=checkbox]' ) ]
 				.forEach( d => {
 					d.removeAttribute('disabled')
 				} )	
-			event.target.form.classList.remove('noneAvailable');
+			document.querySelector('.mainContain').classList.remove('noneAvailable');
 		}
 	} );
 } );

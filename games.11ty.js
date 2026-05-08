@@ -216,7 +216,7 @@ export function render(data) {
 
 	<h3><span>Claimed</span></h3>
 
-	<ul class="prizes claimed">
+	<ul class="prizes noneAvailable">
 
 		${ prizes
 		.filter( prize => prize.maxWinners !== null && remainingPrizeCount( prize ) <= 0 )

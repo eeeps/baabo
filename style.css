@@ -317,7 +317,7 @@ table.tiny td {
 	cursor: unset;
 }
 
-.prizes.claimed .what {
+.noneAvailable .what {
 	text-decoration: line-through;
 	text-decoration-thickness: 0.125ch;
 }
