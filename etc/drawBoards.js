@@ -4,9 +4,9 @@ import fs from 'fs';
 
 const gameName = '2025';
 
-const playersChallenges = JSON.parse( fs.readFileSync('_data/challenges.json') );
+const playersChallenges = JSON.parse( fs.readFileSync('../_data/challenges.json') );
 const flatChallenges = playersChallenges.reduce( ( acc, cv ) => acc.concat( cv.challenges ), [] );
-const players = JSON.parse( fs.readFileSync('_data/players.json') );
+const players = 
 
 const drawABoard = ( challenges ) => {
 
