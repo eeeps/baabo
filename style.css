@@ -305,6 +305,10 @@ hgroup> h1.what + p {
 	margin-inline-start: 0.25em;
 }
 
+.prizes h4 {
+	scroll-margin-top: 7.5rem;
+}
+
 table.tiny {
 	--tableWidth: 1.5rem;
 	display: inline-table;
