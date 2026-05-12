@@ -5,7 +5,7 @@ import remainingPrizeCount from './lib/remainingPrizeCount.js';
 export const data = {
 	layout: "base.11ty.js",
 	pagination: {
-		data: "prizes",
+		data: "prizesWithStates",
 		size: 1,
 		alias: 'prize'
 	},
@@ -57,7 +57,7 @@ export function render(data) {
 				<dd><form style='display: grid; grid-template-columns: repeat( auto-fit, minmax(15ch, 1fr) );'>
 				${ data.players.map( player => { 
 						
-						const didThisPlayerWin = data.prize.wonBy.map( d => d.player.toLowerCase() ).includes( player.toLowerCase() );
+						const didThisPlayerWin = data.prize.wonBy.map( d => urlSlugify(d.player) ).includes( urlSlugify( player ) );
 					
 					return `
 					<label>

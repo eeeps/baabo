@@ -11,6 +11,9 @@ export const data = {
 	eleventyComputed: {
 		permalink: data => `${ data.game.name }/`,
 		boards: data => data.boards.filter( x => x.game === data.game.name ),
+		prizes: data => data.prizesWithStates
+			.filter( x => x.game === data.game.name ),
+		
 		head: data => `
 ${ data.game.active ? `
 <script type="module" blocking="render">
@@ -79,10 +82,9 @@ export function render(data) {
 
 	const boardStates = data.boardStates
 		.filter( x => x.game === data.game.name );
-	const prizes = data.prizes
-		.filter( x => x.game === data.game.name )
-		// add some computed properties
-		.map( prize => ( {
+
+	// add some computed properties
+	const prizes = data.prizes.map( prize => ( {
 			...prize,
 			html: `
 				<li>
