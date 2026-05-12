@@ -130,7 +130,13 @@ export function render(data) {
 										>Won by</dt>
 										<!-- todo dazzle the name again -->
 										<dd>
-											${ prettyList.format( prize.wonBy.map( d => d.player ) ) }
+											${ prettyList.format(
+												prize.wonBy.map( d => 
+													data.players
+														.find( player => player.slug === d.player )
+														.name
+												)
+											) }
 										</dd>
 									</div>
 								` : '' )
