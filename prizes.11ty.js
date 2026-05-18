@@ -57,7 +57,7 @@ export function render(data) {
 				<dd><form style='display: grid; grid-template-columns: repeat( auto-fit, minmax(15ch, 1fr) );'>
 				${ data.players.map( player => { 
 						
-						const didThisPlayerWin = data.prize.wonBy.map( d => urlSlugify(d.player) ).includes( urlSlugify( player ) );
+					const didThisPlayerWin = data.prize.wonBy.map( d => urlSlugify(d.player) ).includes( urlSlugify( player ) );
 					
 					return `
 					<label>
@@ -82,7 +82,7 @@ checkboxes.forEach( c => {
 			if ( cv.checked ) { acc += 1; } 
 			return acc;
 		}, 0 );
-	console.log(checkedNow);
+
 	if ( maxWinners === null || checkedNow < maxWinners || c.checked ) {
 		c.removeAttribute('disabled');
 	}

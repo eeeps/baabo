@@ -59,6 +59,8 @@ import '/env.js';
 const gameName = '${ urlSlugify( data.board.game ) }';
 const playerName = '${ urlSlugify( data.board.player ) }';
 
+
+// todo as long as there are no visual changes (?) this shouldn't block rendering?
 tds.forEach( ( td, index ) => {
 	if ( index === 12 ) { return; } // free space
 	td.classList.add('clickable');
