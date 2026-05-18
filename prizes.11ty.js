@@ -149,13 +149,6 @@ checkboxes.forEach( c => {
 	
 	c.addEventListener( 'input', ( event ) => {
 		
-		// update the dom so our css works
-		if ( event.target.checked ) {
-			event.target.setAttribute('checked', 'checked')
-		} else {
-			event.target.removeAttribute('checked');
-		}
-		
 		const change = {
 			id: uuid(),
 			timestamp: new Date(),
@@ -167,28 +160,24 @@ checkboxes.forEach( c => {
 
 		postPrizeChange( change );
 		
-		
-		// todo can I get rid of this with some kind of quantity query in css?
-		
-		const checkedNow = [...document.querySelectorAll('input[type=checkbox]')]
-			.reduce( (acc, cv) => {
-				if ( cv.checked ) { acc += 1; } 
-				return acc;
-			}, 0 );
+		const checkedNow = [ ...document.querySelectorAll( 'input[type=checkbox]:checked' ) ].length;
+		// console.log( checkedNow );
+
+		// we store the .noneAvailable state here, because it's the highest thing we have access to in this page (body is handled by template...)
+		const mainContain = document.querySelector( '.mainContain' );
 
 		if ( maxWinners !== null && checkedNow >= maxWinners ) {
-			[...document.querySelectorAll( 'input[type=checkbox]:not([checked])' ) ]
-				.filter( d => d !== event.target )
+			[...document.querySelectorAll( 'input[type=checkbox]:not(:checked)' ) ]
 				.forEach( d => {
 					d.setAttribute('disabled', 'disabled');
 				} )
-			document.querySelector('.mainContain').classList.add('noneAvailable');
+			mainContain.classList.add('noneAvailable');
 		} else {
 			[...document.querySelectorAll( 'input[type=checkbox]' ) ]
 				.forEach( d => {
 					d.removeAttribute('disabled')
 				} )	
-			document.querySelector('.mainContain').classList.remove('noneAvailable');
+			mainContain.classList.remove('noneAvailable');
 		}
 	} );
 } );
