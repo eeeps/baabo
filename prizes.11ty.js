@@ -14,6 +14,61 @@ export const data = {
 		game: data => data.games.find( g => urlSlugify( g.name ) === urlSlugify( data.prize.game ) ),
 		players: data => data.boards.filter( b => urlSlugify( b.game ) === data.prize.game ).map( b => b.player ).sort(),
 		head: data => `
+<script type="module" blocking="render">
+
+// TODO if the game isn't active, don't do any of this
+
+// imports
+import fetchPrizeChangeHistoryFromLocalStorageWhere from '/lib/fetchPrizeChangeHistoryFromLocalStorageWhere.js';
+import onePrizeWonByFromChangeHistory from '/lib/onePrizeWonByFromChangeHistory.js';
+import syncLocalStoragePrizeChangeHistoryAndDatabaseWhere from '/lib/syncLocalStoragePrizeChangeHistoryAndDatabaseWhere.js';
+import updatePrizeDetailFromPrizeState from '/lib/updatePrizeDetailFromPrizeState.js';
+
+// hoisted imports
+// TODO
+
+// game and prize name
+const gameName = '${ urlSlugify( data.prize.game ) }';
+const prizeName = '${ urlSlugify( data.prize.what ) }';
+
+// calculate wonBy from what's in local storage now
+// set checkbox states based on that
+const prizeChanges = fetchPrizeChangeHistoryFromLocalStorageWhere( {
+	game: gameName,
+	prize: prizeName
+} );
+
+// todo can i eliminate the gamename and prizename here, and assume changehistory is always pre-filtered?
+const wonBy = onePrizeWonByFromChangeHistory( gameName, prizeName, prizeChanges );
+const checkboxForm = document.getElementById( 'playerCheckboxes' );
+updatePrizeDetailFromPrizeState( checkboxForm, wonBy );
+
+// sync with the database, and if there were relevant changes, update again, async
+syncLocalStoragePrizeChangeHistoryAndDatabaseWhere( {
+	game: gameName,
+	prize: prizeName
+} ).then( ( result ) => {
+	if ( result.postedToLocalStorage === true ||
+		 result.deletedFromLocalStorage === true ) {
+		updatePrizeDetailFromPrizeState(
+			checkboxForm,
+			onePrizeWonByFromChangeHistory(
+				gameName,
+				prizeName,
+				fetchPrizeChangeHistoryFromLocalStorageWhere( {
+					game: gameName,
+					prize: prizeName
+				} )
+			)
+		);
+	}
+} );
+
+
+// set click handlers and make checkboxes clickable 
+// actually this should block rendering so we don't get disabled style flash?
+
+</script>
 		`
 	}
 };
@@ -54,14 +109,14 @@ export function render(data) {
 				<dt
 					style="view-transition-name: prize-${ urlSlugify( data.prize.what ) }-won-by-dt"
 				>Won by</dt>
-				<dd><form style='display: grid; grid-template-columns: repeat( auto-fit, minmax(15ch, 1fr) );'>
+				<dd><form id="playerCheckboxes" style='display: grid; grid-template-columns: repeat( auto-fit, minmax(15ch, 1fr) );'>
 				${ data.players.map( player => { 
 						
 					const didThisPlayerWin = data.prize.wonBy.map( d => urlSlugify(d.player) ).includes( urlSlugify( player ) );
 					
 					return `
 					<label>
-						<input type=checkbox${ ( didThisPlayerWin ? ' checked' : '' ) } disabled></input>
+						<input name="${ urlSlugify( player ) }" type=checkbox${ ( didThisPlayerWin ? ' checked' : '' ) } disabled></input>
 						${ player }
 					</label>
 				` } ).join('\n\n')}
@@ -72,8 +127,13 @@ export function render(data) {
 
 </div>
 
-<script>
+<script type=module>
+import uuid from '/lib/uuid.js';
+import postPrizeChange from '/lib/postPrizeChange.js';
+
 const maxWinners = ${ data.prize.maxWinners };
+const gameName = '${ urlSlugify( data.prize.game ) }';
+const prizeName = '${ urlSlugify( data.prize.what ) }';
 const checkboxes = document.querySelectorAll('input[type=checkbox]');
 checkboxes.forEach( c => {
 	
@@ -95,6 +155,20 @@ checkboxes.forEach( c => {
 		} else {
 			event.target.removeAttribute('checked');
 		}
+		
+		const change = {
+			id: uuid(),
+			timestamp: new Date(),
+			game: gameName,
+			prize: prizeName,
+			player: event.target.name,
+			state: event.target.checked
+		};
+
+		postPrizeChange( change );
+		
+		
+		// todo can I get rid of this with some kind of quantity query in css?
 		
 		const checkedNow = [...document.querySelectorAll('input[type=checkbox]')]
 			.reduce( (acc, cv) => {
