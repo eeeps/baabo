@@ -1,5 +1,10 @@
 [
 	{
+		"name": "2026",
+		"startDate": "2025-06-14",
+		"active": true
+	},
+	{
 		"name": "2025",
 		"startDate": "2025-06-01",
 		"active": false
