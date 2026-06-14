@@ -428,6 +428,13 @@ input[type=checkbox][disabled]:checked {
 	background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><style>line { stroke: white; stroke-width: 2px; stroke-dasharray: 3 2;  }</style><line x1="0" y1="0" x2="16" y2="16" /><line x1="16" y1="0" x2="0" y2="16" /></svg>');
 }
 
+/* default is no winners; hide the div */
+.wonByList {
+	display: none;
+}
+.someWinners .wonByList {
+	display: unset;
+}
 
 /* view transitions */
 

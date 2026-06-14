@@ -67,6 +67,118 @@ syncLocalStorageChangeHistoryAndDatabaseWhere( { game: '${ urlSlugify( data.game
 	}
 } );
 
+// console.log( 'hellooo');
+///////
+import onePrizeWonByFromChangeHistory from '/lib/onePrizeWonByFromChangeHistory.js';
+import fetchPrizeChangeHistoryFromLocalStorageWhere from '/lib/fetchPrizeChangeHistoryFromLocalStorageWhere.js';
+
+const fullNamesFromSlugs = {
+	${ data.boards.map( b => `'${ urlSlugify(b.player)}': '${b.player}'` ).join(',\n') }
+};
+
+const prettyList = new Intl.ListFormat( 'en', { style: 'long', type: 'conjunction' } );
+
+const prizeLis = document.querySelectorAll( '.prizes > li' );
+
+const updatePrizes = ( prizeLis, prizeChanges ) => {
+	
+	const availableUl = document.querySelector( '.prizes.available' );
+	const noneAvailableUl = document.querySelector( '.prizes.noneAvailable' );
+	
+	const lastClaimedDates = new WeakMap();
+	let movedLisCount = 0;
+	
+	// loop over prizes
+	// set wonby and available or not class
+	prizeLis.forEach( ( li ) => {
+		
+		// wonby from prize history
+		const wonBy = onePrizeWonByFromChangeHistory(
+			"${ urlSlugify( data.game.name ) }",
+			li.dataset.prizename,
+			prizeChanges
+		);
+		
+		// store most recent wonby
+		if ( wonBy.length > 0 ) {
+			lastClaimedDates.set( li, Math.max( ...wonBy.map( wb => wb.claimDate.getTime() ) ) );
+		}
+		
+	
+		// set dd to pretty list of winners
+		li.querySelector( '.wonByList dd' ).textContent = prettyList.format( wonBy.map(w => fullNamesFromSlugs[ w.player ] ) );
+		
+		// adjust classes
+		const wonByNum = wonBy.length;
+		if ( wonByNum === 0 ) {
+			// remove wonBySome class
+			li.classList.remove( "someWinners" );
+		} else if ( wonByNum > 0 ) {
+			// add wonBySome class
+			li.classList.add( "someWinners" );
+		}
+		
+		// move between available and unavailable, if we need to
+		let maxWinners = li.dataset.maxwinners;
+		if ( maxWinners === "null" || maxWinners === undefined ) {
+			maxWinners = null;
+		} else {
+			maxWinners = parseInt( maxWinners );
+		}
+		
+		console.log( maxWinners, wonByNum );
+		
+		if ( 
+			( maxWinners === null || wonByNum < maxWinners ) &&
+			li.parentNode === noneAvailableUl
+		) {
+			
+			// move
+			availableUl.insertBefore( li, availableUl.firstChild );
+			movedLisCount += 1;
+			
+		} else if ( 
+			( maxWinners !== null && wonByNum >= maxWinners ) &&
+			li.parentNode === availableUl
+		) {
+			
+			// move
+			noneAvailableUl.insertBefore( li, noneAvailableUl.firstChild );
+			movedLisCount += 1;
+		
+		}
+		
+	} );
+	
+	// re-order prizes
+	if ( movedLisCount > 0 ) {
+		[ ...availableUl.querySelectorAll( 'li' ) ]
+			.sort( ( a, b ) => a.querySelector( '.what' ).textContent < b.querySelector( '.what' ).textContent )
+			.forEach( li => availableUl.appendChild( li ) );
+		[ ...noneAvailableUl.querySelectorAll( 'li' ) ]
+			.sort( ( a, b ) => lastClaimedDates.get( a ) > lastClaimedDates.get( b ) )
+			.forEach( li => availableUl.appendChild( li ) );
+	}
+	
+};
+
+
+// fetch prize history from localstorage
+const prizeChanges = fetchPrizeChangeHistoryFromLocalStorageWhere( {
+	game: "${ urlSlugify( data.game.name ) }"
+} );
+
+updatePrizes( prizeLis, prizeChanges );
+
+// if bfcache causes problems??
+// window.addEventListener('pageshow', (event) => {
+//   if (event.persisted) {
+// 	updatePrizes( prizeLis, prizeChanges );
+//   }
+// });
+
+// fetch prize history from database
+	// if we changed anything about localstorage, update again
 
 </script>
 ` : '' }
@@ -87,7 +199,11 @@ export function render(data) {
 	const prizes = data.prizes.map( prize => ( {
 			...prize,
 			html: `
-				<li>
+				<li
+					data-prizename="${ urlSlugify( prize.what ) }"
+					data-maxwinners="${ prize.maxWinners }"
+					class="${ prize.wonBy.length > 0 ? ' someWinners' : '' }"
+				>
 					<p
 						class="emoji"
 						style="view-transition-name: prize-${ urlSlugify( prize.what ) }-emoji"
@@ -122,25 +238,21 @@ export function render(data) {
 									style="view-transition-name: prize-${ urlSlugify( prize.what ) }-how-to-win-dd"
 								>${ prize.howToWin }</dd>
 							</div>
-							${
-								( prize.wonBy.length > 0 ? `
-									<div>
-										<dt
-											style="view-transition-name: prize-${ urlSlugify( prize.what ) }-won-by-dt"
-										>Won by</dt>
-										<!-- todo dazzle the name again -->
-										<dd>
-											${ prettyList.format(
-												prize.wonBy.map( d => 
-													data.players
-														.find( player => player.slug === d.player )
-														.name
-												)
-											) }
-										</dd>
-									</div>
-								` : '' )
-							}
+								<div class="wonByList">
+									<dt
+										style="view-transition-name: prize-${ urlSlugify( prize.what ) }-won-by-dt"
+									>Won by</dt>
+									<!-- todo dazzle the name again -->
+									<dd>
+										${ prettyList.format(
+											prize.wonBy.map( d => 
+												data.players
+													.find( player => player.slug === d.player )
+													.name
+											)
+										) }
+									</dd>
+								</div>
 						</dl>
 					</div>
 				</li>

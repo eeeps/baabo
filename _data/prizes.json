@@ -932,7 +932,7 @@
 		"emoji": "🪥",
 		"from": "Celeste",
 		"howToWin": "Baseball diamond (<table class=tiny><tr><td><td><td class=checked><td><td><tr><td><td><td><td><td><tr><td class=checked><td><td class=checked><td><td class=checked><tr><td><td><td><td><td><tr><td><td><td class=checked><td><td></table>)",
-		"maxWinners": 1,
+		"maxWinners": 1
 		"wonBy": [
 			{
 				"player": "Marguerite",
@@ -945,9 +945,17 @@
 		"what": "Toothbrush",
 		"emoji": "🪥",
 		"from": "Celeste",
-		"howToWin": "Baseball diamond (<table class=tiny><tr><td><td><td class=checked><td><td><tr><td><td><td><td><td><tr><td class=checked><td><td class=checked><td><td class=checked><tr><td><td><td><td><td><tr><td><td><td class=checked><td><td></table>)",
-		"maxWinners": 1,
+		"howToWin": "First two bingos",
+		"maxWinners": 2
 		"wonBy": []
+	},
+	{
+		"game": "test",
+		"what": "Cool jazz",
+		"emoji": "🎷",
+		"from": "Wxy Z.",
+		"howToWin": "Everyone who gets a baseball diamond (<table class=tiny><tr><td><td><td class=checked><td><td><tr><td><td><td><td><td><tr><td class=checked><td><td class=checked><td><td class=checked><tr><td><td><td><td><td><tr><td><td><td class=checked><td><td></table>)",
+		"maxWinners": null
 	},
 	{
 		"game": "2026",
