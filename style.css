@@ -254,6 +254,11 @@ h4 {
 	font-size: 2rem;
 	font-weight: normal;
 	margin: 0;
+	text-wrap: pretty;
+}
+/* hack for eyonna and jonah?? */
+.mainContain[data-game="2026"] h4.name {
+	max-width: 180px;
 }
 
 .prizes {
