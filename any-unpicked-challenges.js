@@ -2,7 +2,7 @@ import fs from 'fs';
 
 const boards = JSON.parse( 
 	fs.readFileSync('_data/boards.json')
-).filter( board => board.game === '2025');
+).filter( board => board.game === '2026');
 
 //console.log(boards);
 

@@ -6,5 +6,189 @@
 			"Make a craft out of recycled materials or household items",
 			"Attend a local fair (NW Raspberry Fest, NW WA Fair, Shipwreck Fest, etc)"
 		]
+	},
+	{
+		"player": "Mary",
+		"challenges": [
+			"Watch a Mary-Kate and Ashley movie",
+			"Take a picture of a fossil within a 200-mile radius of Bellingham",
+			"Enter something into a fair",
+			"Bake or cook something that seems intimidating"
+		]
+	},
+	{
+		"player": "Zach",
+		"challenges": [
+			"Visit a new-to-you state park",
+			"Master a new recipe",
+			"Have a beach day",
+			"Learn five knots"
+		]
+	},
+	{
+		"player": "Brendon",
+		"challenges": [
+			"Plant a native northwest plant",
+			"Have a cocktail (NA OK) on a rooftop or outdoor patio",
+			"Play a game of Kubb",
+			"Visit the Consulat de Monte-Cristo"
+		]
+	},
+	{
+		"player": "Justin",
+		"challenges": [
+			"Catch a fish",
+			"Hold a crab",
+			"Eat clam",
+			"Bioluminescene swim",
+			"Grow a vegetable"
+		]
+	},
+	{
+		"player": "Stephanie",
+		"challenges": [
+			"Create an instrument out of random stuff",
+			"Record a song",
+			"Do art in public",
+			"Sing karaoke in front of people",
+			"Learn a new craft",
+			"Try a resturant you’ve never eaten at"
+		]
+	},
+	{
+		"player": "Cassi",
+		"challenges": [
+			"Make a meal entirely from farmer’s market ingredients",
+			"Make a full day of recipes from cookbooks",
+			"Come to a run or walk at the El Sueñito Run Club",
+			"Get five different pizzas in town",
+			"Do a DIY repair",
+			"Go to see a movie at the Pickford that you know nothing about",
+			"Ferment something"
+		]
+	},
+	{
+		"player": "Emma",
+		"challenges": [
+			"Give somebody the bird while eating The Bird sandwich from The Shirlee Bird Café"
+		]
+	},
+	{
+		"player": "Celeste",
+		"challenges": [
+			"Drop off an itty-bitty masterpiece to the Little Free Art Gallery",
+			"Help out or join three BAABO activities that are not on your board",
+			"Do something that is a little bit scary to you"
+		]
+	},
+	{
+		"player": "Eyonna and Jonah",
+		"challenges": [
+			"Visit the Breazeale Interpretive Center",
+			"Find a starfish in a tide pool",
+			"Attend a farmer’s market in Whatcom County besides Bellingham’s",
+			"Go to a U-Pick farm"
+		]
+	},
+	{
+		"player": "Caity",
+		"challenges": [
+			"Go on an after-work hike",
+			"Watch the documentary “Listers: A Glimpse Into Extreme Birdwatching”",
+			"Go to the Beach Store Cafe on Lummi Island",
+			"Start a conga line and get at least three strangers to join it",
+			"Do a BAABO activity you were excited about but didn’t get on your board (photo evidence required)"
+			
+		]
+	},
+	{
+		"player": "Ben",
+		"challenges": [
+			"Squish a penny on train tracks",
+			"Play in a sprinkler",
+			"Make your own homemade butter",
+			"High five a ferry worker",
+			"Cross a stream without using a bridge",
+			"Win a bet",
+			"Feed some friggin’ goats",
+			"Find a frog"
+		]
+	},
+	{
+		"player": "Jacob",
+		"challenges": [
+			"Leave a note in a geocache",
+			"Read a book from a genre you don’t normally frequent"
+		]
+	},
+	{
+		"player": "Andrea",
+		"challenges": [
+			"Hula-hoop",
+			"Ride a train",
+			"Write and illustrate a comic strip",
+			"Go without social media for two weeks",
+			"Use a bidet",
+			"Swim in an outdoor pool",
+			"Decorate fairy doors (give back to Andrea)",
+			"Snail-mail Andrea, Florence, and Hazel a picture or letter",
+			"Try a new resturant in Bellingham"
+		]
+	},
+	{
+		"player": "Lou",
+		"challenges": [
+			"Jump off Taylor Dock",
+			"Meditate for 20 minutes a day for seven days and report back to the group",
+			"While you’re awake, sit and do nothing for one hour in your house or yard and report back"
+		]
+	},
+	{
+		"player": "Britt",
+		"challenges": [
+			"Get ice cream from five different establishments in Bellingham",
+			"Have soft serve",
+			"Make three other BAABO players a sundae",
+			"Buy someone an ice cream sandwich",
+			"Make kick the can ice cream"
+		]
+	},
+	{
+		"player": "Eric",
+		"challenges": [
+			"Plant a plant CLANDESTINELY",
+			"Vogue down the Boardwalk",
+			"Make a flip book and share with the group",
+			"Wave to someone on a boat you’re not on and have them wave back",
+			"Eat peanut butter pie"
+		]
+	},
+	{
+		"player": "Will",
+		"challenges": [
+			"Make 4 consecutive left turns on a bicycle",
+			"Take a picture of a mailbox that is not your own, and not standard in some way",
+			"Eat a whole watermelon in 24 hours",
+			"Pull an all-nighter"
+		]
+	},
+	{
+		"player": "Margurite",
+		"challenges": [
+			"Find the Disco Duck",
+			"Have soft serve",
+			"Attend a World Cup Fan Zone event",
+			"Rent a pedal boat at lake Samish"
+		]
+	},	
+	{
+		"player": "Zach C.",
+		"challenges": [
+			"Park in the James street Trader Joe’s parking lot on a weekday between 5 and 6 PM",
+			"Wave at a cat cafe cat",
+			"Go to the beach at sunset but look in the opposite direction",
+			"Salute the I5 sloth"
+
+		]
 	}
 ]
