@@ -932,7 +932,7 @@
 		"emoji": "🪥",
 		"from": "Celeste",
 		"howToWin": "Baseball diamond (<table class=tiny><tr><td><td><td class=checked><td><td><tr><td><td><td><td><td><tr><td class=checked><td><td class=checked><td><td class=checked><tr><td><td><td><td><td><tr><td><td><td class=checked><td><td></table>)",
-		"maxWinners": 1
+		"maxWinners": 1,
 		"wonBy": [
 			{
 				"player": "Marguerite",
@@ -946,7 +946,7 @@
 		"emoji": "🪥",
 		"from": "Celeste",
 		"howToWin": "First two bingos",
-		"maxWinners": 2
+		"maxWinners": 2,
 		"wonBy": []
 	},
 	{
@@ -962,183 +962,183 @@
 		"what": "Custom made mug",
 		"emoji": "🍵",
 		"from": "Meg",
-		"available": true,
-		"howToWin": "Second L (<table class=tiny><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)"
+		"howToWin": "Second L (<table class=tiny><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)",
+		"maxWinners": 1
 	},
 	{
 		"game": "2026",
 		"what": "2005 first place ice hockey trophy",
 		"emoji": "🏆",
 		"from": "Mary",
-		"available": true,
-		"howToWin": "First M (including free space) (<table class=tiny><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td class=checked><td><td class=checked><td class=checked><tr><td class=checked><td><td class=checked><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked></table>)"
+		"howToWin": "First M (including free space) (<table class=tiny><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td class=checked><td><td class=checked><td class=checked><tr><td class=checked><td><td class=checked><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked></table>)",
+		"maxWinners": 1
 	},
 	{
 		"game": "2026",
 		"what": "Ginger upside down cake",
 		"emoji": "🍰",
 		"from": "Zach M.",
-		"available": true,
-		"howToWin": "First Z (<table class=tiny><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td><td><td class=checked><td><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)"
+		"howToWin": "First Z (<table class=tiny><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td><td><td class=checked><td><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)",
+		"maxWinners": 1
 	},	
 	{
 		"game": "2026",
 		"what": "Homemade tomato sauce",
 		"emoji": "🍅",
 		"from": "Brendon",
-		"available": true,
-		"howToWin": "Everyone who gets a T (<table class=tiny><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td><td class=checked><td><td><tr><td><td><td class=checked><td><td><tr><td><td><td class=checked><td><td><tr><td><td><td class=checked><td><td></table>)"
+		"howToWin": "Everyone who gets a T (<table class=tiny><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td><td class=checked><td><td><tr><td><td><td class=checked><td><td><tr><td><td><td class=checked><td><td><tr><td><td><td class=checked><td><td></table>)",
+		"maxWinners": null
 	},	
 	{
 		"game": "2026",
 		"what": "Box of homegrown produce",
 		"emoji": "🥬",
 		"from": "Justin",
-		"available": true,
-		"howToWin": "First J (<table class=tiny><tr><td><td><td><td><td class=checked><tr><td><td><td><td><td class=checked><tr><td><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td><td class=checked><td class=checked><td class=checked><td></table>)"
+		"howToWin": "First J (<table class=tiny><tr><td><td><td><td><td class=checked><tr><td><td><td><td><td class=checked><tr><td><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td><td class=checked><td class=checked><td class=checked><td></table>)",
+		"maxWinners": 1
 	},
 	{
 		"game": "2026",
 		"what": "Homemade ice cream (flavor of your choice)",
 		"emoji": "🍨",
 		"from": "Stephanie",
-		"available": true,
-		"howToWin": "First smiley face (<table class=tiny><tr><td><td><td><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td><td><td><tr><td class=checked><td><td><td><td class=checked><tr><td><td class=checked><td class=checked><td class=checked><td></table>)"
+		"howToWin": "First smiley face (<table class=tiny><tr><td><td><td><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td><td><td><tr><td class=checked><td><td><td><td class=checked><tr><td><td class=checked><td class=checked><td class=checked><td></table>)",
+		"maxWinners": 1
 	},	
 	{
 		"game": "2026",
 		"what": "Watercolor of a flower of your choice",
 		"emoji": "🎨",
 		"from": "Cassi",
-		"available": true,
-		"howToWin": "Fourth, fifth, and sixth bingos"
+		"howToWin": "Fourth, fifth, and sixth bingos",
+		"maxWinners": 3
 	},
 	{
 		"game": "2026",
 		"what": "2026 BAABO magnent",
 		"emoji": "🧲",
 		"from": "Jeff",
-		"available": true,
-		"howToWin": "Everyone who gets four corners (<table class=tiny><tr><td class=checked><td><td><td><td class=checked><tr><td><td><td><td><td><tr><td><td><td><td><td><tr><td><td><td><td><td><tr><td class=checked><td><td><td><td class=checked></table>)"
+		"howToWin": "Everyone who gets four corners (<table class=tiny><tr><td class=checked><td><td><td><td class=checked><tr><td><td><td><td><td><tr><td><td><td><td><td><tr><td><td><td><td><td><tr><td class=checked><td><td><td><td class=checked></table>)",
+		"maxWinners": null
 	},
 	{
 		"game": "2026",
 		"what": "Box of muffins",
 		"emoji": "🧁",
 		"from": "Emma",
-		"available": true,
-		"howToWin": "First cat paw (<table class=tiny><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td class=checked><td><td><td><td class=checked><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td><td><td></table>)"
+		"howToWin": "First cat paw (<table class=tiny><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td class=checked><td><td><td><td class=checked><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td><td><td></table>)",
+		"maxWinners": 1
 	},
 	{
 		"game": "2026",
 		"what": "Celeste will write you a personal poem",
 		"emoji": "📝",
 		"from": "Celeste",
-		"available": true,
-		"howToWin": "First three players to get a bingo"
+		"howToWin": "First three players to get a bingo",
+		"maxWinners": 3
 	},
 	{
 		"game": "2026",
 		"what": "Three half-pints of homemade jam (your choice of strawberry, raspberry, and/or blackberry)",
 		"emoji": "🍓",
 		"from": "Eyonna and Jonah",
-		"available": true,
-		"howToWin": "First E (<table class=tiny><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)"
+		"howToWin": "First E (<table class=tiny><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)",
+		"maxWinners": 1
 	},
 	{
 		"game": "2026",
 		"what": "Homemade pie",
 		"emoji": "🥧",
 		"from": "Eyonna and Jonah",
-		"available": true,
-		"howToWin": "Second E (<table class=tiny><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)"
+		"howToWin": "Second E (<table class=tiny><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)",
+		"maxWinners": 1
 	},
 	{
 		"game": "2026",
 		"what": "9×12 pan of Eyonna’s famous mac and cheese",
 		"emoji": "🧀",
 		"from": "Eyonna and Jonah",
-		"available": true,
-		"howToWin": "Third E (<table class=tiny><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)"
+		"howToWin": "Third E (<table class=tiny><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)",
+		"maxWinners": 1
 	},
 	{
 		"game": "2026",
 		"what": "English muffins from Dough’s Bakery and two stickers that will be picked out just for you",
 		"emoji": "😋",
 		"from": "Caity",
-		"available": true,
-		"howToWin": "First X (<table class=tiny><tr><td class=checked><td><td><td><td class=checked><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td class=checked><td><td><td><td class=checked></table>)"
+		"howToWin": "First X (<table class=tiny><tr><td class=checked><td><td><td><td class=checked><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td class=checked><td><td><td><td class=checked></table>)",
+		"maxWinners": 1
 	},
 	{
 		"game": "2026",
 		"what": "Box of Family Donuts (from Seattle)",
 		"emoji": "🍩",
 		"from": "Ben",
-		"available": true,
-		"howToWin": "First triangle from the free space (<table class=tiny><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td><tr><td><td><td><td><td><tr><td><td><td><td><td></table>, <table class=tiny><tr><td><td><td><td><td class=checked><tr><td><td><td><td class=checked><td class=checked><tr><td><td><td class=checked><td><td class=checked><tr><td><td><td><td class=checked><td class=checked><tr><td><td><td><td><td class=checked></table>, <table class=tiny><tr><td><td><td><td><td><tr><td><td><td><td><td><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>, or <table class=tiny><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td><td><td><tr><td class=checked><td><td class=checked><td><td><tr><td class=checked><td class=checked><td><td><td><tr><td class=checked><td><td><td><td></table>)"
+		"howToWin": "First triangle from the free space (<table class=tiny><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td><tr><td><td><td><td><td><tr><td><td><td><td><td></table>, <table class=tiny><tr><td><td><td><td><td class=checked><tr><td><td><td><td class=checked><td class=checked><tr><td><td><td class=checked><td><td class=checked><tr><td><td><td><td class=checked><td class=checked><tr><td><td><td><td><td class=checked></table>, <table class=tiny><tr><td><td><td><td><td><tr><td><td><td><td><td><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>, or <table class=tiny><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td><td><td><tr><td class=checked><td><td class=checked><td><td><tr><td class=checked><td class=checked><td><td><td><tr><td class=checked><td><td><td><td></table>)",
+		"maxWinners": 1
 	},
-{
+	{
 		"game": "2026",
 		"what": "Hazel art t-shirt",
 		"emoji": "👕",
 		"from": "Jacob",
-		"available": true,
-		"howToWin": "First lower-case “h” (<table class=tiny><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td><td><tr><td class=checked><td><td class=checked><td><td><tr><td class=checked><td><td class=checked><td><td></table>)"
+		"howToWin": "First lower-case “h” (<table class=tiny><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td><td><tr><td class=checked><td><td class=checked><td><td><tr><td class=checked><td><td class=checked><td><td></table>)",
+		"maxWinners": 1
 	},
 	{
 		"game": "2026",
 		"what": "Truffles (gluten-free; can be vegan upon request)",
 		"emoji": "🍬",
 		"from": "Andrea",
-		"available": true,
-		"howToWin": "First three players to get a diamond (<table class=tiny><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td class=checked><td><td><td><td class=checked><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td></table>)"
+		"howToWin": "First three players to get a diamond (<table class=tiny><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td class=checked><td><td><td><td class=checked><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td></table>)",
+		"maxWinners": 3
 	},
 	{
 		"game": "2026",
 		"what": "Lou will donate an amount of Lou’s choice to a non-profit of your choice",
 		"emoji": "🎗️",
 		"from": "Lou",
-		"available": true,
-		"howToWin": "First L (<table class=tiny><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)"
+		"howToWin": "First L (<table class=tiny><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)",
+		"maxWinners": 1
 	},
 	{
 		"game": "2026",
 		"what": "Fifteen dollars to Cafe Blue",
 		"emoji": "☕️",
 		"from": "Britt",
-		"available": true,
-		"howToWin": "First player to get a little “i” including the free space (<table class=tiny><tr><td><td><td class=checked><td><td><tr><td><td><td><td><td><tr><td><td><td class=checked><td><td><tr><td><td><td class=checked><td><td><tr><td><td><td class=checked><td><td></table>)"
+		"howToWin": "First player to get a little “i” including the free space (<table class=tiny><tr><td><td><td class=checked><td><td><tr><td><td><td><td><td><tr><td><td><td class=checked><td><td><tr><td><td><td class=checked><td><td><tr><td><td><td class=checked><td><td></table>)",
+		"maxWinners": 1
 	},
 	{
 		"game": "2026",
 		"what": "Letterpress print",
 		"emoji": "🖼️",
 		"from": "Eric",
-		"available": true,
-		"howToWin": "Everyone who gets a diagonal bingo (<table class=tiny><tr><td class=checked><td><td><td><td><tr><td><td class=checked><td><td><td><tr><td><td><td class=checked><td><td><tr><td><td><td><td class=checked><td><tr><td><td><td><td><td class=checked></table> or <table class=tiny><tr><td><td><td><td><td class=checked><tr><td><td><td><td class=checked><td><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td><td><tr><td class=checked><td><td><td><td></table>)"
+		"howToWin": "Everyone who gets a diagonal bingo (<table class=tiny><tr><td class=checked><td><td><td><td><tr><td><td class=checked><td><td><td><tr><td><td><td class=checked><td><td><tr><td><td><td><td class=checked><td><tr><td><td><td><td><td class=checked></table> or <table class=tiny><tr><td><td><td><td><td class=checked><tr><td><td><td><td class=checked><td><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td><td><tr><td class=checked><td><td><td><td></table>)",
+		"maxWinners": null
 	},
 	{
 		"game": "2026",
 		"what": "$100 cold hard cash (five frozen $20 bills)",
 		"emoji": "💵",
 		"from": "Will",
-		"available": true,
-		"howToWin": "First squiggle with two dots (<table class=tiny><tr><td class=checked><td><td><td class=checked><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td><td><td><td class=checked><tr><td><td class=checked><td><td><td class=checked></table>)"
+		"howToWin": "First squiggle with two dots (<table class=tiny><tr><td class=checked><td><td><td class=checked><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td><td><td><td class=checked><tr><td><td class=checked><td><td><td class=checked></table>)",
+		"maxWinners": 1
 	},
 	{
 		"game": "2026",
 		"what": "$25 gift card to Third Planet",
 		"emoji": "🌎",
 		"from": "Marguerite",
-		"available": true,
-		"howToWin": "First arrow pointing up and to the right (<table class=tiny><tr><td><td><td class=checked><td class=checked><td class=checked><tr><td><td><td><td class=checked><td class=checked><tr><td><td><td class=checked><td><td class=checked><tr><td><td class=checked><td><td><td><tr><td class=checked><td><td><td><td></table>)"
+		"howToWin": "First arrow pointing up and to the right (<table class=tiny><tr><td><td><td class=checked><td class=checked><td class=checked><tr><td><td><td><td class=checked><td class=checked><tr><td><td><td class=checked><td><td class=checked><tr><td><td class=checked><td><td><td><tr><td class=checked><td><td><td><td></table>)",
+		"maxWinners": 1
 	},
 	{
 		"game": "2026",
 		"what": "Six creme brûlées",
 		"emoji": "🍮",
 		"from": "Zach C.",
-		"available": true,
-		"howToWin": "First to get this pattern <table class=tiny><tr><td><td><td><td><td><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td><td class=checked><td><td class=checked><td><tr><td><td class=checked><td><td class=checked><td></table>"
+		"howToWin": "First to get this pattern <table class=tiny><tr><td><td><td><td><td><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td><td class=checked><td><td class=checked><td><tr><td><td class=checked><td><td class=checked><td></table>",
+		"maxWinners": 1
 	}
 ]
