@@ -944,7 +944,7 @@
 		"game": "test",
 		"what": "Toothbrush",
 		"emoji": "🪥",
-		"from": "Celeste",
+		"from": "Test",
 		"howToWin": "First two bingos",
 		"maxWinners": 2,
 		"wonBy": []
@@ -956,6 +956,22 @@
 		"from": "Wxy Z.",
 		"howToWin": "Everyone who gets a baseball diamond (<table class=tiny><tr><td><td><td class=checked><td><td><tr><td><td><td><td><td><tr><td class=checked><td><td class=checked><td><td class=checked><tr><td><td><td><td><td><tr><td><td><td class=checked><td><td></table>)",
 		"maxWinners": null
+	},
+	{
+		"game": "test",
+		"what": "Connect Four",
+		"emoji": "🔴",
+		"from": "Eric",
+		"howToWin": "First four four corners",
+		"maxWinners": 4
+	},
+	{
+		"game": "test",
+		"what": "$10 to Cafe Blue",
+		"emoji": "☕️",
+		"from": "Abc A.",
+		"howToWin": "First square around the free space",
+		"maxWinners": 1
 	},
 	{
 		"game": "2026",
