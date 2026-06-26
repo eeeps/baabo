@@ -24,12 +24,16 @@ import onePrizeWonByFromChangeHistory from '/lib/onePrizeWonByFromChangeHistory.
 import syncLocalStoragePrizeChangeHistoryAndDatabaseWhere from '/lib/syncLocalStoragePrizeChangeHistoryAndDatabaseWhere.js';
 import updatePrizeDetailFromPrizeState from '/lib/updatePrizeDetailFromPrizeState.js';
 
+import uuid from '/lib/uuid.js';
+import postPrizeChange from '/lib/postPrizeChange.js';
+
 // hoisted imports
 // TODO
 
 // game and prize name
 const gameName = '${ urlSlugify( data.prize.game ) }';
 const prizeName = '${ urlSlugify( data.prize.what ) }';
+const maxWinners = ${ data.prize.maxWinners };
 
 // calculate wonBy from what's in local storage now
 // set checkbox states based on that
@@ -41,7 +45,11 @@ const prizeChanges = fetchPrizeChangeHistoryFromLocalStorageWhere( {
 // todo can i eliminate the gamename and prizename here, and assume changehistory is always pre-filtered?
 const wonBy = onePrizeWonByFromChangeHistory( gameName, prizeName, prizeChanges );
 const checkboxForm = document.getElementById( 'playerCheckboxes' );
-updatePrizeDetailFromPrizeState( checkboxForm, wonBy );
+// we store the .noneAvailable state here, because it's the highest thing we have access to in this page (body is handled by template...)
+const mainContain = document.querySelector( '.mainContain' );
+
+updatePrizeDetailFromPrizeState( mainContain, checkboxForm, wonBy, maxWinners )
+
 
 // sync with the database, and if there were relevant changes, update again, async
 syncLocalStoragePrizeChangeHistoryAndDatabaseWhere( {
@@ -51,6 +59,7 @@ syncLocalStoragePrizeChangeHistoryAndDatabaseWhere( {
 	if ( result.postedToLocalStorage === true ||
 		 result.deletedFromLocalStorage === true ) {
 		updatePrizeDetailFromPrizeState(
+			mainContain,
 			checkboxForm,
 			onePrizeWonByFromChangeHistory(
 				gameName,
@@ -59,14 +68,40 @@ syncLocalStoragePrizeChangeHistoryAndDatabaseWhere( {
 					game: gameName,
 					prize: prizeName
 				} )
-			)
+			),
+			maxWinners
 		);
 	}
 } );
 
+// set event listeners
+checkboxForm.querySelectorAll('input[type=checkbox]').forEach( c => {
+	
+	c.addEventListener( 'input', ( event ) => {
+		
+		//console.log(event)
+		
+		const change = {
+			id: uuid(),
+			timestamp: new Date(),
+			game: gameName,
+			prize: prizeName,
+			player: event.target.name,
+			state: event.target.checked
+		};
+		//console.log(change)
 
-// set click handlers and make checkboxes clickable 
-// actually this should block rendering so we don't get disabled style flash?
+		console.log(postPrizeChange( change ));
+		
+		const wonBy = [ ...checkboxForm.querySelectorAll( 'input[type=checkbox]:checked' ) ]
+			// we don't actually need claimdates, I think?
+			.map( cb => ({ player: cb.name, claimDate: null }) );
+		
+		updatePrizeDetailFromPrizeState( mainContain, checkboxForm, wonBy, maxWinners )
+		
+	} );
+
+} );
 
 </script>
 		`
@@ -127,61 +162,6 @@ export function render(data) {
 
 </div>
 
-<script type=module>
-import uuid from '/lib/uuid.js';
-import postPrizeChange from '/lib/postPrizeChange.js';
-
-const maxWinners = ${ data.prize.maxWinners };
-const gameName = '${ urlSlugify( data.prize.game ) }';
-const prizeName = '${ urlSlugify( data.prize.what ) }';
-const checkboxes = document.querySelectorAll('input[type=checkbox]');
-checkboxes.forEach( c => {
-	
-	const checkedNow = [...document.querySelectorAll('input[type=checkbox]')]
-		.reduce( (acc, cv) => {
-			if ( cv.checked ) { acc += 1; } 
-			return acc;
-		}, 0 );
-
-	if ( maxWinners === null || checkedNow < maxWinners || c.checked ) {
-		c.removeAttribute('disabled');
-	}
-	
-	c.addEventListener( 'input', ( event ) => {
-		
-		const change = {
-			id: uuid(),
-			timestamp: new Date(),
-			game: gameName,
-			prize: prizeName,
-			player: event.target.name,
-			state: event.target.checked
-		};
-
-		postPrizeChange( change );
-		
-		const checkedNow = [ ...document.querySelectorAll( 'input[type=checkbox]:checked' ) ].length;
-		// console.log( checkedNow );
-
-		// we store the .noneAvailable state here, because it's the highest thing we have access to in this page (body is handled by template...)
-		const mainContain = document.querySelector( '.mainContain' );
-
-		if ( maxWinners !== null && checkedNow >= maxWinners ) {
-			[...document.querySelectorAll( 'input[type=checkbox]:not(:checked)' ) ]
-				.forEach( d => {
-					d.setAttribute('disabled', 'disabled');
-				} )
-			mainContain.classList.add('noneAvailable');
-		} else {
-			[...document.querySelectorAll( 'input[type=checkbox]' ) ]
-				.forEach( d => {
-					d.removeAttribute('disabled')
-				} )	
-			mainContain.classList.remove('noneAvailable');
-		}
-	} );
-} );
-</script>
 `;
 
 };
