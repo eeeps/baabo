@@ -9,8 +9,9 @@ export default async function() {
 	// fetch entire change history
 	const changeHistory = await fetchPrizeChangeHistoryFromDatabaseWhere( {} );
 	
-	return prizes.map( prize => ({
+	return prizes.map( ( prize, index ) => ({
 		...prize,
+		jsonIndex: index,
 		wonBy: onePrizeWonByFromChangeHistory( urlSlugify( prize.game ), urlSlugify( prize.what ), changeHistory )
 	}) );
 	

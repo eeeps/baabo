@@ -2,6 +2,17 @@ import monochromize from './lib/monochromizeEmoji.js';
 import urlSlugify from './lib/urlSlugify.js';
 import remainingPrizeCount from './lib/remainingPrizeCount.js';
 
+
+const noneAvailablePrizeSortNumber = ( prize ) => {
+	if ( prize.wonBy && prize.wonBy[ 0 ].claimDate ) {
+		// console.log(prize.what, Math.max( ...prize.wonBy.map( x => x.claimDate.getTime() ) ) );
+		return Math.max( ...prize.wonBy.map( x => x.claimDate.getTime() ) );
+	} else {
+		// console.log(prize.what, prize.jsonIndex );
+		return prize.jsonIndex;
+	}
+}
+
 export const data = {
 	pagination: {
 		data: "games",
@@ -85,8 +96,9 @@ const updatePrizes = ( prizeLis, prizeChanges ) => {
 	const availableUl = document.querySelector( '.prizes.available' );
 	const noneAvailableUl = document.querySelector( '.prizes.noneAvailable' );
 	
+	// console.log(availableUl, noneAvailableUl)
+	
 	const lastClaimedDates = new WeakMap();
-	let movedLisCount = 0;
 	
 	// loop over prizes
 	// set wonby and available or not class
@@ -101,6 +113,7 @@ const updatePrizes = ( prizeLis, prizeChanges ) => {
 		
 		// store most recent wonby
 		if ( wonBy.length > 0 ) {
+			// console.log(li,Math.max( ...wonBy.map( wb => wb.claimDate.getTime() ) ) )
 			lastClaimedDates.set( li, Math.max( ...wonBy.map( wb => wb.claimDate.getTime() ) ) );
 		}
 		
@@ -126,39 +139,35 @@ const updatePrizes = ( prizeLis, prizeChanges ) => {
 			maxWinners = parseInt( maxWinners );
 		}
 		
-		console.log( maxWinners, wonByNum );
-		
 		if ( 
 			( maxWinners === null || wonByNum < maxWinners ) &&
 			li.parentNode === noneAvailableUl
 		) {
 			
+			// console.log( "moving to available", li )
 			// move
-			availableUl.insertBefore( li, availableUl.firstChild );
-			movedLisCount += 1;
+			availableUl.appendChild( li );
 			
 		} else if ( 
 			( maxWinners !== null && wonByNum >= maxWinners ) &&
 			li.parentNode === availableUl
 		) {
-			
+			// console.log( "moving to unavailable", li )
 			// move
-			noneAvailableUl.insertBefore( li, noneAvailableUl.firstChild );
-			movedLisCount += 1;
+			noneAvailableUl.appendChild( li );
 		
 		}
 		
 	} );
 	
+	// todo this can almost certianly be combined with shuffling, above
 	// re-order prizes
-	if ( movedLisCount > 0 ) {
-		[ ...availableUl.querySelectorAll( 'li' ) ]
-			.sort( ( a, b ) => a.querySelector( '.what' ).textContent < b.querySelector( '.what' ).textContent )
-			.forEach( li => availableUl.appendChild( li ) );
-		[ ...noneAvailableUl.querySelectorAll( 'li' ) ]
-			.sort( ( a, b ) => lastClaimedDates.get( a ) > lastClaimedDates.get( b ) )
-			.forEach( li => availableUl.appendChild( li ) );
-	}
+	[ ...availableUl.querySelectorAll( 'li' ) ]
+		.sort( ( a, b ) => parseInt( a.dataset.jsonindex ) - parseInt( b.dataset.jsonindex ) )
+		.forEach( li => availableUl.appendChild( li ) );
+	[ ...noneAvailableUl.querySelectorAll( 'li' ) ]
+		.sort( ( a, b ) => lastClaimedDates.get( b ) - lastClaimedDates.get( a ) )
+		.forEach( li => noneAvailableUl.appendChild( li ) );
 	
 };
 
@@ -167,7 +176,7 @@ const updatePrizes = ( prizeLis, prizeChanges ) => {
 const prizeChanges = fetchPrizeChangeHistoryFromLocalStorageWhere( {
 	game: "${ urlSlugify( data.game.name ) }"
 } );
-
+// console.log( 'updatePrizes()' )
 updatePrizes( prizeLis, prizeChanges );
 
 // if bfcache causes problems??
@@ -202,6 +211,7 @@ export function render(data) {
 				<li
 					data-prizename="${ urlSlugify( prize.what ) }"
 					data-maxwinners="${ prize.maxWinners }"
+					data-jsonindex="${ prize.jsonIndex }"
 					class="${ prize.wonBy.length > 0 ? ' someWinners' : '' }"
 				>
 					<p
@@ -258,6 +268,8 @@ export function render(data) {
 				</li>
 			`
 		} ) );
+		
+		// console.log(prizes.map( x => x.wonBy ))
 
 	return `<div class="mainContain" data-game="${ data.game.name }">
 	<header>
@@ -328,6 +340,7 @@ export function render(data) {
 
 		${ prizes
 			.filter( prize => prize.maxWinners === null || remainingPrizeCount( prize ) > 0 )
+			.sort( ( a, b ) => a.jsonIndex - b.jsonIndex )
 			.map( prize => prize.html )
 			.join('\n\t\t')
 		}
@@ -339,10 +352,11 @@ export function render(data) {
 	<ul class="prizes noneAvailable">
 
 		${ prizes
-		.filter( prize => prize.maxWinners !== null && remainingPrizeCount( prize ) <= 0 )
-		.map( prize => prize.html )
-		.join('\n\t\t')
-	}
+			.filter( prize => prize.maxWinners !== null && remainingPrizeCount( prize ) <= 0 )
+			.sort( ( a, b ) => noneAvailablePrizeSortNumber( b ) - noneAvailablePrizeSortNumber( a ) )
+			.map( prize => prize.html )
+			.join('\n\t\t')
+		}
 
 	</ul>
 
