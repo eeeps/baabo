@@ -14,9 +14,8 @@ export const data = {
 		game: data => data.games.find( g => urlSlugify( g.name ) === urlSlugify( data.prize.game ) ),
 		players: data => data.boards.filter( b => urlSlugify( b.game ) === data.prize.game ).map( b => b.player ).sort(),
 		head: data => `
+${ data.game.active ? `
 <script type="module" blocking="render">
-
-// TODO if the game isn't active, don't do any of this
 
 // imports
 import fetchPrizeChangeHistoryFromLocalStorageWhere from '/lib/fetchPrizeChangeHistoryFromLocalStorageWhere.js';
@@ -104,6 +103,7 @@ checkboxForm.querySelectorAll('input[type=checkbox]').forEach( c => {
 } );
 
 </script>
+` : '' }
 		`
 	}
 };
