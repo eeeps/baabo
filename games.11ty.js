@@ -247,10 +247,10 @@ export function render(data) {
 						<hgroup>
 							<h4
 								class=what
-								id="prize-${ urlSlugify( prize.what ) }"><a
+								id="prize-${ urlSlugify( prize.what ) }">${ data.game.active ? `<a
 									href="/${ urlSlugify( prize.game ) }/prizes/${ urlSlugify( prize.what ) }/" 
-									style="view-transition-name: prize-${ urlSlugify( prize.what ) }-what">${ prize.what }</a
-							></h4>
+									style="view-transition-name: prize-${ urlSlugify( prize.what ) }-what">` : '' }${ prize.what }${ data.game.active ? `</a
+							>` : '' }</h4>
 							${ ( prize.subhead ? `<p style="view-transition-name: prize-${ urlSlugify( prize.what ) }-subhead">
 								${ prize.subhead }
 							</p>` : '' ) }
