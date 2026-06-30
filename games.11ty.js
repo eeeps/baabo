@@ -79,11 +79,20 @@ syncLocalStorageChangeHistoryAndDatabaseWhere( { game: gameName } ).then( ( resu
 	}
 } );
 
-// console.log( 'hellooo');
+
 ///////
 import onePrizeWonByFromChangeHistory from '/lib/onePrizeWonByFromChangeHistory.js';
 import fetchPrizeChangeHistoryFromLocalStorageWhere from '/lib/fetchPrizeChangeHistoryFromLocalStorageWhere.js';
 import syncLocalStoragePrizeChangeHistoryAndDatabaseWhere from '/lib/syncLocalStoragePrizeChangeHistoryAndDatabaseWhere.js';
+
+/* hoisted */
+import applyPrizeChangesToWonBy from '/lib/applyPrizeChangesToWonBy.js';
+// already got it above // import timestampReviver from '/lib/timestampReviver.js';
+import fetchPrizeChangeHistoryFromDatabaseWhere from '/lib/fetchPrizeChangeHistoryFromDatabaseWhere.js';
+// import setDifference from '/lib/setDifference.js';
+import postPrizeChangeToDatabase from '/lib/postPrizeChangeToDatabase.js';
+import deletePrizeChangeFromLocalStorage from '/lib/deletePrizeChangeFromLocalStorage.js';
+import postPrizeChangesToLocalStorage from '/lib/postPrizeChangesToLocalStorage.js';
 
 const fullNamesFromSlugs = {
 	${ data.boards.map( b => `'${ urlSlugify(b.player)}': '${b.player}'` ).join(',\n') }
