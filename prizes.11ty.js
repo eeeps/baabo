@@ -27,7 +27,15 @@ import uuid from '/lib/uuid.js';
 import postPrizeChange from '/lib/postPrizeChange.js';
 
 // hoisted imports
-// TODO
+import timestampReviver from '/lib/timestampReviver.js';
+import applyPrizeChangesToWonBy from '/lib/applyPrizeChangesToWonBy.js';
+import fetchPrizeChangeHistoryFromDatabaseWhere from '/lib/fetchPrizeChangeHistoryFromDatabaseWhere.js';
+import setDifference from '/lib/setDifference.js';
+import postPrizeChangeToDatabase from '/lib/postPrizeChangeToDatabase.js';
+import postPrizeChangesToLocalStorage from '/lib/postPrizeChangesToLocalStorage.js';
+import deletePrizeChangeFromLocalStorage from '/lib/deletePrizeChangeFromLocalStorage.js';
+
+
 
 // game and prize name
 const gameName = '${ urlSlugify( data.prize.game ) }';
