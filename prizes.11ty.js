@@ -153,7 +153,9 @@ export function render(data) {
 					style="view-transition-name: prize-${ urlSlugify( data.prize.what ) }-won-by-dt"
 				>Won by</dt>
 				<dd><form id="playerCheckboxes" style='display: grid; grid-template-columns: repeat( auto-fit, minmax(15ch, 1fr) );'>
-				${ data.players.map( player => { 
+				${ data.players
+					.filter( player => urlSlugify( player ) !== urlSlugify( data.prize.from ) )
+					.map( player => { 
 						
 					const didThisPlayerWin = data.prize.wonBy.map( d => urlSlugify(d.player) ).includes( urlSlugify( player ) );
 					
