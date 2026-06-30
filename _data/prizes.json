@@ -6,8 +6,7 @@
 		"emoji": "🖼",
 		"from": "Celeste",
 		"howToWin": "Complete a full frame (<table class=tiny><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)",
-		"maxWinners": 1,
-		"wonBy": []
+		"maxWinners": 1
 	},
 	{
 		"game": "2022",
@@ -16,13 +15,7 @@
 		"emoji": "🏆",
 		"from": "Ellie",
 		"howToWin": "Do the thing on your board that is the most scary (or challenging) to you",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Rachel",
-				"claimDate": "2022-07-10"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "2022",
@@ -30,8 +23,7 @@
 		"emoji": "🍾",
 		"from": "Rachel",
 		"howToWin": "Complete an X (<table class=tiny><tr><td class=checked><td><td><td><td class=checked><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td class=checked><td><td><td><td class=checked></table>); everyone who gets an X gets to come",
-		"maxWinners": null,
-		"wonBy": []
+		"maxWinners": null
 	},
 	{
 		"game": "2022",
@@ -39,8 +31,7 @@
 		"emoji": "🍸",
 		"from": "Britt",
 		"howToWin": "Complete an M (<table class=tiny><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td class=checked><td><td class=checked><td class=checked><tr><td class=checked><td><td class=checked><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked></table>); everyone who gets an M gets a prize",
-		"maxWinners": null,
-		"wonBy": []
+		"maxWinners": null
 	},
 	{
 		"game": "2022",
@@ -48,13 +39,7 @@
 		"emoji": "💡",
 		"from": "Jake",
 		"howToWin": "Complete the middle row (<table class=tiny><tr><td><td><td><td><td><tr><td><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td><td><td><td><tr><td><td><td><td><td></table>)",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Eric",
-				"claimDate": "2022-08-13"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "2022",
@@ -62,8 +47,7 @@
 		"emoji": "🏷",
 		"from": "Andrea",
 		"howToWin": "Complete an S (<table class=tiny><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td><td><td><td class=checked><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>) (like money)",
-		"maxWinners": 1,
-		"wonBy": []
+		"maxWinners": 1
 	},
 	{
 		"game": "2022",
@@ -71,13 +55,7 @@
 		"emoji": "🍺",
 		"from": "Eric",
 		"howToWin": "First BINGO",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Andrea",
-				"claimDate": "2022-06-21"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "2022",
@@ -85,8 +63,7 @@
 		"emoji": "🍻",
 		"from": "Jeff",
 		"howToWin": "Complete a U (<table class=tiny><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>); first three winners get beers",
-		"maxWinners": 3,
-		"wonBy": []
+		"maxWinners": 3
 	},
 	{
 		"game": "2022",
@@ -94,8 +71,7 @@
 		"emoji": "📿",
 		"from": "Lindsey",
 		"howToWin": "Complete a small circle around the free square (<table class=tiny><tr><td><td><td><td><td><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td><td class=checked><td><td class=checked><td><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td><td><td><td><td></table>)",
-		"maxWinners": 1,
-		"wonBy": []
+		"maxWinners": 1
 	},
 	{
 		"game": "2022",
@@ -103,13 +79,7 @@
 		"emoji": "🥄",
 		"from": "Jamie",
 		"howToWin": "Complete five squares with activities that are new to you",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Celeste",
-				"claimDate": "2022-09-11"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "2023",
@@ -117,8 +87,7 @@
 		"emoji": "🏆",
 		"from": "Ellie",
 		"howToWin": "Identify and complete three separate challenges on your board: <ol><li>the scariest thing for you,</li> <li>the most time-consuming thing for you, and</li> <li>the most difficult thing for you</li></ol>",
-		"maxWinners": 1,
-		"wonBy": []
+		"maxWinners": 1
 	},
 	{
 		"game": "2023",
@@ -126,8 +95,7 @@
 		"emoji": "🗝️",
 		"from": "Jake",
 		"howToWin": "Complete a box around the free space (<table class=tiny><tr><td><td><td><td><td><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td><td class=checked><td><td class=checked><td><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td><td><td><td><td></table>)",
-		"maxWinners": 1,
-		"wonBy": []
+		"maxWinners": 1
 	},
 	{
 		"game": "2023",
@@ -135,13 +103,7 @@
 		"emoji": "🍫",
 		"from": "Andrea",
 		"howToWin": "Complete any two adjacent vertical columns (<table class=tiny><tr><td class=checked><td class=checked><td><td><td><tr><td class=checked><td class=checked><td><td><td><tr><td class=checked><td class=checked><td><td><td><tr><td class=checked><td class=checked><td><td><td><tr><td class=checked><td class=checked><td><td><td></table>, <table class=tiny><tr><td><td class=checked><td class=checked><td><td><tr><td><td class=checked><td class=checked><td><td><tr><td><td class=checked><td class=checked><td><td><tr><td><td class=checked><td class=checked><td><td><tr><td><td class=checked><td class=checked><td><td></table>, <table class=tiny><tr><td><td><td class=checked><td class=checked><td><tr><td><td><td class=checked><td class=checked><td><tr><td><td><td class=checked><td class=checked><td><tr><td><td><td class=checked><td class=checked><td><tr><td><td><td class=checked><td class=checked><td></table>, or <table class=tiny><tr><td><td><td><td class=checked><td class=checked><tr><td><td><td><td class=checked><td class=checked><tr><td><td><td><td class=checked><td class=checked><tr><td><td><td><td class=checked><td class=checked><tr><td><td><td><td class=checked><td class=checked></table>)",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Eric",
-				"claimDate": "2023-07-24"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "2023",
@@ -149,13 +111,7 @@
 		"emoji": "🪡",
 		"from": "Mary",
 		"howToWin": "Four corners (<table class=tiny><tr><td class=checked><td><td><td><td class=checked><tr><td><td><td><td><td><tr><td><td><td><td><td><tr><td><td><td><td><td><tr><td class=checked><td><td><td><td class=checked></table>)",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Ellie",
-				"claimDate": "2023-07-17"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "2023",
@@ -163,13 +119,7 @@
 		"emoji": "💸",
 		"from": "Britt",
 		"howToWin": "First person to get TWO bingos",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Ellie",
-				"claimDate": "2023-07-13"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "2023",
@@ -177,8 +127,7 @@
 		"emoji": "🖼️",
 		"from": "Celeste",
 		"howToWin": "Complete a diamond (<table class=tiny><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td class=checked><td><td><td><td class=checked><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td></table>)",
-		"maxWinners": 1,
-		"wonBy": []
+		"maxWinners": 1
 	},
 	{
 		"game": "2023",
@@ -187,8 +136,7 @@
 		"emoji": "🍪",
 		"from": "Megan",
 		"howToWin": "First five people to complete an “M” (<table class=tiny><tr><td class=checked><td class=checked><td><td class=checked><td class=checked><tr><td class=checked><td><td class=checked><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked></table>)",
-		"maxWinners": 5,
-		"wonBy": []
+		"maxWinners": 5
 	},
 	{
 		"game": "2023",
@@ -196,13 +144,7 @@
 		"emoji": "💝",
 		"from": "Jason",
 		"howToWin": "Complete a cross (for Jesus) (<table class=tiny><tr><td><td><td class=checked><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td><td class=checked><td><td><tr><td><td><td class=checked><td><td><tr><td><td><td class=checked><td><td></table>)",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Mary",
-				"claimDate": "2023-08-23"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "2023",
@@ -210,13 +152,7 @@
 		"emoji": "🧶",
 		"from": "Jamie",
 		"howToWin": "Complete a “C” (excluding the corners) (<table class=tiny><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td class=checked><tr><td><td class=checked><td class=checked><td class=checked><td></table>)",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Celeste",
-				"claimDate": "2023-09-16"
-			}
-		]
+		"maxWinners": 1
 	},	
 	{
 		"game": "2023",
@@ -225,8 +161,7 @@
 		"emoji": "🏔️",
 		"from": "Jasper",
 		"howToWin": "Complete an “X” (<table class=tiny><tr><td class=checked><td><td><td><td class=checked><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td class=checked><td><td><td><td class=checked></table>)",
-		"maxWinners": 1,
-		"wonBy": []
+		"maxWinners": 1
 	},
 	{
 		"game": "2023",
@@ -234,8 +169,7 @@
 		"emoji": "🪢",
 		"from": "Lauren",
 		"howToWin": "Complete an “L” (<table class=tiny><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)",
-		"maxWinners": 1,
-		"wonBy": []
+		"maxWinners": 1
 	},
 	{
 		"game": "2023",
@@ -243,8 +177,7 @@
 		"emoji": "🫔",
 		"from": "Caity",
 		"howToWin": "Complete an “E” (<table class=tiny><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)",
-		"maxWinners": 1,
-		"wonBy": []
+		"maxWinners": 1
 	},
 	{
 		"game": "2023",
@@ -252,13 +185,7 @@
 		"emoji": "💆",
 		"from": "Bryon",
 		"howToWin": "Blackout!",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Lauren",
-				"claimDate": "2023-08-30"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "2023",
@@ -266,8 +193,7 @@
 		"emoji": "🍕",
 		"from": "Bryson",
 		"howToWin": "First two people to complete a “T” (<table class=tiny><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td><td class=checked><td><td><tr><td><td><td class=checked><td><td><tr><td><td><td class=checked><td><td><tr><td><td><td class=checked><td><td></table>)",
-		"maxWinners": 1,
-		"wonBy": []
+		"maxWinners": 1
 	},
 	{
 		"game": "2023",
@@ -275,13 +201,7 @@
 		"emoji": "🍩",
 		"from": "Eric",
 		"howToWin": "First bingo",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Ellie",
-				"claimDate": "2023-07-06"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "2023",
@@ -289,13 +209,7 @@
 		"emoji": "✨",
 		"from": "Eric",
 		"howToWin": "Blackout!",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Lauren",
-				"claimDate": "2023-08-30"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "2023",
@@ -303,8 +217,7 @@
 		"emoji": "🙃",
 		"from": "Celeste",
 		"howToWin": "Complete the fewest squares (“Shame Prize”)",
-		"maxWinners": 1,
-		"wonBy": []
+		"maxWinners": 1
 	},
 	
 	
@@ -315,13 +228,7 @@
 		"emoji": "🥯",
 		"from": "Britt",
 		"howToWin": "Third person to get a bingo",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Celeste",
-				"claimDate": "2024-02-16"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "winter2023-24",
@@ -329,8 +236,7 @@
 		"emoji": "🧶",
 		"from": "Jamie",
 		"howToWin": "Complete an “X” (<table class=tiny><tr><td class=checked><td><td><td><td class=checked><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td class=checked><td><td><td><td class=checked></table>)",
-		"maxWinners": 1,
-		"wonBy": []
+		"maxWinners": 1
 	},
 	{
 		"game": "winter2023-24",
@@ -338,13 +244,7 @@
 		"emoji": "🎞️",
 		"from": "Jasper",
 		"howToWin": "Second person to get two bingos",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Mary",
-				"claimDate": "2024-02-24"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "winter2023-24",
@@ -352,8 +252,7 @@
 		"emoji": "☕️",
 		"from": "Caity",
 		"howToWin": "Complete a “C” (three sides) (<table class=tiny><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)",
-		"maxWinners": 1,
-		"wonBy": []
+		"maxWinners": 1
 	},
 	{
 		"game": "winter2023-24",
@@ -361,13 +260,7 @@
 		"emoji": "🫔",
 		"from": "Bryon",
 		"howToWin": "Last person to get their first bingo",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Ellie",
-				"claimDate": "2024-03-10"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "winter2023-24",
@@ -375,13 +268,7 @@
 		"emoji": "🧺",
 		"from": "Celeste",
 		"howToWin": "Closest to completing a diamond (<table class=tiny><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td class=checked><td><td><td><td class=checked><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td></table>)",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Jamie",
-				"claimDate": "2024-03-10" 
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "winter2023-24",
@@ -389,13 +276,7 @@
 		"emoji": "🥐",
 		"from": "Mary",
 		"howToWin": "Four corners (<table class=tiny><tr><td class=checked><td><td><td><td class=checked><tr><td><td><td><td><td><tr><td><td><td><td><td><tr><td><td><td><td><td><tr><td class=checked><td><td><td><td class=checked></table>)",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Britt",
-				"claimDate": "2024-02-19"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "winter2023-24",
@@ -403,13 +284,7 @@
 		"emoji": "🍞",
 		"from": "Lauren",
 		"howToWin": "Complete an “L” (<table class=tiny><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Britt",
-				"claimDate": "2024-02-19"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "winter2023-24",
@@ -417,8 +292,7 @@
 		"emoji": "🚲",
 		"from": "Jeremy",
 		"howToWin": "First four people to complete the 100-cumulative-miles-on-a-bike challenge",
-		"maxWinners": 4,
-		"wonBy": []
+		"maxWinners": 4
 	},
 	{
 		"game": "winter2023-24",
@@ -426,13 +300,7 @@
 		"emoji": "🧼",
 		"from": "Ellie",
 		"howToWin": "First person to do the thing on your board that will make you the stinkiest",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Jamie",
-				"claimDate": "2024-03-10"
-			}
-		]
+		"maxWinners": 1
 	},
 		{
 		"game": "winter2023-24",
@@ -440,13 +308,7 @@
 		"emoji": "🧘",
 		"from": "Vicki",
 		"howToWin": "Postage stamp (any square block of four – but can’t include FREE space)",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Caity",
-				"claimDate": "2024-02-21"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "winter2023-24",
@@ -454,13 +316,7 @@
 		"emoji": "🐣",
 		"from": "Eric",
 		"howToWin": "First bingo",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Mary",
-				"claimDate": "2024-01-06"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "summer2024",
@@ -468,21 +324,7 @@
 		"emoji": "🍦",
 		"from": "Celeste",
 		"howToWin": "First <em>three</em> people to get a non-free-space bingo",
-		"maxWinners": 3,
-		"wonBy": [
-			{
-				"player": "Britt",
-				"claimDate": "2024-08-18"
-			},
-			{
-				"player": "Mary",
-				"claimDate": "2024-08-18"
-			},
-			{
-				"player": "Jamie",
-				"claimDate": "2024-08-18"
-			}
-		]
+		"maxWinners": 3
 	},
 	{
 		"game": "summer2024",
@@ -490,13 +332,7 @@
 		"emoji": "⚾️",
 		"from": "Britt",
 		"howToWin": "First person to get two bingos",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Celeste",
-				"claimDate": "2024-07-28"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "summer2024",
@@ -504,8 +340,7 @@
 		"emoji": "📖",
 		"from": "Caity",
 		"howToWin": "Tree (<table class=tiny><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td><td class=checked><td><td><tr><td><td><td class=checked><td><td></table>)",
-		"maxWinners": 1,
-		"wonBy": []
+		"maxWinners": 1
 	},
 	{
 		"game": "summer2024",
@@ -513,21 +348,7 @@
 		"emoji": "🥐",
 		"from": "Mary",
 		"howToWin": "Any player who gets four corners (<table class=tiny><tr><td class=checked><td><td><td><td class=checked><tr><td><td><td><td><td><tr><td><td><td><td><td><tr><td><td><td><td><td><tr><td class=checked><td><td><td><td class=checked></table>)",
-		"maxWinners": null,
-		"wonBy": [
-			{
-				"player": "Britt",
-				"claimDate": "2024-09-22"
-			},
-			{
-				"player": "Lou",
-				"claimDate": "2024-09-22"
-			},
-			{
-				"player": "Jamie",
-				"claimDate": "2024-09-22"
-			}
-		]
+		"maxWinners": null
 	},
 	{
 		"game": "summer2024",
@@ -535,13 +356,7 @@
 		"emoji": "🍽️",
 		"from": "Lou",
 		"howToWin": "L (<table class=tiny><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Celeste",
-				"claimDate": "2024-08-22"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "summer2024",
@@ -549,13 +364,7 @@
 		"emoji": "🎤",
 		"from": "Jasper",
 		"howToWin": "First bingo",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Jamie",
-				"claimDate": "2024-07-23"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "summer2024",
@@ -563,8 +372,7 @@
 		"emoji": "🛍️",
 		"from": "Meg",
 		"howToWin": "Little M that kind of looks like an H (<table class=tiny><tr><td><td><td><td><td><tr><td><td><td><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td><td class=checked><td><td class=checked><td></table>)",
-		"maxWinners": 1,
-		"wonBy": []
+		"maxWinners": 1
 	},
 	{
 		"game": "summer2024",
@@ -572,17 +380,7 @@
 		"emoji": "📬",
 		"from": "Eric",
 		"howToWin": "First two people to get postage stamps (<table class=tiny><tr><td><td><td><td class=checked><td class=checked><tr><td><td><td><td class=checked><td class=checked><tr><td><td><td><td><td><tr><td><td><td><td><td><tr><td><td><td><td><td></table>)",
-		"maxWinners": 2,
-		"wonBy": [
-			{
-				"player": "Britt",
-				"claimDate": "2024-08-25"
-			},
-			{
-				"player": "Aleta",
-				"claimDate": "2024-08-25"
-			}
-		]
+		"maxWinners": 2
 	},
 	{
 		"game": "summer2024",
@@ -590,13 +388,7 @@
 		"emoji": "🛒",
 		"from": "Jamie",
 		"howToWin": "Make a five-square plus sign anywhere (e.g. <table class=tiny><tr><td><td class=checked><td><td><td><tr><td class=checked><td class=checked><td class=checked><td><td><tr><td><td class=checked><td><td><td><tr><td><td><td><td><td><tr><td><td><td><td><td></table> or <table class=tiny><tr><td><td><td><td><td><tr><td><td><td><td class=checked><td><tr><td><td><td class=checked><td class=checked><td class=checked><tr><td><td><td><td class=checked><td><tr><td><td><td><td><td></table>)",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Celeste",
-				"claimDate": "2024-07-26"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "summer2024",
@@ -604,13 +396,7 @@
 		"emoji": "❓",
 		"from": "Jason",
 		"howToWin": "Jason thinks you have the most asthetically pleasing board",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Celeste",
-				"claimDate": "2024-08-31"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "summer2024",
@@ -618,8 +404,7 @@
 		"emoji": "🧶",
 		"from": "Cassi",
 		"howToWin": "Square framing the board (<table class=tiny><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)",
-		"maxWinners": 1,
-		"wonBy": []
+		"maxWinners": 1
 	},
 	{
 		"game": "summer2024",
@@ -627,8 +412,7 @@
 		"emoji": "📚",
 		"from": "Christina",
 		"howToWin": "Square around the free space (<table class=tiny><tr><td><td><td><td><td><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td><td class=checked><td><td class=checked><td><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td><td><td><td><td></table>)",
-		"maxWinners": 1,
-		"wonBy": []
+		"maxWinners": 1
 	},
 	{
 		"game": "summer2024",
@@ -636,14 +420,7 @@
 		"emoji": "🏔️",
 		"from": "Jeff",
 		"howToWin": "Make a big X (<table class=tiny><tr><td class=checked><td><td><td><td class=checked><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td class=checked><td><td><td><td class=checked></table>)",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Britt",
-				"claimDate": "2024-09-22"
-			}
-		]
-		
+		"maxWinners": 1
 	},
 	
 	
@@ -654,13 +431,7 @@
 		"emoji": "👕",
 		"from": "Britt",
 		"howToWin": "Fourth person to get a bingo",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Ellie",
-				"claimDate": "2025-06-25"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "2025",
@@ -668,13 +439,7 @@
 		"emoji": "🫓",
 		"from": "Jasper",
 		"howToWin": "First horizontal bingo",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Ellie",
-				"claimDate": "2025-06-08"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "2025",
@@ -682,13 +447,7 @@
 		"emoji": "🧖",
 		"from": "Lou",
 		"howToWin": "Make an L (<table class=tiny><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Marguerite",
-				"claimDate": "2025-08-26"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "2025",
@@ -696,8 +455,7 @@
 		"emoji": "👂",
 		"from": "Aleta",
 		"howToWin": "Elongated bagel (<table class=tiny><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td><td class=checked><td><td class=checked><td><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td></table>)",
-		"maxWinners": 1,
-		"wonBy": []
+		"maxWinners": 1
 	},
 	{
 		"game": "2025",
@@ -705,13 +463,7 @@
 		"emoji": "👐",
 		"from": "Caity",
 		"howToWin": "Best finger hand video",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Eric",
-				"claimDate": "2025-11-08"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "2025",
@@ -719,17 +471,7 @@
 		"emoji": "🍞",
 		"from": "Mary",
 		"howToWin": "Four corners (<table class=tiny><tr><td class=checked><td><td><td><td class=checked><tr><td><td><td><td><td><tr><td><td><td><td><td><tr><td><td><td><td><td><tr><td class=checked><td><td><td><td class=checked></table>)",
-		"maxWinners": 2,
-		"wonBy": [
-			{
-				"player": "Ellie",
-				"claimDate": "2025-07-09"
-			},
-			{
-				"player": "Aleta",
-				"claimDate": "2025-07-09"
-			}
-		]
+		"maxWinners": 2
 	},
 	{
 		"game": "2025",
@@ -737,13 +479,7 @@
 		"emoji": "🍯",
 		"from": "Zach M.",
 		"howToWin": "First two people to make the letter Z (<table class=tiny><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td><td><td class=checked><td><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)",
-		"maxWinners": 2,
-		"wonBy": [
-			{
-				"player": "Ellie",
-				"claimDate": "2025-11-02"
-			}
-		]
+		"maxWinners": 2
 	},
 	{
 		"game": "2025",
@@ -751,13 +487,7 @@
 		"emoji": "🖼️",
 		"from": "Jeff",
 		"howToWin": "First person to get a J (<table class=tiny><tr><td><td><td><td><td class=checked><tr><td><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td><td class=checked><td class=checked><td class=checked><td></table>)",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Celeste",
-				"claimDate": "2025-09-01"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "2025",
@@ -765,13 +495,7 @@
 		"emoji": "🌄",
 		"from": "Eric",
 		"howToWin": "Mountain (<table class=tiny><tr><td><td><td><td><td><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td class=checked><td><td><td><td class=checked><tr><td><td><td><td><td></table>)",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Celeste",
-				"claimDate": "2025-09-07"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "2025",
@@ -779,13 +503,7 @@
 		"emoji": "🥯",
 		"from": "Celeste",
 		"howToWin": "First vertical or diagonal bingo",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Caity",
-				"claimDate": "2025-06-07"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "2025",
@@ -793,13 +511,7 @@
 		"emoji": "☕️",
 		"from": "Tessa",
 		"howToWin": "Big X (<table class=tiny><tr><td class=checked><td><td><td><td class=checked><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td><tr><td><td class=checked><td><td class=checked><td><tr><td class=checked><td><td><td><td class=checked></table>)",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Aleta",
-				"claimDate": "2025-07-08"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "2025",
@@ -807,13 +519,7 @@
 		"emoji": "♟️",
 		"from": "Steph and Will",
 		"howToWin": "Upside-down J (scythe) (<table class=tiny><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td><tr><td class=checked><td><td><td><td></table>)",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Marguerite",
-				"claimDate": "2025-11-13"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "2025",
@@ -821,13 +527,7 @@
 		"emoji": "🧶",
 		"from": "Cassi",
 		"howToWin": "Outer square (<table class=tiny><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td><td><td><td class=checked><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked></table>)",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Marguerite",
-				"claimDate": "2025-11-13"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "2025",
@@ -835,13 +535,7 @@
 		"emoji": "🥣",
 		"from": "Zack",
 		"howToWin": "Peace sign upside down (<table class=tiny><tr><td class=checked><td><td class=checked><td><td class=checked><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td><td><td class=checked><td><td><tr><td><td><td class=checked><td><td><tr><td><td><td class=checked><td><td></table>)",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Marguerite",
-				"claimDate": "2025-11-13"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "2025",
@@ -849,13 +543,7 @@
 		"emoji": "🍦",
 		"from": "Ellie",
 		"howToWin": "Downward triangle at any level (<table class=tiny><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td><tr><td><td><td><td><td><tr><td><td><td><td><td></table>, <table class=tiny><tr><td><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td><tr><td><td><td><td><td></table>, or <table class=tiny><tr><td><td><td><td><td><tr><td><td><td><td><td><tr><td class=checked><td class=checked><td class=checked><td class=checked><td class=checked><tr><td><td class=checked><td><td class=checked><td><tr><td><td><td class=checked><td><td></table>)",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Celeste",
-				"claimDate": "2025-09-10"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "2025",
@@ -863,13 +551,7 @@
 		"emoji": "😋",
 		"from": "Jamie",
 		"howToWin": "Second bingo",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Ellie",
-				"claimDate": "2025-06-14"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "2025",
@@ -877,13 +559,7 @@
 		"emoji": "🥖",
 		"from": "Jason",
 		"howToWin": "Third bingo",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Marguerite",
-				"claimDate": "2025-06-16"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "2025",
@@ -891,8 +567,7 @@
 		"emoji": "🖌️",
 		"from": "Marguerite",
 		"howToWin": "First “Sunshine Bingo” (<table class=tiny><tr><td class=checked><td><td class=checked><td><td class=checked><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td class=checked><td class=checked><td><td class=checked><td class=checked><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td class=checked><td><td class=checked><td><td class=checked></table>)",
-		"maxWinners": 1,
-		"wonBy": []
+		"maxWinners": 1
 	},
 	{
 		"game": "2025",
@@ -900,8 +575,7 @@
 		"emoji": "🍩",
 		"from": "Zach C.",
 		"howToWin": "First to finish “The closest to a tooth Zach could get” (<table class=tiny><tr><td><td class=checked><td><td class=checked><td><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td><td class=checked><td><td class=checked><td><tr><td><td class=checked><td><td class=checked><td></table>)",
-		"maxWinners": 1,
-		"wonBy": []
+		"maxWinners": 1
 	},
 	{
 		"game": "2025",
@@ -909,8 +583,7 @@
 		"emoji": "🍫",
 		"from": "Andrea",
 		"howToWin": "Square around the center space (<table class=tiny><tr><td><td><td><td><td><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td><td class=checked><td><td class=checked><td><tr><td><td class=checked><td class=checked><td class=checked><td><tr><td><td><td><td><td></table>)",
-		"maxWinners": 1,
-		"wonBy": []
+		"maxWinners": 1
 	},
 	{
 		"game": "2025",
@@ -918,13 +591,7 @@
 		"emoji": "🍵",
 		"from": "Meg",
 		"howToWin": "Second vertical bingo",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Aleta",
-				"claimDate": "2025-06-16"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "2025",
@@ -932,13 +599,7 @@
 		"emoji": "🪥",
 		"from": "Celeste",
 		"howToWin": "Baseball diamond (<table class=tiny><tr><td><td><td class=checked><td><td><tr><td><td><td><td><td><tr><td class=checked><td><td class=checked><td><td class=checked><tr><td><td><td><td><td><tr><td><td><td class=checked><td><td></table>)",
-		"maxWinners": 1,
-		"wonBy": [
-			{
-				"player": "Marguerite",
-				"claimDate": "2025-11-13"
-			}
-		]
+		"maxWinners": 1
 	},
 	{
 		"game": "test",
@@ -946,8 +607,7 @@
 		"emoji": "🪥",
 		"from": "Test",
 		"howToWin": "First two bingos",
-		"maxWinners": 2,
-		"wonBy": []
+		"maxWinners": 2
 	},
 	{
 		"game": "test",
