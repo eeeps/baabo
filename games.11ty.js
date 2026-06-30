@@ -49,13 +49,14 @@ import '/lib/applyChangesToBoard.js';
 import '/lib/blankBoard.js';
 import '/env.js'; 
 
+const gameName = "${ urlSlugify( data.game.name ) }";
 const tables = document.querySelectorAll( 'table:not(.tiny)' );
 
 function updateTables( tables ) {
 	
 	const playerNames = [ ${ data.boards.map( b => `"${ urlSlugify( b.player ) }"` ).join(', ') } ];
 	const allBoards = boardsFromLocalStorage( playerNames.map( pn => ( {
-		game: "${ urlSlugify( data.game.name ) }",
+		game: gameName,
 		player: pn,
 	} ) ) );
 	
@@ -71,7 +72,7 @@ updateTables( tables );
 
 
 // go out to the database and update again, asynchronously
-syncLocalStorageChangeHistoryAndDatabaseWhere( { game: '${ urlSlugify( data.game.name ) }' } ).then( ( result ) => {
+syncLocalStorageChangeHistoryAndDatabaseWhere( { game: gameName } ).then( ( result ) => {
 	if ( result.postedToLocalStorage === true ||
 	     result.deletedFromLocalStorage === true ) {
 		updateTables( tables );
@@ -82,6 +83,7 @@ syncLocalStorageChangeHistoryAndDatabaseWhere( { game: '${ urlSlugify( data.game
 ///////
 import onePrizeWonByFromChangeHistory from '/lib/onePrizeWonByFromChangeHistory.js';
 import fetchPrizeChangeHistoryFromLocalStorageWhere from '/lib/fetchPrizeChangeHistoryFromLocalStorageWhere.js';
+import syncLocalStoragePrizeChangeHistoryAndDatabaseWhere from '/lib/syncLocalStoragePrizeChangeHistoryAndDatabaseWhere.js';
 
 const fullNamesFromSlugs = {
 	${ data.boards.map( b => `'${ urlSlugify(b.player)}': '${b.player}'` ).join(',\n') }
@@ -106,7 +108,7 @@ const updatePrizes = ( prizeLis, prizeChanges ) => {
 		
 		// wonby from prize history
 		const wonBy = onePrizeWonByFromChangeHistory(
-			"${ urlSlugify( data.game.name ) }",
+			gameName,
 			li.dataset.prizename,
 			prizeChanges
 		);
@@ -174,7 +176,7 @@ const updatePrizes = ( prizeLis, prizeChanges ) => {
 
 // fetch prize history from localstorage
 const prizeChanges = fetchPrizeChangeHistoryFromLocalStorageWhere( {
-	game: "${ urlSlugify( data.game.name ) }"
+	game: gameName
 } );
 // console.log( 'updatePrizes()' )
 updatePrizes( prizeLis, prizeChanges );
@@ -186,8 +188,22 @@ updatePrizes( prizeLis, prizeChanges );
 //   }
 // });
 
-// fetch prize history from database
-	// if we changed anything about localstorage, update again
+
+// sync with the database, and if there were relevant changes, update again, async
+syncLocalStoragePrizeChangeHistoryAndDatabaseWhere( {
+	game: gameName
+} ).then( ( result ) => {
+	if ( result.postedToLocalStorage === true ||
+		 result.deletedFromLocalStorage === true ) {
+		updatePrizes(
+			prizeLis,
+			fetchPrizeChangeHistoryFromLocalStorageWhere( {
+				game: gameName
+			} )
+		);
+	}
+} );
+
 
 </script>
 ` : '' }
