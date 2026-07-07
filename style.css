@@ -226,7 +226,7 @@ ul.players {
 	grid-template-rows: repeat(8, 1fr);
 }
 .mainContain[data-game="2026"] ul.players {
-	grid-template-rows: repeat(7, 1fr);
+	grid-template-rows: repeat(8, 1fr);
 }
 
 .players li {

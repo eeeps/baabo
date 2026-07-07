@@ -2,11 +2,11 @@
 
 import fs from 'fs';
 
-const gameName = '2025';
+const gameName = '2026';
 
 const playersChallenges = JSON.parse( fs.readFileSync('../_data/challenges.json') );
 const flatChallenges = playersChallenges.reduce( ( acc, cv ) => acc.concat( cv.challenges ), [] );
-const players = 
+const players = JSON.parse( fs.readFileSync('../_data/players.json') );
 
 const drawABoard = ( challenges ) => {
 
@@ -37,21 +37,21 @@ const drawABoard = ( challenges ) => {
 // draw all boards and replace the boards.json
 // only do this once!
 //
-const boards = players.map( playerName => {
-	return {
-		"game": gameName,
-		"player": playerName,
-		"challenges": drawABoard( flatChallenges )
-	}
-} );
-
-try {
-  fs.writeFileSync(`_data/boards-${ gameName }.json`, JSON.stringify( boards, null, 2 ), 'utf8');
-  console.log('Data successfully saved to disk');
-} catch (error) {
-  console.log('An error has occurred ', error);
-}
+// const boards = players.map( playerName => {
+// 	return {
+// 		"game": gameName,
+// 		"player": playerName,
+// 		"challenges": drawABoard( flatChallenges )
+// 	}
+// } );
+// 
+// try {
+//   fs.writeFileSync(`_data/boards-${ gameName }.json`, JSON.stringify( boards, null, 2 ), 'utf8');
+//   console.log('Data successfully saved to disk');
+// } catch (error) {
+//   console.log('An error has occurred ', error);
+// }
 
 
 // draw one board
-// console.log( drawABoard( flatChallenges ) );
+console.log( drawABoard( flatChallenges ) );
